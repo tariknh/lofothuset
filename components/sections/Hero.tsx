@@ -15,10 +15,11 @@ function Hero() {
       </div>
       <div className="h-screen relative overflow-hidden">
         <Image
-          className="object-cover scale-100"
+          objectFit="cover"
+          className="absolute"
           alt="Mikrohus"
-          src={"/images/hero.jpg"}
-          fill={true}
+          src={"/images/mobileHome.png"}
+          fill
         />
       </div>
     </section>
