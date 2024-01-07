@@ -1,7 +1,7 @@
 "use client";
+import { secureHeapUsed } from "crypto";
 import React from "react";
 import Button from "../ui/LagButton";
-import NewsCard from "../ui/NewsCard";
 import {
   Carousel,
   CarouselContent,
@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import NewsCard from "../ui/NewsCard";
 
 const news_cards = [
   {
@@ -28,18 +29,18 @@ const news_cards = [
   },
 ];
 
-function SisteNytt() {
+function Blog() {
   return (
     <section className="mx-8 lg:m-16 overflow-visible grid grid-cols-2 max-w-[1200px] self-center">
       <div className="flex justify-between items-center w-fit ">
         {/* Header */}
-        <h2 className="md:text-2xl text-xl">Siste nytt</h2>
+        <h2 className="md:text-2xl text-xl">Nyeste artikler</h2>
       </div>
       <Button
         className={
           "place-self-end self-center xsm:row-start-1 xsm:col-start-2 row-start-1 col-start-2"
         }
-        text="Se alle nyheter"
+        text="Se alle artikler"
         slug="/nyheter"
       />
       <div className="flex justify-center items-center overflow-visible col-span-2 my-8">
@@ -54,7 +55,6 @@ function SisteNytt() {
                 <NewsCard
                   date={newsCardProps.date}
                   title={newsCardProps.title}
-                  text={newsCardProps.text}
                 />
               </CarouselItem>
             ))}
@@ -69,6 +69,4 @@ function SisteNytt() {
   );
 }
 
-export default SisteNytt;
-
-// <Button text="Se alle nyheter" slug="/nyheter" />
+export default Blog;

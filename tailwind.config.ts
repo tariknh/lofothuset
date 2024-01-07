@@ -80,6 +80,7 @@ const config: Config = {
         xsm: "420px",
         "xsm-370": "370px",
         "2xl": "1250px",
+        "3xl": "1290px",
         // ...other screens
       },
       // ...other theme extensions

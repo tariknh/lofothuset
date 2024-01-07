@@ -35,6 +35,7 @@ function Header() {
         <>
           <div className={styles.main}>
             <div className={styles.header}>
+              <span className="p-8 text-white">LOFOTEN A GROUP</span>
               <div
                 onClick={() => {
                   setIsActive(!isActive);

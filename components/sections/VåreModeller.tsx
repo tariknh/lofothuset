@@ -6,7 +6,7 @@ function VåreModeller() {
   return (
     <section className="mx-8 my-16 lg:m-16">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl">Våre modeller</h2>{" "}
+        <h2 className="md:text-2xl text-xl">Modeller</h2>{" "}
         <Button text="Se modeller" slug="/modeller" />
       </div>
       <div>

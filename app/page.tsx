@@ -1,5 +1,7 @@
+import Blog from "@/components/sections/Blog";
 import Fordeler from "@/components/sections/Fordeler";
 import Hero from "@/components/sections/Hero";
+import Hvordan from "@/components/sections/Hvordan";
 import OmOss from "@/components/sections/OmOss";
 import SisteNytt from "@/components/sections/SisteNytt";
 import VåreModeller from "@/components/sections/VåreModeller";
@@ -13,6 +15,8 @@ export default function Home() {
       <SisteNytt />
       <Fordeler />
       <VåreModeller />
+      <Hvordan />
+      <Blog />
     </main>
   );
 }
