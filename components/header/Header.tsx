@@ -30,9 +30,9 @@ function Header() {
     // it is called every time the window is resized
   }, [isMobile]);
   return (
-    <>
+    <div>
       {isMobile ? (
-        <>
+        <div>
           <div className={styles.main}>
             <div className={styles.header}>
               <span className="p-8 text-white">LOFOTEN A GROUP</span>
@@ -53,7 +53,7 @@ function Header() {
           <AnimatePresence mode="wait">
             {isActive && <MobileNav setOpen={setIsActive} open={isActive} />}
           </AnimatePresence>
-        </>
+        </div>
       ) : (
         <nav className="fixed py-4 w-full z-50 flex text-white text-xl justify-between px-8 lg:px-20">
           <div>
@@ -64,7 +64,7 @@ function Header() {
           </div>
         </nav>
       )}
-    </>
+    </div>
   );
 }
 
