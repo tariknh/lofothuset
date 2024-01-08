@@ -1,4 +1,6 @@
 import Blog from "@/components/sections/Blog";
+import { FAQ } from "@/components/sections/FAQ";
+import Footer from "@/components/sections/Footer";
 import Fordeler from "@/components/sections/Fordeler";
 import Hero from "@/components/sections/Hero";
 import Hvordan from "@/components/sections/Hvordan";
@@ -17,6 +19,8 @@ export default function Home() {
       <VåreModeller />
       <Hvordan />
       <Blog />
+      <FAQ />
+      <Footer />
     </main>
   );
 }

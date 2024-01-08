@@ -1,0 +1,40 @@
+{
+  "accordionItems": [
+    {
+      "question": "Hvilke tillatelser trenger jeg for å plassere et mikrohus?",
+      "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "question": "Hvordan tilkobles vann og kloakk til mikrohuset?",
+      "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    {
+      "question": "Hvilke isolasjon- og varmeløsninger finnes for mikrohus?",
+      "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+    },
+    {
+      "question": "Hvordan påvirkes verdivurdering og forsikring av mikrohus?",
+      "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+    },
+    {
+      "question": "Hva er de tekniske kravene for mikrohus i Norge (TEK17)?",
+      "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+    },
+    {
+      "question": "Hvor kan jeg plassere et mikrohus lovlig?",
+      "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+    },
+    {
+      "question": "Hvordan får man strøm i et mikrohus?",
+      "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+    },
+    {
+      "question": "Kan jeg bo i et mikrohus om vinteren?",
+      "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+    },
+    {
+      "question": "Hvor lang tid tar det fra jeg bestiller til jeg får mikrohuset?",
+      "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+    }
+  ]
+}
