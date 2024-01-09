@@ -27,13 +27,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <SmoothScroll />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
+        <SmoothScroll />
         <Header />
         {children}
       </body>
