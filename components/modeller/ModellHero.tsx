@@ -63,7 +63,7 @@ function ModellHero() {
             align="justify-start"
             title="Floor"
             underTitle="33,9 m"
-            svg="/floor.svg"
+            svg="/room.svg"
           />
           <ModellFordel
             title="Komponenter"

@@ -4,12 +4,6 @@ import Image from "next/image";
 import ModellModell from "./ModellModell";
 
 function ModellModeller() {
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  });
   return (
     <section className="w-full grid grid-cols-5  p-2 lg:p-16">
       <ModellModell

@@ -7,6 +7,7 @@ import Hvordan from "@/components/sections/Hvordan";
 import OmOss from "@/components/sections/OmOss";
 import SisteNytt from "@/components/sections/SisteNytt";
 import VåreModeller from "@/components/sections/VåreModeller";
+import SmoothScroll from "@/contexts/SmoothScroll.context";
 import Image from "next/image";
 
 export default function Home() {
