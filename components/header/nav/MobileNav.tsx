@@ -11,7 +11,7 @@ type openStates = {
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const navItems = [
+export const navItems = [
   {
     title: "Hjem",
     href: "/",
@@ -22,7 +22,7 @@ const navItems = [
   },
   {
     title: "Modeller",
-    href: "/modeller",
+    href: "/modeller/finnmarken",
   },
   {
     title: "Om oss",

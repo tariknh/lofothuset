@@ -15,25 +15,22 @@ const letterAnimation = {
     y: 0,
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 0.6,
+      duration: 1.3,
     },
   },
 };
 
 const banner = {
   animate: {
-    transition: {
-      delayChildren: 0.4,
-      staggerChildren: 0.1,
-    },
+    transition: {},
   },
 };
 
-const AnimatedLetters = ({ title }: { title: string }) => {
+export const AnimatedLetters = ({ title }: { title: string }) => {
   const letters = Array.from(title);
   return (
     <motion.span
-      className="flex overflow-hidden max-w-screen-sm"
+      className="flex overflow-hidden "
       variants={banner}
       initial="initial"
       animate="animate"

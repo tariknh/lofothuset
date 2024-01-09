@@ -2,6 +2,7 @@ import ModellFordeler from "@/components/modeller/ModellFordeler";
 import ModellHero from "@/components/modeller/ModellHero";
 import ModellModeller from "@/components/modeller/ModellModeller";
 import ModellVideo from "@/components/modeller/ModellVideo";
+import Transition from "@/components/ui/Animations/Transition";
 import React from "react";
 
 function page() {

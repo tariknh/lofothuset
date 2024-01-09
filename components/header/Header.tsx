@@ -1,8 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
 import styles from "./style.module.scss";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import MobileNav from "./nav/MobileNav";
+import { navItems } from "./nav/MobileNav";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -10,6 +13,11 @@ function Header() {
   const [isMobile, setIsMobile] = useState(
     typeof window !== "undefined" && window.innerWidth < 1024
   );
+
+  const path = usePathname();
+  if (navItems[0].href === path) {
+    console.log(true, "true!");
+  }
 
   useEffect(() => {
     function handleResize() {
@@ -30,12 +38,12 @@ function Header() {
     // it is called every time the window is resized
   }, [isMobile]);
   return (
-    <nav>
+    <nav className="bg-transparent">
       {isMobile ? (
         <div>
           <div className={styles.main}>
             <div className={styles.header}>
-              <span className="p-8 text-white">LOFOTEN A GROUP</span>
+              <span className="p-8">LOFOTEN A GROUP</span>
               <div
                 onClick={() => {
                   setIsActive(!isActive);
@@ -55,13 +63,25 @@ function Header() {
           </AnimatePresence>
         </div>
       ) : (
-        <div className="fixed py-4 w-full z-50 flex text-white text-xl justify-between px-8 lg:px-20">
+        <div className="flex fixed mix-blend-difference py-4 w-full text-xl justify-between px-8 lg:px-20 z-50">
           <div>
-            <span>LOFOTEN A GROUP</span>
+            <span className={styles.logo}>LOFOTEN A GROUP</span>
           </div>
-          <div>
-            <span>Hjem</span>
-          </div>
+          <ul className="flex gap-6 text-white invert-1">
+            {navItems.map((data, index) => (
+              <li key={data.href}>
+                <Link className="relative" href={data.href}>
+                  {data.href === path && (
+                    <motion.span
+                      layoutId="underline"
+                      className="bg-white h-[1px] left-0 top-full absolute w-full"
+                    />
+                  )}
+                  {data.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </nav>
