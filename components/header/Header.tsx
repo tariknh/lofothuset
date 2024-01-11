@@ -1,11 +1,12 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./style.module.scss";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useScroll } from "framer-motion";
 import MobileNav from "./nav/MobileNav";
 import { navItems } from "./nav/MobileNav";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { scroll } from "framer-motion";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -38,17 +39,20 @@ function Header() {
     // it is called every time the window is resized
   }, [isMobile]);
   return (
-    <nav className="bg-transparent">
+    <nav className="">
       {isMobile ? (
         <div>
           <div className={styles.main}>
-            <div className={styles.header}>
-              <span className="p-8">LOFOTEN A GROUP</span>
+            <div className={` ${styles.header}`}>
+              <div className="hidden bg-white w-screen absolute top-0 h-20"></div>
+              <span className={`p-8 mix-blend-difference ${styles.logo}`}>
+                LOFOTHUSET
+              </span>
               <div
                 onClick={() => {
                   setIsActive(!isActive);
                 }}
-                className={styles.button}
+                className={`mix-blend-difference ${styles.button}`}
               >
                 <div
                   className={`${styles.burger} ${
@@ -65,7 +69,7 @@ function Header() {
       ) : (
         <div className="flex fixed mix-blend-difference py-4 w-full text-xl justify-between px-8 lg:px-20 z-50">
           <div>
-            <span className={styles.logo}>LOFOTEN A GROUP</span>
+            <span className={styles.logo}>LOFOTHUSET</span>
           </div>
           <ul className="flex gap-6 text-white invert-1">
             {navItems.map((data, index) => (

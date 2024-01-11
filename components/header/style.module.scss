@@ -1,7 +1,7 @@
 .logo {
   color: white;
-  mix-blend-mode: screen !important;
-  filter: invert(0) !important;
+  mix-blend-mode: difference !important;
+  filter: invert(0) grayscale(9) !important;
 }
 
 .header {

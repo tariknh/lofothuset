@@ -30,14 +30,14 @@ export const AnimatedLetters = ({ title }: { title: string }) => {
   const letters = Array.from(title);
   return (
     <motion.span
-      className="flex overflow-hidden "
+      className="flex overflow-hidden flex-wrap "
       variants={banner}
       initial="initial"
       animate="animate"
     >
       {letters.map((letter) => (
         <motion.span variants={letterAnimation} key={letter}>
-          {letter === " " ? "\u00A0" : letter}
+          {letter === " " ? "\u00A0" : letter === "+" ? "\u0020" : letter}
         </motion.span>
       ))}
     </motion.span>

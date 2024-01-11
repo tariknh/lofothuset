@@ -4,7 +4,7 @@ import AnimatedHero, { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 
 function Hero() {
   return (
-    <section className="w-full">
+    <section id="hero" className="w-full">
       <div className="p-8 lg:p-16 grid  h-screen grid-rows-12 absolute z-10 text-white w-full">
         <AnimatedHero />
         <h2 className="scroll-m-20 text-4xl tracking-tight row-start-11 lg:row-start-12">

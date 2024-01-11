@@ -11,7 +11,7 @@ export default function NavLink({
 
   return (
     <motion.div
-      className="relative flex items-center"
+      className="relative max-w-fit flex items-center"
       onMouseEnter={() => {
         setSelectedIndicator(href);
       }}
@@ -20,11 +20,13 @@ export default function NavLink({
     >
       <motion.div
         animate={isActive ? "open" : "closed"}
-        className={` w-[10px] h-[10px] ${
+        className={` w-full h-[2px] -bottom-1 ${
           isActive && "bg-white"
-        } rounded-md -left-5 absolute`}
+        }  left-0 absolute`}
       ></motion.div>
-      <Link href={href}>{title}</Link>
+      <Link className="tracking-tighter" href={href}>
+        {title}
+      </Link>
     </motion.div>
   );
 }

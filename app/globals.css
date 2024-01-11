@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  min-width: 0;
+}
+
 html.lenis {
   height: auto;
 }
