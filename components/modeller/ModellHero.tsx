@@ -40,27 +40,27 @@ function ModellHero() {
             or background. Alpha IV is designed for a family up to four people.
           </h3>
         </div>
-        <div className="grid xsm:ml-12 lg:ml-32 lg:mr-16 sm:mx-2 md:mx-4 grid-cols-3 gap-y-12 gap-x-2 ">
+        <div className="grid xsm:ml-12 lg:ml-32 lg:mr-16 sm:mx-2 md:mx-4 grid-cols-3 gap-y-12 gap-x-2">
           <ModellFordel
             title="Gulvareal"
             underTitle="53,9 m"
             svg="/ground.svg"
-            align="justify-start"
+            align="justify-end "
           />
           <ModellFordel
             title="Bygningsareal"
             underTitle="70 m"
             svg="/build.svg"
-            align="justify-center"
+            align="justify-center "
           />
           <ModellFordel
             title="Bad"
             underTitle="2"
             svg="/bath.svg"
-            align="justify-end"
+            align="justify-start "
           />
           <ModellFordel
-            align="justify-start"
+            align="justify-end"
             title="Floor"
             underTitle="33,9 m"
             svg="/room.svg"
@@ -75,7 +75,7 @@ function ModellHero() {
             title="Rom"
             underTitle="3"
             svg="/room.svg"
-            align="justify-end"
+            align="justify-start"
           />
         </div>
       </div>

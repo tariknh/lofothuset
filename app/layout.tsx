@@ -5,6 +5,10 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Header from "@/components/header/Header";
 import dynamic from "next/dynamic";
+import Hvordan from "@/components/sections/Hvordan";
+import Blog from "@/components/sections/Blog";
+import { FAQ } from "@/components/sections/FAQ";
+import Footer from "@/components/sections/Footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -36,6 +40,8 @@ export default function RootLayout({
         <SmoothScroll />
         <Header />
         {children}
+
+        <Footer />
       </body>
     </html>
   );

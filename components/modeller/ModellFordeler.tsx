@@ -4,7 +4,7 @@ import ModellFordelBoks from "./ModellFordelBoks";
 
 function ModellFordeler() {
   return (
-    <section className="flex w-full flex-col  px-2 sm:px-4 mt-20 lg:px-16 bg-[#303843] text-white">
+    <section className="flex w-full flex-col justify-center items-center px-2 sm:px-4 mt-20 lg:px-16 bg-[#303843] text-white mb-40">
       <div className="flex flex-col justify-center items-center mb-4 xsm-370:text-lg sm:text-xl lg:text-2xl mt-20">
         <h4 className="text-zinc-300">Fordeler</h4>
         <h2 className="xsm-370:text-2xl sm:text-3xl lg:text-4xl text-xl font-medium mb-4">
@@ -15,7 +15,7 @@ function ModellFordeler() {
           grunnprisen for våre mikrohus.
         </h3>
       </div>
-      <div className="grid grid-cols-2 pb-36">
+      <div className="grid grid-cols-2 pb-36 w-full max-w-[1200px] ">
         <ModellFordelBoks
           image="/floor.svg"
           text="Elektrisitet"

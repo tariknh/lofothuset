@@ -11,12 +11,12 @@ type ModellFordelProps = {
 function ModellFordel({ svg, title, underTitle, align }: ModellFordelProps) {
   return (
     <div
-      className={`flex sm:flex-row flex-col gap-2 sm:gap-4 sm:${align} justify-center items-center `}
+      className={`flex  flex-col gap-2 sm:gap-4 justify-start items-center  `}
     >
       <div className="w-[32px] h-[32px] xsm:w-[46px] xsm:h-[46px] sm:w-[50px] sm:h-[50px] relative">
         <Image src={svg} alt="" fill objectFit="contain" />
       </div>
-      <div className="flex flex-col sm:items-start justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
         <h2 className=" md:text-2xl sm:text-xl md:font-light xsm:text-lg lg:text-2xl">
           {title}
         </h2>
