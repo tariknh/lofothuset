@@ -7,7 +7,6 @@ import {
 import questions from "../Static/FAQ.json";
 
 export function FAQ() {
-  console.log(questions);
   return (
     <Accordion type="single" collapsible className="my-16 p-8 lg:p-16">
       <h2 className="text-center mb-8 sm:text-left lg:text-4xl text-3xl ">

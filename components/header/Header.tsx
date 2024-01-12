@@ -46,7 +46,7 @@ function Header() {
             <div className={` ${styles.header}`}>
               <div className="hidden bg-white w-screen absolute top-0 h-20"></div>
               <span className={`p-8 mix-blend-difference ${styles.logo}`}>
-                LOFOTHUSET
+                <Link href={"/"}>LOFOTHUSET</Link>
               </span>
               <div
                 onClick={() => {
