@@ -1,0 +1,28 @@
+{
+  "team": [
+    {
+      "name": "Harald Kjeldaas",
+      "phone": "12345678",
+      "mail": "harald@lofothuset.no",
+      "position": "Daglig leder og salgsansvarlig",
+      "description": "Har 25 år i byggevarhandel som salgssjef og dagligleder. Har du stort eller lite prosjekt hva angår små hus. Er jeg den rette å snakke med.",
+      "image": "/images/team/harald.jpg"
+    },
+    {
+      "name": "Yavuz Karaboga",
+      "phone": "12345678",
+      "mail": "yavuz@lofothuset.no",
+      "position": "Utdannelse fra BI Oslo innen forretningsjus",
+      "description": "Har jobbet innenfor bank, forsikring, eiendom og helse. Bodd i Norge i 25 år, er nå fast bosatt i Tyrkia og driver med salg av minihus til både norske så vel som utenlandske kunder.",
+      "image": "/images/team/yavuz.jpg"
+    },
+    {
+      "name": "Ruben Staven",
+      "phone": "93049995",
+      "mail": "ruben@lofothuset.no",
+      "position": "Salgsansvarlig for Sør-vest Norge",
+      "description": "Jeg har 6 års erfaring innen salg&service. Har du spørsmål angående Mikrohus? Hvor du skal starte og prosessen videre? Ta gjerne kontakt.",
+      "image": "/images/team/ruben.jpg"
+    }
+  ]
+}
