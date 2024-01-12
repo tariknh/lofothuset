@@ -1,22 +1,32 @@
-import React from "react";
-import { signal } from "@preact/signals-react";
+"use client";
+import { useState } from "react";
+
 import StegEn from "@/components/kontakt/StegEn";
 import StegTo from "@/components/kontakt/StegTo";
-import { useSignals } from "@preact/signals-react/runtime";
-
-const count = signal(0);
 
 function page() {
-  const currentStep = signal(1);
-  const handleACtion = async (formData: FormData) => {
-    "use server";
-    currentStep.value = currentStep.value + 1;
-    console.log(currentStep.value);
+  const [currentStep, setCurrentStep] = useState(1);
+
+  const handleClick = () => {
+    setCurrentStep(currentStep + 1);
+    console.log(currentStep);
+  };
+
+  const next = () => {
+    if (currentStep < 2) {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const prev = () => {
+    if (currentStep > 1) {
+      setCurrentStep(currentStep - 1);
+    }
   };
 
   return (
     <main className="w-full flex min-h-screen flex-col items-center justify-center">
-      <form action={handleACtion}>
+      <form>
         <div className="flex flex-col justify-center items-center text-balance text-center">
           <h1>Kontakt Oss</h1>
           <p>
@@ -31,10 +41,16 @@ function page() {
             <h2>Generel Info</h2>
           </div>
           <div>
-            {currentStep.value}
-            {currentStep.value == 1 && <StegEn />}
-            {currentStep.value == 2 && <StegTo />}
-            <button type="submit">test</button>
+            {currentStep}
+            {currentStep == 1 && <StegEn />}
+            {currentStep == 2 && <StegTo />}
+            <button
+              onClick={() => {
+                handleClick;
+              }}
+            >
+              next
+            </button>
           </div>
         </div>
       </form>

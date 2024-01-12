@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import questions from "../Static/FAQ.json";
+import questions from "@/app/Static/faq.json";
 
 export function FAQ() {
   return (
