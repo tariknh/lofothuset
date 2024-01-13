@@ -25,7 +25,7 @@ function Button({ text, slug, className, full = false }: ButtonProps) {
     return (
       <Link className={`${className} `} href={slug}>
         <button
-          className={`w-[150px] xsm:w-52 sm:w-64 flex justify-between py-4 border-b-[1px] border-black items-center text-lagtext`}
+          className={`gap-4 xsm:w-52 sm:w-64 flex justify-between py-4 border-b-[1px] border-black items-center text-lagtext`}
         >
           {text}
           <Image width={28} height={28} src={"/arrow.svg"} alt="Click Here" />
