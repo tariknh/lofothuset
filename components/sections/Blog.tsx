@@ -31,7 +31,7 @@ const news_cards = [
 
 function Blog() {
   return (
-    <section className="mx-8 lg:m-16 overflow-visible grid grid-cols-2 max-w-[1200px] self-center">
+    <section className=" overflow-visible grid grid-cols-2 my-16 p-8 lg:p-16">
       <div className="flex justify-between items-center w-fit ">
         {/* Header */}
         <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">

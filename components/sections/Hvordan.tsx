@@ -11,6 +11,7 @@ import {
 import Image from "next/image";
 import AccordianHow from "../ui/AccordianHow";
 import { Progress } from "@/components/ui/progress";
+import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 
 function Hvordan() {
   const [activeItem, setActiveItem] = useState("item-1");
@@ -102,9 +103,12 @@ function Hvordan() {
   }, []);
 
   return (
-    <section className="p-2 sm:p-4 lg:p-16 my-16 grid sm:grid-cols-2 gap-8 max-w-[1200px] self-center ">
-      <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
-        Så lett er det å få i gang ditt mikrohus
+    <section className="my-16 p-8 lg:p-16 grid sm:grid-cols-2 gap-8 ">
+      <h2 className="md:col-span-2 text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
+        <AnimatedLetters
+          center
+          text="Så lett er det å få i gang ditt mikrohus"
+        />
       </h2>
       <Accordion
         type="single"

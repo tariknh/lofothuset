@@ -6,11 +6,11 @@ import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 function VåreModeller() {
   return (
     <section className="">
-      <div className="flex justify-between items-center mb-16 p-2 sm:p-4 lg:p-16">
-        <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
+      <div className="flex flex-col md:flex-row justify-between my-16 p-8 lg:p-16">
+        <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter">
           <AnimatedLetters text="Våre modeller" />
         </h2>{" "}
-        <Button text="Se modeller" slug="/modeller" />
+        <Button className="" text="Se modeller" slug="/modeller" />
       </div>
 
       {/* Modeller */}

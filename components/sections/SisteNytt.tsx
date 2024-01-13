@@ -31,7 +31,7 @@ const news_cards = [
 
 function SisteNytt() {
   return (
-    <section className="mx-8 lg:m-16 overflow-visible grid grid-cols-2 max-w-[1200px] self-center">
+    <section className=" my-16 p-8 lg:p-16 overflow-visible grid grid-cols-2">
       <div className="flex justify-between items-center w-fit ">
         {/* Header */}
         <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter">
