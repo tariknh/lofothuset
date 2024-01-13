@@ -103,7 +103,7 @@ function Hvordan() {
 
   return (
     <section className="p-2 sm:p-4 lg:p-16 my-16 grid sm:grid-cols-2 gap-8 max-w-[1200px] self-center ">
-      <h2 className="text-left mb-8 sm:text-left lg:text-4xl text-3xl max-w-80">
+      <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
         Så lett er det å få i gang ditt mikrohus
       </h2>
       <Accordion

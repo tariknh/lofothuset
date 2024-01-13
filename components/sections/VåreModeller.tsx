@@ -1,12 +1,15 @@
 import React from "react";
 import Button from "../ui/LagButton";
 import Image from "next/image";
+import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 
 function VåreModeller() {
   return (
     <section className="">
       <div className="flex justify-between items-center mb-16 p-2 sm:p-4 lg:p-16">
-        <h2 className="md:text-2xl text-xl">Modeller</h2>{" "}
+        <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
+          <AnimatedLetters text="Våre modeller" />
+        </h2>{" "}
         <Button text="Se modeller" slug="/modeller" />
       </div>
 

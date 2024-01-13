@@ -69,7 +69,9 @@ function Header() {
       ) : (
         <div className="flex fixed mix-blend-difference py-4 w-full text-xl justify-between px-8 lg:px-20 z-50">
           <div>
-            <span className={styles.logo}>LOFOTHUSET</span>
+            <span className={styles.logo}>
+              <Link href={"/"}>LOFOTHUSET</Link>
+            </span>
           </div>
           <ul className="flex gap-6 text-white invert-1">
             {navItems.map((data, index) => (

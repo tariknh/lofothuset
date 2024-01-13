@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import FordelCard from "../ui/FordelCard";
+import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 
 function Fordeler() {
   return (
-    <section className="mb-4 p-2 sm:p-4 lg:p-16 max-w-[1200px] self-center">
-      <h2 className="text-3xl font-light text-center my-8 lg:mb-16 sm:text-4xl lg:text-5xl">
-        Derfor bør du velge mikrohus
+    <section className="mb-4 p-6 sm:p-8 lg:p-16 max-w-[1200px] self-center">
+      <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
+        <AnimatedLetters text="Derfor bør du velge mikrohus" />
       </h2>
       <div className="grid grid-cols-3 gap-2 lg:gap-6">
         <FordelCard

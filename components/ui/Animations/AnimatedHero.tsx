@@ -32,6 +32,7 @@ interface AnimatedLettersProps {
   el?: keyof JSX.IntrinsicElements;
   className?: string;
   once?: boolean;
+  center?: boolean;
 }
 
 export const AnimatedLetters = ({
@@ -39,12 +40,15 @@ export const AnimatedLetters = ({
   el,
   className,
   once,
+  center,
 }: AnimatedLettersProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.5, once: true });
   return (
     <motion.span
-      className="flex overflow-hidden flex-wrap text-balance"
+      className={`flex overflow-hidden pb-2 flex-wrap text-balance ${
+        center && "justify-center"
+      }`}
       variants={banner}
       initial="initial"
       animate={isInView ? "animate" : "hidden"}

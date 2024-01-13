@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 
 const news_cards = [
   {
@@ -33,7 +34,9 @@ function SisteNytt() {
     <section className="mx-8 lg:m-16 overflow-visible grid grid-cols-2 max-w-[1200px] self-center">
       <div className="flex justify-between items-center w-fit ">
         {/* Header */}
-        <h2 className="md:text-2xl text-xl">Siste nytt</h2>
+        <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter">
+          <AnimatedLetters text="Siste nytt" />
+        </h2>
       </div>
       <Button
         className={
@@ -42,7 +45,7 @@ function SisteNytt() {
         text="Se alle nyheter"
         slug="/nyheter"
       />
-      <div className="flex justify-center items-center overflow-visible col-span-2 my-8">
+      <div className="flex justify-center items-center overflow-visible col-span-2 my-4">
         {/* News card */}
         <Carousel className="w-full flex flex-col overflow-visible 2xl:items-center 2xl::justify-center">
           <CarouselContent className="p-2 overflow-visible max-w-[1200px]">
