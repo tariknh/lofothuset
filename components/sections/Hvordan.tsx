@@ -115,7 +115,7 @@ function Hvordan() {
   }, []);
 
   return (
-    <section className="my-16 p-8 lg:p-16 grid sm:grid-cols-2 gap-8 ">
+    <section className="my-16 p-3 lg:p-4 grid sm:grid-cols-2 gap-8 ">
       <h2 className="md:col-span-2 text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
         <AnimatedLetters
           center
@@ -182,7 +182,7 @@ function Hvordan() {
           alt="Bilde av modell 1"
           fill
           objectFit="cover"
-          className="rounded-lg"
+          className=""
         />
       </div>
     </section>

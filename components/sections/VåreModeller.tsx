@@ -5,39 +5,8 @@ import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 import Link from "next/link";
 
 function VåreModeller() {
-  const Cursor = () => {
-    return (
-      <div
-        className="fixed bg-white w-2 h-2 rounded-full z-50"
-        style={{
-          transition:
-            "transform 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33), opacity 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33)",
-          transform: "scale(0.8)",
-          pointerEvents: "none",
-          userSelect: "none",
-        }}
-      ></div>
-    );
-  };
-
-  const CursorFollower = () => {
-    return (
-      <div
-        className="fixed bg-white w-2 h-2 rounded-full z-50"
-        style={{
-          transition:
-            "transform 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33), opacity 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33)",
-          transform: "scale(0.8)",
-          pointerEvents: "none",
-          userSelect: "none",
-        }}
-      ></div>
-    );
-  };
   return (
     <section className="">
-      <Cursor />
-      <CursorFollower />
       <div className="flex flex-col md:flex-row justify-between ">
         <h2 className="text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight p-3 lg:p-4">
           <AnimatedLetters text="Vår modell" />
@@ -65,7 +34,7 @@ function VåreModeller() {
           className="relative h-[100vh] w-full flex flex-col sm:flex-row justify-center items-center"
         >
           <Image
-            src={"/modell/cover.png"}
+            src={"/modell/renderSquareZoomed.png"}
             alt="Bilde av modell 1"
             fill
             className="absolute object-cover "
@@ -73,7 +42,11 @@ function VåreModeller() {
 
           <div className="absolute inset-0 bg-black opacity-30"></div>
 
-          <div className="z-20 self-start sm:self-center p-8 text-white sm:basis-1/2 sm:mx-8 lg:mx-16">
+          <div
+            data-scroll
+            data-scroll-speed="-0.05"
+            className="z-20 self-start sm:self-center p-8 text-white sm:basis-1/2 sm:mx-8 lg:mx-16"
+          >
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[2vw] font-base mb-3">
               Urban transformation
             </h3>
@@ -102,7 +75,7 @@ function VåreModeller() {
             <Image
               fill
               className="object-contain z-20 p-6"
-              src={"/modell/overlay.png"}
+              src={"/modell/renderBlueprintZoomedV2.png"}
               alt="Bilde av modell 1"
             />
           </div>

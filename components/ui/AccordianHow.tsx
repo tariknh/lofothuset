@@ -29,14 +29,14 @@ function AccordianHow({
   onClick,
 }: AccordianHowProps) {
   return (
-    <AccordionItem value={value}>
+    <AccordionItem className="py-4" value={value}>
       <AccordionTrigger
         chevron={false}
         onClick={onClick}
         className="text-left flex justify-start"
       >
-        <span className="w-1/5 ">{num}</span>
-        <p className="text-lg xsm-370:text-xl lg:text-2xl ">{title}</p>
+        <span className="w-[10%] ">{num}</span>
+        <p className="text-lg xsm-370:text-xl lg:text-3xl ">{title}</p>
       </AccordionTrigger>
       <AccordionContent className="text-left">
         <Progress className="h-[2px] mb-4" value={progress} />
