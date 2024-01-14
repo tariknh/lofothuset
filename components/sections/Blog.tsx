@@ -1,7 +1,7 @@
 "use client";
-import { secureHeapUsed } from "crypto";
 import React from "react";
 import Button from "../ui/LagButton";
+import NewsCard from "../ui/NewsCard";
 import {
   Carousel,
   CarouselContent,
@@ -9,66 +9,68 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import NewsCard from "../ui/NewsCard";
+import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
+import Link from "next/link";
 
 const news_cards = [
   {
     date: "22. DESEMBER 2023",
-    title: "LAG selger sine andeler i tyrkia",
+    title: "RETHINK STORIES | Take a look inside at MEL Interior",
     text: "LAG og det statseide oljeselskapet i Tyrkia (State Oil Company of Tyrkia Republic, SOCAR) har ingått en avtale som innebærer...",
   },
   {
     date: "22. DESEMBER 2023",
-    title: "LAG selger sine andeler i tyrkia",
+    title: "A conversation with Gabrielle, Interior Designer at Format",
     text: "LAG og det statseide oljeselskapet i Tyrkia (State Oil Company of Tyrkia Republic, SOCAR) har ingått en avtale som innebærer...",
   },
   {
     date: "22. DESEMBER 2023",
-    title: "LAG selger sine andeler i tyrkia",
+    title: "The Founding Story | Founders Floor & Jikke",
+    text: "LAG og det statseide oljeselskapet i Tyrkia (State Oil Company of Tyrkia Republic, SOCAR) har ingått en avtale som innebærer...",
+  },
+  {
+    date: "22. DESEMBER 2023",
+    title: "RETHINK STORIES | Have a look inside Chun Café in the 9 streets",
     text: "LAG og det statseide oljeselskapet i Tyrkia (State Oil Company of Tyrkia Republic, SOCAR) har ingått en avtale som innebærer...",
   },
 ];
 
-function Blog() {
+function SisteNytt() {
   return (
-    <section className=" overflow-visible grid grid-cols-2 my-16 p-8 lg:p-16">
-      <div className="flex justify-between items-center w-fit ">
+    <section className="my-16 p-3 gap-4 lg:p-4 overflow-visible grid grid-cols-2 ">
+      <div className=" flex justify-between items-center w-full ">
         {/* Header */}
-        <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
-          Nyeste artikler
+        <h2 className="text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight ">
+          <AnimatedLetters text="Blog innlegg" />
         </h2>
       </div>
-      <Button
-        className={
-          "place-self-end self-center xsm:row-start-1 xsm:col-start-2 row-start-1 col-start-2"
-        }
-        text="Se alle artikler"
-        slug="/nyheter"
-      />
-      <div className="flex justify-center items-center overflow-visible col-span-2 my-8">
+
+      <Link className="row-start-4 col-start-2 place-self-end" href={"/"}>
+        <span className="underline underline-offset-4 text-lg">
+          Se alle artiklene
+        </span>
+      </Link>
+
+      <div className="w-full justify-center items-center overflow-visible flex col-span-2  ">
         {/* News card */}
-        <Carousel className="w-full flex flex-col overflow-visible 2xl:items-center 2xl::justify-center">
-          <CarouselContent className="p-2 overflow-visible max-w-[1200px]">
-            {news_cards.map((newsCardProps, index) => (
-              <CarouselItem
-                key={index}
-                className="flex justify-center items-center overflow-visible xsm:basis-3/4 sm:basis-3/5 md:basis-1/3 "
-              >
-                <NewsCard
-                  date={newsCardProps.date}
-                  title={newsCardProps.title}
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="w-full p-8 lg:p-16 flex justify-between max-w-[1200px] mt-8 md:hidden">
-            <CarouselPrevious className="relative w-16 h-16 rounded-2xl shadow-md [&>svg]:w-32 [&>svg]:h-32" />
-            <CarouselNext className="relative w-16 h-16 rounded-2xl shadow-md [&>svg]:w-32 [&>svg]:h-32" />
-          </div>
-        </Carousel>
+
+        <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4 gap-y-8 lg:grid-cols-3">
+          {news_cards.map((newsCardProps, index) => (
+            <NewsCard
+              date={newsCardProps.date}
+              title={newsCardProps.title}
+              text={newsCardProps.text}
+              className={`${
+                index === news_cards.length - 1 ? "md:hidden" : ""
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
 }
 
-export default Blog;
+export default SisteNytt;
+
+// <Button text="Se alle nyheter" slug="/nyheter" />

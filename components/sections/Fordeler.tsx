@@ -5,7 +5,7 @@ import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 
 function Fordeler() {
   return (
-    <section className="my-16 p-8 lg:p-16">
+    <section className="my-16 p-3 lg:p-4">
       <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
         <AnimatedLetters text="Derfor bør du velge mikrohus" />
       </h2>

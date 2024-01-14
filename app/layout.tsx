@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Inter as FontSans } from "next/font/google";
+
 import { cn } from "@/lib/utils";
 import Header from "@/components/header/Header";
 import dynamic from "next/dynamic";
@@ -9,10 +9,28 @@ import Hvordan from "@/components/sections/Hvordan";
 import Blog from "@/components/sections/Blog";
 import { FAQ } from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
+import localFont from "next/font/local";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
+const satoshi = localFont({
   variable: "--font-sans",
+  src: [
+    {
+      path: "./fonts/Satoshi-Bold.woff2",
+    },
+    {
+      path: "./fonts/Satoshi-Light.woff2",
+    },
+    {
+      path: "./fonts/Satoshi-Medium.woff2",
+    },
+    {
+      path: "./fonts/Satoshi-Regular.woff2",
+    },
+    {
+      path: "./fonts/Satoshi-Variable.woff2",
+      style: "variable",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -34,7 +52,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          satoshi.variable
         )}
       >
         <SmoothScroll />

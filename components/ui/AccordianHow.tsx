@@ -31,6 +31,7 @@ function AccordianHow({
   return (
     <AccordionItem value={value}>
       <AccordionTrigger
+        chevron={false}
         onClick={onClick}
         className="text-left flex justify-start"
       >

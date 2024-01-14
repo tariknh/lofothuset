@@ -12,20 +12,17 @@ interface ButtonProps {
 function Button({ text, slug, className, full = false }: ButtonProps) {
   if (full) {
     return (
-      <Link className={`${className}`} href={slug}>
-        <button
-          className={`w-[150px] xsm:w-52 sm:w-64 flex justify-between py-4 border-b-[1px] border-black items-center text-lagtext`}
-        >
+      <Link className="row-start-4 col-start-2 place-self-end" href={slug}>
+        <span className={`underline underline-offset-4 text-lg ${className}`}>
           {text}
-          <Image width={28} height={28} src={"/arrow.svg"} alt="Click Here" />
-        </button>
+        </span>
       </Link>
     );
   } else {
     return (
       <Link className={`${className} `} href={slug}>
         <button
-          className={`gap-4 xsm:w-52 sm:w-64 flex justify-between py-4 border-b-[1px] border-black items-center text-lagtext`}
+          className={`w-[150px] xsm:w-52 sm:w-64 flex justify-between py-4 border-b-[1px] border-black items-center text-lagtext`}
         >
           {text}
           <Image width={28} height={28} src={"/arrow.svg"} alt="Click Here" />

@@ -11,36 +11,28 @@ import { scroll } from "framer-motion";
 function Header() {
   const [isActive, setIsActive] = useState(false);
 
-  const [isMobile, setIsMobile] = useState(
-    typeof window !== "undefined" && window.innerWidth < 1024
-  );
-
   const path = usePathname();
   if (navItems[0].href === path) {
     console.log(true, "true!");
   }
 
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth < 1024);
-    }
+  const [isMobile, setIsMobile] = useState(false);
 
-    if (typeof window !== "undefined") {
-      handleResize();
-    }
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    handleResize(); // Set the initial state
 
     window.addEventListener("resize", handleResize);
     return () => {
-      // remove event listener when the component is unmounted to not cause any memory leaks
-      // otherwise the event listener will continue to be active
       window.removeEventListener("resize", handleResize);
     };
-    // add `isMobile` state variable as a dependency so that
-    // it is called every time the window is resized
-  }, [isMobile]);
+  }, []);
   return (
     <nav className="">
-      {isMobile ? (
+      {isMobile && (
         <div>
           <div className={styles.main}>
             <div className={` ${styles.header}`}>
@@ -66,7 +58,8 @@ function Header() {
             {isActive && <MobileNav setOpen={setIsActive} open={isActive} />}
           </AnimatePresence>
         </div>
-      ) : (
+      )}
+      {!isMobile && (
         <div className="flex fixed mix-blend-difference py-4 w-full text-xl justify-between px-8 lg:px-20 z-50">
           <div>
             <span className={styles.logo}>

@@ -1,20 +1,114 @@
 "use client";
+import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import FormInput from "@/components/ui/FormInput";
+import Image from "next/image";
+import FormSelect from "@/components/ui/FormSelect";
+import { z } from "zod";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { kontaktValidation } from "@/actions/KontaktValidation";
+import { Checkbox } from "@/components/ui/checkbox";
+import FormCheck from "@/components/ui/FormCheck";
 
-import StegEn from "@/components/kontakt/StegEn";
-import StegTo from "@/components/kontakt/StegTo";
+const formDataSchema = z.object({
+  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
+  email: z.string().trim().email({
+    message: "Ugyldig e-postadresse. Vennligst oppgi en gyldig adresse.",
+  }),
+  phone: z
+    .string()
+    .min(5, { message: "Phone number must be at least 2 characters" }),
+});
+const formDataSchemeSecond = z.object({
+  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
+  email: z.string().trim().email({
+    message: "Ugyldig e-postadresse. Vennligst oppgi en gyldig adresse.",
+  }),
+  phone: z
+    .string()
+    .min(5, { message: "Phone number must be at least 2 characters" }),
+  task: z.string(),
+  modell: z.string(),
+  agreeToTerms: z.boolean().refine((value) => value === true, {
+    message: "You must agree to the terms",
+  }),
+});
 
 function page() {
   const [currentStep, setCurrentStep] = useState(1);
 
-  const handleClick = () => {
-    setCurrentStep(currentStep + 1);
-    console.log(currentStep);
+  const initialFormData = {
+    name: "",
+    email: "",
+    phone: "",
+    task: "Jeg vil ha en visning over video",
+    modell: "Finnmarken",
+    agreeToTerms: false,
   };
+
+  const [formData, setFormData] = useState(initialFormData);
+
+  async function clientAction() {
+    const parsed = formDataSchemeSecond.safeParse(formData);
+    console.log(parsed);
+    if (!parsed.success) {
+      parsed.error.issues.map((issue) => {
+        console.log(issue.message);
+        toast.error(issue.message, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "light",
+        });
+      }); // This was missing
+
+      return;
+    }
+
+    const response = await kontaktValidation(parsed.data);
+
+    if (response?.error) {
+      response.error.forEach((issue) => {
+        toast.error(issue.message, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "light",
+        });
+      });
+      return;
+    }
+
+    console.log("Worked!");
+    // redirect("/takk");
+  }
 
   const next = () => {
     if (currentStep < 2) {
-      setCurrentStep(currentStep + 1);
+      const result = formDataSchema.safeParse(formData);
+      if (!result.success) {
+        result.error.issues.map((issue) => {
+          console.log(issue.message);
+          toast.error(issue.message, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "light",
+          });
+        });
+      } else {
+        setCurrentStep(currentStep + 1);
+      }
     }
   };
 
@@ -24,12 +118,28 @@ function page() {
     }
   };
 
+  const handleInputChange = (event: any) => {
+    if (event && event.target) {
+      setFormData({
+        ...formData,
+        [event.target.name]: event.target.value,
+      });
+    } else {
+      setFormData({
+        ...formData,
+        // Assuming the select component does not provide `name`, you would need to
+        // manually specify which field of `formData` should be updated.
+        // For example, if this handler is for a 'task' field, you would use:
+        task: event,
+      });
+    }
+  };
   return (
-    <main className="w-full flex min-h-screen flex-col items-center justify-center">
-      <form>
+    <main className="w-full  flex min-h-screen flex-col items-center justify-center p-2 sm:p-4 lg:p-16">
+      <form action={clientAction} className="max-w-[745px]">
         <div className="flex flex-col justify-center items-center text-balance text-center">
-          <h1>Kontakt Oss</h1>
-          <p>
+          <h1 className="text-5xl font-medium mb-4">Kontakt Oss</h1>
+          <p className="text-xl mb-16">
             Vi hører gjerne fra deg! Fyll ut skjemaet nedenfor med navn, e-post,
             telefonnummer og litt informasjon om dine behov, så tar vi kontakt
             så snart som mulig.
@@ -37,22 +147,135 @@ function page() {
         </div>
         <div>
           <div className="flex flex-col justify-center items-center">
-            <h3 className="">STEG 1/2</h3>
-            <h2>Generel Info</h2>
+            {currentStep === 1 && (
+              <>
+                <h3 className="">STEG 1/2</h3>
+                <h2 className="text-xl font-medium mb-8">Kontakt Info</h2>
+              </>
+            )}
+            {currentStep === 2 && (
+              <>
+                <h3 className="">STEG 2/2</h3>
+                <h2 className="text-xl font-medium mb-8">Generel Info</h2>
+              </>
+            )}
           </div>
-          <div>
-            {currentStep}
-            {currentStep == 1 && <StegEn />}
-            {currentStep == 2 && <StegTo />}
-            <button
-              onClick={() => {
-                handleClick;
-              }}
-            >
-              next
-            </button>
+          <div className="w-full h-full flex justify-center items-center flex-col">
+            {currentStep === 1 && (
+              <div className="grid grid-cols-1 w-full h-full gap-4 mb-4">
+                <FormInput
+                  label="FORNAVN OG ETTERNAVN"
+                  id="name"
+                  type="text"
+                  placeholder="Fullt navn"
+                  formData={formData.name}
+                  handleInputChange={handleInputChange}
+                />
+                <FormInput
+                  label="E-POST"
+                  id="email"
+                  type="email"
+                  placeholder="E-post"
+                  formData={formData.email}
+                  handleInputChange={handleInputChange}
+                />
+
+                <FormInput
+                  label="TELEFONNUMMER"
+                  id="phone"
+                  type="number"
+                  placeholder="Telefonnummer"
+                  formData={formData.phone}
+                  handleInputChange={handleInputChange}
+                />
+                <div className="w-full flex justify-end items-center mt-8">
+                  <button
+                    type="button"
+                    onClick={next}
+                    className={`w-[116px] flex justify-between py-4 border-b-[1px] border-black items-center text-lagtext`}
+                  >
+                    Neste
+                    <Image
+                      width={28}
+                      height={28}
+                      src={"/arrow.svg"}
+                      alt="Click Here"
+                    />
+                  </button>
+                </div>
+              </div>
+            )}
+            {currentStep === 2 && (
+              <div className="grid grid-cols-1 w-full h-full gap-4 mb-4">
+                <FormSelect
+                  id="HVA ØNSKER DU Å GJØRE?"
+                  name="task"
+                  values={[
+                    "Jeg vil ha en visning over video",
+                    "Jeg vil ringes opp for en samtale",
+                  ]}
+                  formData={formData.task}
+                  handleInputChange={handleInputChange}
+                />
+
+                <FormSelect
+                  id="HVILKEN MODELL?"
+                  name="modell"
+                  values={["Finnmarken"]}
+                  formData={formData.modell}
+                  handleInputChange={handleInputChange}
+                />
+                <FormCheck
+                  formData={formData.agreeToTerms}
+                  handleInputChange={handleInputChange}
+                />
+
+                <div className="w-full flex justify-between items-center mt-8">
+                  <button
+                    type="button"
+                    onClick={prev}
+                    className={`w-[116px]  flex flex-row-reverse justify-between py-4  items-center text-lagtext`}
+                  >
+                    Tilbake
+                    <Image
+                      width={28}
+                      height={28}
+                      src={"/arrow.svg"}
+                      alt="Click Here"
+                      className="transform rotate-180"
+                    />
+                  </button>
+
+                  <button
+                    type="submit"
+                    onClick={next}
+                    className={`w-[116px] flex justify-between py-4 border-b-[1px] border-black items-center text-lagtext`}
+                  >
+                    Send inn
+                    <Image
+                      width={28}
+                      height={28}
+                      src={"/arrow.svg"}
+                      alt="Click Here"
+                    />
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </form>
     </main>
   );

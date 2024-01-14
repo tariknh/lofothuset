@@ -16,8 +16,9 @@ export default function Home() {
       <Hero />
       <OmOss />
       <SisteNytt />
-      <Fordeler />
       <VåreModeller />
+      <Fordeler />
+
       <Hvordan />
       <Blog />
       <FAQ />

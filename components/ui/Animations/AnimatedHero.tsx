@@ -56,11 +56,11 @@ export const AnimatedLetters = ({
     >
       {text.split(" ").map((word) => (
         <span key={word} className="inline-block">
-          {word.split("").map((letter) => (
+          {word.split("").map((letter, index) => (
             <motion.span
               className="inline-block"
               variants={letterAnimation}
-              key={letter}
+              key={index}
             >
               {letter === " " ? "\u00A0" : letter === "+" ? "\u0020" : letter}
             </motion.span>

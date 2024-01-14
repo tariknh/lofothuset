@@ -35,6 +35,12 @@ function Hvordan() {
       case "item-3":
         setImgSrc("/wallet.svg");
         break;
+      case "item-4":
+        setImgSrc("/wallet.svg");
+        break;
+      case "item-5":
+        setImgSrc("/wallet.svg");
+        break;
       default:
         setImgSrc("/modell1.png");
     }
@@ -69,6 +75,12 @@ function Hvordan() {
           case "item-2":
             setImgSrc("/turkey.jpg");
             return "item-3";
+          case "item-3":
+            setImgSrc("/turkey.jpg");
+            return "item-4";
+          case "item-4":
+            setImgSrc("/turkey.jpg");
+            return "item-5";
           default:
             setImgSrc("/modell1.png");
             return "item-1";
