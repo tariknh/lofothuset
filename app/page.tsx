@@ -17,7 +17,6 @@ export default function Home() {
       <OmOss />
       <SisteNytt />
       <VåreModeller />
-      <Fordeler />
 
       <Hvordan />
       <Blog />

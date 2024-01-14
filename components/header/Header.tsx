@@ -7,9 +7,12 @@ import { navItems } from "./nav/MobileNav";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { scroll } from "framer-motion";
+import { inView } from "framer-motion";
+import { set } from "zod";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
+  const [isHero, setIsHero] = useState(false);
 
   const path = usePathname();
   if (navItems[0].href === path) {
@@ -19,6 +22,19 @@ function Header() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const hero = document.getElementById("hero");
+    if (hero) {
+      inView(
+        hero,
+        (info) => {
+          console.log("in view");
+          setIsHero(true);
+          return (leaveInfo) => setIsHero(false);
+        },
+        { margin: "-35px 0px 0px 0px" }
+      );
+    }
+
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024);
     };
@@ -35,16 +51,19 @@ function Header() {
       {isMobile && (
         <div>
           <div className={styles.main}>
-            <div className={` ${styles.header}`}>
-              <div className="hidden bg-white w-screen absolute top-0 h-20"></div>
-              <span className={`p-8 mix-blend-difference ${styles.logo}`}>
+            <div
+              className={`${!isHero && "mix-blend-difference"} ${
+                styles.header
+              }`}
+            >
+              <span className={`p-8 ${styles.logo}`}>
                 <Link href={"/"}>LOFOTHUSET</Link>
               </span>
               <div
                 onClick={() => {
                   setIsActive(!isActive);
                 }}
-                className={`mix-blend-difference ${styles.button}`}
+                className={`${styles.button}`}
               >
                 <div
                   className={`${styles.burger} ${
@@ -60,9 +79,13 @@ function Header() {
         </div>
       )}
       {!isMobile && (
-        <div className="flex fixed mix-blend-difference py-4 w-full text-xl justify-between px-8 lg:px-20 z-50">
+        <motion.div
+          className={`flex fixed py-4 w-full text-xl justify-between px-8 lg:px-[4rem] z-50  ${
+            !isHero && "mix-blend-difference"
+          }`}
+        >
           <div>
-            <span className={styles.logo}>
+            <span className={` ${styles.logo}`}>
               <Link href={"/"}>LOFOTHUSET</Link>
             </span>
           </div>
@@ -81,7 +104,7 @@ function Header() {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       )}
     </nav>
   );
