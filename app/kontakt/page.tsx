@@ -135,11 +135,11 @@ function page() {
     }
   };
   return (
-    <main className="w-full  flex min-h-screen flex-col items-center justify-center p-2 sm:p-4 lg:p-16">
+    <main className="w-full  flex min-h-screen flex-col items-center justify-center p-3 lg:p-4 py-[88px]">
       <form action={clientAction} className="max-w-[745px]">
         <div className="flex flex-col justify-center items-center text-balance text-center">
           <h1 className="text-5xl font-medium mb-4">Kontakt Oss</h1>
-          <p className="text-xl mb-16">
+          <p className="text-xl mb-8">
             Vi hører gjerne fra deg! Fyll ut skjemaet nedenfor med navn, e-post,
             telefonnummer og litt informasjon om dine behov, så tar vi kontakt
             så snart som mulig.
