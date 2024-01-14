@@ -7,7 +7,7 @@ function OmOss() {
     <section className="p-3 lg:p-4">
       <div>
         {/* Øvre om oss */}
-        <div className="flex flex-col lg:flex-row lg:justify-center justify-center items-center text-center lg:text-left gap-16 mt-16">
+        <div className="flex flex-col lg:flex-row justify-between md:mx-12 items-center text-center lg:text-left gap-16 mt-16">
           <h2 className="text-3xl md:text-3xl text-balance max-w-[726px] font-medium">
             Håndlagde mikrohus formet av kreativitet, håndverk og et stort fokus
             på detaljer.
