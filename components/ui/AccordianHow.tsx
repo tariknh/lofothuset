@@ -29,7 +29,7 @@ function AccordianHow({
   onClick,
 }: AccordianHowProps) {
   return (
-    <AccordionItem className="py-4" value={value}>
+    <AccordionItem className="py-2 sm:py-4" value={value}>
       <AccordionTrigger
         chevron={false}
         onClick={onClick}
