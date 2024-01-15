@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@/components/ui/LagButton";
 import Image from "next/image";
+import { AnimatedLines } from "../ui/Animations/AnimatedHero";
 
 function OmOss() {
   return (
@@ -36,9 +37,10 @@ function OmOss() {
           />
         </div>
         <h2 className="relative text-xl xsm:text-3xl xsm-370:text-2xl mb-4 md:my-6 sm:text-4xl md:text-5xl lg:text-6xl text-balance text-center font-light tracking-tighter max-w-[1200px]">
-          Lofoten A Group tilbyr mikrohus med moderne arkitektur, som muliggjør
-          liv i drømmemiljøet ditt. Vår erfaring og gjennomtenkte løsninger
-          skaper et ettertraktet boligkonsept.
+          <AnimatedLines
+            center
+            text="Lofoten A Group tilbyr mikrohus med moderne arkitektur, som muliggjør liv i drømmemiljøet ditt. Vår erfaring og gjennomtenkte løsninger skaper et ettertraktet boligkonsept."
+          />
         </h2>
         <div className="flex justify-center items-center gap-4">
           <div className="w-[116px] h-[116px] border rounded-full flex justify-center items-center">

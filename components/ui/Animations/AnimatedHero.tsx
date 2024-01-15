@@ -11,19 +11,38 @@ const letters2 = Array.from(heading2);
 const letterAnimation = {
   initial: {
     y: 200,
+    opacity: 0,
   },
   animate: {
     y: 0,
+    opacity: 1,
     transition: {
-      ease: [0.6, 0.01, -0.05, 0.95],
+      ease: [0.87, 0, 0.13, 1],
       duration: 1.3,
+    },
+  },
+};
+
+const linesAnimation = {
+  initial: {
+    y: 50,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: [0.87, 0, 0.13, 1],
+      duration: 1,
     },
   },
 };
 
 const banner = {
   animate: {
-    transition: {},
+    transition: {
+      staggerChildren: 0.01,
+    },
   },
 };
 
@@ -55,14 +74,51 @@ export const AnimatedLetters = ({
       ref={ref}
     >
       {text.split(" ").map((word) => (
-        <span key={word} className="inline-block">
+        <span key={word} className="inline-block overflow-hidden h-fit">
           {word.split("").map((letter, index) => (
             <motion.span
-              className="inline-block"
+              className="inline-block overflow-hidden"
               variants={letterAnimation}
               key={index}
             >
               {letter === " " ? "\u00A0" : letter === "+" ? "\u0020" : letter}
+            </motion.span>
+          ))}
+          <span className="inline-block">&nbsp;</span>
+        </span>
+      ))}
+    </motion.span>
+  );
+};
+
+export const AnimatedLines = ({
+  text,
+  el,
+  className,
+  once,
+  center,
+}: AnimatedLettersProps) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.5, once: true });
+  return (
+    <motion.span
+      className={`flex overflow-hidden pb-2 flex-wrap text-balance ${
+        center && "justify-center"
+      }`}
+      variants={banner}
+      initial="initial"
+      animate={isInView ? "animate" : "hidden"}
+      ref={ref}
+    >
+      {text.split(" ").map((word) => (
+        <span key={word} className="inline-block">
+          {word.split("").map((letter, index) => (
+            <motion.span
+              className="inline-block"
+              variants={linesAnimation}
+              key={index}
+            >
+              {letter}
             </motion.span>
           ))}
           <span className="inline-block">&nbsp;</span>

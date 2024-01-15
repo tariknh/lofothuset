@@ -9,12 +9,23 @@ import { usePathname } from "next/navigation";
 import { scroll } from "framer-motion";
 import { inView } from "framer-motion";
 import { set } from "zod";
+import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+import LocomotiveScroll from "locomotive-scroll";
+
+export const SmoothScroll = dynamic(
+  () => import("contexts/SmoothScroll.context"),
+  {
+    ssr: false,
+  }
+);
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
   const [isHero, setIsHero] = useState(false);
 
   const path = usePathname();
+
   if (navItems[0].href === path) {
     console.log(true, "true!");
   }
@@ -22,6 +33,11 @@ function Header() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    let scroll: import("locomotive-scroll");
+    import("locomotive-scroll").then((locomotiveModule) => {
+      scroll = new locomotiveModule.default();
+    });
+
     const hero = document.getElementById("hero");
     if (hero) {
       inView(
@@ -45,7 +61,8 @@ function Header() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [path]);
+
   return (
     <nav>
       {isMobile && (

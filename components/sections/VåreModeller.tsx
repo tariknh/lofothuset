@@ -51,7 +51,7 @@ function VåreModeller() {
               Urban transformation
             </h3>
             <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-[8vw] font-medium max-w-7 mb-6">
-              Wolgadreef Utrecht
+              Finnmarken
             </h2>
             <div className="row-start-4 col-start-2 place-self-end">
               <span
