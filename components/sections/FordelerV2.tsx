@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { AnimatedLines } from "../ui/Animations/AnimatedHero";
 
 type FordelProps = {
   title: string;
@@ -8,7 +9,7 @@ type FordelProps = {
   className?: string;
 };
 
-const black = false;
+const black = true;
 
 function FordelerV2() {
   const Fordel = ({ title, text, image, className }: FordelProps) => {
@@ -16,7 +17,7 @@ function FordelerV2() {
       <div
         className={`${className} ${
           black ? "bg-white text-lagText" : "bg-lagText text-white"
-        } w-full px-8 py-12 flex rounded-lg `}
+        } w-full px-8 py-12 xl:px-14 xl:py-20 flex rounded-lg md:justify-start items-center `}
       >
         <Image
           className="shrink-0"
@@ -26,8 +27,12 @@ function FordelerV2() {
           height={100}
         />
         <div className="flex flex-col ml-4">
-          <h3 className="text-2xl font-medium uppercase">{title}</h3>
-          <p className="text-base font-medium">{text}</p>
+          <h3 className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-medium uppercase text-wrap">
+            {title}
+          </h3>
+          <p className="text-base md:text-base sm:text-lg lg:text-lg font-medium">
+            {text}
+          </p>
         </div>
       </div>
     );
@@ -35,42 +40,48 @@ function FordelerV2() {
 
   return (
     <section
-      className={`grid grid-cols-1 py-16 p-3 lg:p-4 ${
+      className={`grid gap-3 grid-cols-1 md:grid-cols-2 py-32 p-3 lg:px-4 ${
         black ? "bg-lagText" : "bg-white"
       }`}
     >
       <div
-        className={`flex flex-col justify-center items-center ${
+        className={`flex flex-col md:col-span-2 justify-center items-center ${
           black ? "text-white" : "text-lagText"
         }`}
       >
-        <h2 className="uppercase text-4xl md:text-6xl lg:text-7xl xl:text-[8vw] font-medium  text-center mb-2 ">
-          Derfor bør du velge mikrohus
+        <h2
+          className="uppercase font-medium text-center mb-2 sm:mb-6 max-w-[600px] md:max-w-full 
+        
+        text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight p-3 lg:p-4
+        "
+        >
+          <AnimatedLines text="Derfor bør du velge mikrohus" center />
         </h2>
-        <p className="text-center mb-8 text-lg">For beboere i Norge</p>
+        <p className="text-center mb-8 sm:mb-14 text-lg lg:text-2xl">
+          For beboere i Norge
+        </p>
       </div>
-      <div className="flex flex-col gap-3">
-        <Fordel
-          title="Energiforbruk"
-          text="Mikrohus bruker ofte opptil 45% mindre energi for oppvarming og kjøling."
-          image="/plug.svg"
-        />
-        <Fordel
-          title="Miljøvennlig"
-          text="Reduser karbonavtrykk med så mye som 36%"
-          image="/snow.svg"
-        />
-        <Fordel
-          title="Fleksibilitet"
-          text="Mindre rot og enklere livsstil, kan redusere eiendeler med 40-60%"
-          image="/coffee.svg"
-        />
-        <Fordel
-          title="Økonomisk"
-          text="Mikrohus koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
-          image="/wallet.svg"
-        />
-      </div>
+
+      <Fordel
+        title="Energiforbruk"
+        text="Mikrohus bruker ofte opptil 45% mindre energi for oppvarming og kjøling."
+        image="/battery-eco.svg"
+      />
+      <Fordel
+        title="Miljøvennlig"
+        text="Reduser karbonavtrykk med så mye som 36%"
+        image="/leaf.svg"
+      />
+      <Fordel
+        title="Fleksibilitet"
+        text="Mindre rot og enklere livsstil, kan redusere eiendeler med 40-60%"
+        image="/truck-loading.svg"
+      />
+      <Fordel
+        title="Økonomisk"
+        text="Mikrohus koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
+        image="/pig-money.svg"
+      />
     </section>
   );
 }
