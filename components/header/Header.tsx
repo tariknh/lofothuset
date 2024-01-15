@@ -47,7 +47,7 @@ function Header() {
     };
   }, []);
   return (
-    <nav className="">
+    <nav>
       {isMobile && (
         <div>
           <div className={styles.main}>

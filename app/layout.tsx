@@ -10,6 +10,7 @@ import Blog from "@/components/sections/Blog";
 import { FAQ } from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
 import localFont from "next/font/local";
+import Transition from "@/components/ui/Animations/Transition";
 
 const satoshi = localFont({
   variable: "--font-sans",

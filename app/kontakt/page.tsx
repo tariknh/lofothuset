@@ -135,7 +135,7 @@ function page() {
     }
   };
   return (
-    <main className="w-full  flex min-h-screen flex-col items-center justify-center p-2 sm:p-4 lg:p-16">
+    <main className="py-[88px] w-full  flex min-h-screen flex-col items-center justify-center p-2 sm:p-4 lg:p-16">
       <form action={clientAction} className="max-w-[745px]">
         <div className="flex flex-col justify-center items-center text-balance text-center">
           <h1 className="text-5xl font-medium mb-4">Kontakt Oss</h1>
