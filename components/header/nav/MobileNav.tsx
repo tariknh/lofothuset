@@ -49,7 +49,7 @@ export default function MobileNav({ open, setOpen }: openStates) {
         animate="open"
         exit="initial"
         variants={topMobile}
-        className="p-6 grid grid-rows-8 justify-between bg-accent row-span-8 rounded-b-xl text-5xl font-sans text-white tracking-tight"
+        className="p-6 grid grid-rows-8 justify-between bg-[#121212] row-span-8 rounded-b-xl text-5xl font-sans text-white tracking-tight"
       >
         <motion.div
           className="row-start-2 flex flex-col gap-2"
