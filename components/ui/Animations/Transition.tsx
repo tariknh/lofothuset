@@ -1,30 +1,27 @@
+"use client";
 import { motion } from "framer-motion";
 import React from "react";
 
-interface TransitionProps {
-  component: any;
-}
-
-const Transition: any = ({ component }: any) => {
+export default function Transition({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
-      {component}
       <motion.div
-        className="slide-in"
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 1 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-      />
-      <motion.div
-        className="slide-out"
         initial={{ scaleY: 1 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 0 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-      />
+        animate={{ scaleY: 0, originY: 0 }}
+        transition={{ ease: "easeInOut", duration: 1 }}
+        className="z-50 bg-white w-full absolute h-screen"
+      ></motion.div>
+      <motion.div
+        initial={{ y: 0, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
+      >
+        {children}
+      </motion.div>
     </>
   );
-};
-
-export default Transition;
+}
