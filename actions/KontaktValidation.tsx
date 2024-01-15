@@ -46,6 +46,7 @@ export const kontaktValidation = async (kontaktForm: any) => {
       }
     );
   } catch (error: any) {
+    console.log(error);
     if (error.response.body.title === "Member Exists") {
       return {
         error: [{ message: "Eposten du skrev er allerede registrert!" }],
