@@ -2,6 +2,7 @@ import Blog from "@/components/sections/Blog";
 import { FAQ } from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
 import Fordeler from "@/components/sections/Fordeler";
+import FordelerV2 from "@/components/sections/FordelerV2";
 import Hero from "@/components/sections/Hero";
 import Hvordan from "@/components/sections/Hvordan";
 import OmOss from "@/components/sections/OmOss";
@@ -17,7 +18,7 @@ export default function Home() {
       <OmOss />
       <SisteNytt />
       <VåreModeller />
-
+      <FordelerV2 />
       <Hvordan />
       <Blog />
       <FAQ />

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import Button from "../ui/LagButton";
 import {
   Accordion,
@@ -19,6 +20,10 @@ function Hvordan() {
   const progressInterval = useRef<NodeJS.Timeout | null>(null);
   const accordionInterval = useRef<NodeJS.Timeout | null>(null); // add this line
   const [imgSrc, setImgSrc] = useState("/modell1.png");
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Change to false if you want the function to trigger again whenever it comes in view
+    threshold: 0.1, // Percentage of the element that is in view before the callback triggers
+  });
 
   const handleClick = (item: string) => {
     setActiveItem(item);
@@ -102,17 +107,27 @@ function Hvordan() {
   };
 
   useEffect(() => {
-    startIntervals(); // start the intervals
+    if (inView) {
+      startIntervals(); // Start the intervals only when the component is in view
+
+      // Start the progress interval immediately when the component is in view
+      progressInterval.current = setInterval(() => {
+        setProgress((oldProgress) => {
+          const newProgress = oldProgress + 2; // Increment by 2 every 100ms
+          return Math.min(newProgress, 100);
+        });
+      }, 100); // 100ms interval
+    }
 
     return () => {
       if (accordionInterval.current) {
-        clearInterval(accordionInterval.current); // clear the accordion interval using the ref
+        clearInterval(accordionInterval.current); // Clear the accordion interval
       }
       if (progressInterval.current) {
-        clearInterval(progressInterval.current); // clear the progress interval using the ref
+        clearInterval(progressInterval.current); // Clear the progress interval
       }
     };
-  }, []);
+  }, [inView]); // Re-run the effect when `inView` changes
 
   return (
     <section className="my-16 p-3 lg:p-4 grid sm:grid-cols-2 gap-8 ">
@@ -123,6 +138,7 @@ function Hvordan() {
         />
       </h2>
       <Accordion
+        ref={ref}
         type="single"
         collapsible
         className="w-full sm:row-start-2 sm:col-start-2"
