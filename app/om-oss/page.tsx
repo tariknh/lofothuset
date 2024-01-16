@@ -2,9 +2,14 @@ import { AnimatedLetters } from "@/components/ui/Animations/AnimatedHero";
 import Image from "next/image";
 import team from "../Static/Folk.json";
 import ModellBestille from "@/components/modeller/ModellBestille";
+import Button from "@/components/ui/LagButton";
+import Link from "next/link";
 const Omoss = () => {
   return (
     <main className="w-full flex min-h-screen flex-col items-center justify-start">
+      <section className="bg-white p-3 text-6xl place-items-end h-[50vh] flex w-full ">
+        <h1>Vårt Team</h1>
+      </section>
       <section className="grid relative grid-rows-6 h-[50vh] w-full">
         <Image
           className="absolute"
@@ -14,7 +19,7 @@ const Omoss = () => {
           alt={""}
         />
       </section>
-      <section className="mb-16 p-8 lg:p-16 text-2xl gap-y-20 md:grid-cols-12 grid text-balance  bg-white h-fit">
+      <section className="mb-16 p-3 lg:p-16 text-2xl gap-y-20 md:grid-cols-12 grid text-balance  bg-white h-fit">
         <h2
           data-scroll
           data-scroll-speed=".1"
@@ -114,7 +119,37 @@ const Omoss = () => {
           ))}
         </div>
         <div className="col-span-full my-16 lg:col-start-2 self-center  w-full">
-          <ModellBestille />
+          <section className="self-center sm:px-4 lg:px-16 flex flex-col sm:flex-row-reverse justify-center items-center gap-8 w-full max-w-[1200px]">
+            <div className="aspect-square relative w-full sm:max-w-[500px] ">
+              <Image
+                src="/geir.png"
+                alt="Bestille"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-col w-full justify-center sm:items-start sm:p-8">
+              <h3 className="uppercase sm:mb-2 text-lg">
+                Oppfyll drømmene dine
+              </h3>
+              <h2 className="xsm-370:text-2xl sm:text-3xl lg:text-4xl text-xl font-medium mb-4 sm:max-w-72">
+                Klar til å bestille Finnmarken IV?{" "}
+              </h2>
+              <Link href={"/kontakt"}>
+                <button
+                  className={`w-3/5 sm:w-60 text-lg flex justify-between py-4 border-b-[1px] border-black items-center text-lagtext`}
+                >
+                  Kontakt Oss
+                  <Image
+                    width={28}
+                    height={28}
+                    src={"/arrow.svg"}
+                    alt="Click Here"
+                  />
+                </button>
+              </Link>
+            </div>
+          </section>
         </div>
       </section>
     </main>

@@ -18,14 +18,14 @@ const letterAnimation = {
     opacity: 1,
     transition: {
       ease: [0.87, 0, 0.13, 1],
-      duration: 1.3,
+      duration: 2.3,
     },
   },
 };
 
 const linesAnimation = {
   initial: {
-    y: 50,
+    y: 5,
     opacity: 0,
   },
   animate: {
@@ -62,10 +62,10 @@ export const AnimatedLetters = ({
   center,
 }: AnimatedLettersProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.5, once: true });
+  const isInView = useInView(ref, { amount: 0, once: true });
   return (
     <motion.span
-      className={`flex overflow-hidden pb-2 flex-wrap text-balance ${
+      className={`flex overflow-hidden leading-none pb-2 flex-wrap text-balance ${
         center && "justify-center"
       }`}
       variants={banner}
@@ -74,14 +74,14 @@ export const AnimatedLetters = ({
       ref={ref}
     >
       {text.split(" ").map((word) => (
-        <span key={word} className="inline-block overflow-hidden h-fit">
+        <span key={word} className="inline-block pb-2 overflow-hidden h-fit">
           {word.split("").map((letter, index) => (
             <motion.span
-              className="inline-block overflow-hidden"
+              className="inline-block py-1"
               variants={letterAnimation}
               key={index}
             >
-              {letter === " " ? "\u00A0" : letter === "+" ? "\u0020" : letter}
+              {letter}
             </motion.span>
           ))}
           <span className="inline-block">&nbsp;</span>
@@ -99,10 +99,10 @@ export const AnimatedLines = ({
   center,
 }: AnimatedLettersProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.5, once: true });
+  const isInView = useInView(ref, { amount: 0, once: true });
   return (
     <motion.span
-      className={`flex overflow-hidden pb-2 flex-wrap text-balance ${
+      className={`flex overflow-hidden pb-2 leading-tight flex-wrap text-balance ${
         center && "justify-center"
       }`}
       variants={banner}

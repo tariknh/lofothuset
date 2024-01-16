@@ -16,7 +16,9 @@ function page() {
       <ModellModeller />
       {/* <ModellVideo /> */}
       <ModellFordeler />
-      <ModellBestille />
+      <div className="px-3">
+        <ModellBestille />
+      </div>
       <Hvordan />
       <Blog />
       <FAQ />
