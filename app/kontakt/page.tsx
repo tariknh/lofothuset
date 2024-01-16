@@ -51,7 +51,7 @@ function page() {
 
   async function clientAction() {
     const parsed = formDataSchemeSecond.safeParse(formData);
-    console.log(parsed);
+
     if (!parsed.success) {
       parsed.error.issues.map((issue) => {
         console.log(issue.message);
@@ -86,7 +86,6 @@ function page() {
       return;
     }
 
-    console.log("Worked!");
     // redirect("/takk");
   }
 

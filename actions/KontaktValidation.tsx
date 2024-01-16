@@ -26,7 +26,6 @@ export const kontaktValidation = async (kontaktForm: any) => {
   const parsed = schema.safeParse(kontaktForm);
 
   if (!parsed.success) {
-    console.log(parsed.error.issues);
     return { error: parsed.error.issues };
   }
 
