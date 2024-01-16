@@ -36,11 +36,11 @@ function AccordianHow({
         className="text-left flex justify-start"
       >
         <span className="w-[10%] ">{num}</span>
-        <p className="text-lg xsm-370:text-xl lg:text-3xl ">{title}</p>
+        <p className="text-2xl lg:text-3xl ">{title}</p>
       </AccordionTrigger>
-      <AccordionContent className="text-left">
+      <AccordionContent className="text-left ">
         <Progress className="h-[2px] mb-4" value={progress} />
-        <p className="text-lg">{text}</p>
+        <p className="text-lg lg:text-xl">{text}</p>
         {img ? (
           <div className="w-full aspect-video relative">
             <Image

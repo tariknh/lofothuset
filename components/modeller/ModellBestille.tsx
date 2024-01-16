@@ -2,9 +2,15 @@ import Image from "next/image";
 import React from "react";
 import Button from "../ui/LagButton";
 
-function ModellBestille() {
+type FordelProps = {
+  className?: string;
+};
+
+function ModellBestille({ className }: FordelProps) {
   return (
-    <section className="self-center sm:px-4 lg:px-16 flex flex-col sm:flex-row-reverse justify-center items-center gap-8 w-full max-w-[1200px]">
+    <section
+      className={`${className} self-center sm:px-4 lg:px-16 flex flex-col sm:flex-row-reverse justify-center items-center gap-8 w-full max-w-[1200px] `}
+    >
       <div className="aspect-square relative w-full sm:max-w-[500px] ">
         <Image src="/geir.png" alt="Bestille" fill className="object-cover" />
       </div>

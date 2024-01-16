@@ -17,7 +17,7 @@ function FordelerV2() {
       <div
         className={`${className} ${
           black ? "bg-white text-lagText" : "bg-lagText text-white"
-        } w-full px-8 py-12 xl:px-14 xl:py-20 flex rounded-lg md:justify-start items-center `}
+        } w-full px-8 py-12 xl:px-14 xl:py-20 flex rounded-lg md:justify-start items-center`}
       >
         <Image
           className="shrink-0"
@@ -40,7 +40,7 @@ function FordelerV2() {
 
   return (
     <section
-      className={`grid gap-3 grid-cols-1 md:grid-cols-2 py-32 p-3 lg:px-4 ${
+      className={`grid min-h-screen gap-3 grid-cols-1 md:grid-cols-2 py-32 p-3 lg:px-4 ${
         black ? "bg-lagText" : "bg-white"
       }`}
     >

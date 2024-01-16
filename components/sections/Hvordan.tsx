@@ -130,8 +130,8 @@ function Hvordan() {
   }, [inView]); // Re-run the effect when `inView` changes
 
   return (
-    <section className="my-16 p-3 lg:p-4 grid sm:grid-cols-2 gap-8 ">
-      <h2 className="md:col-span-2 text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
+    <section className="my-16 p-3 lg:p-4 grid sm:grid-cols-2 gap-8 h-screen justify-center items-center ">
+      <h2 className="sm:col-span-2 self-end text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter ">
         <AnimatedLetters
           center
           text="Så lett er det å få i gang ditt mikrohus"
@@ -141,7 +141,7 @@ function Hvordan() {
         ref={ref}
         type="single"
         collapsible
-        className="w-full sm:row-start-2 sm:col-start-2"
+        className="sm:h-[600px] md:h-[711px] h-[400px sm:row-start-2 sm:col-start-2 flex flex-col justify-evenly"
         value={activeItem}
       >
         <AccordianHow
@@ -192,13 +192,14 @@ function Hvordan() {
           onClick={() => handleClick("item-5")}
         />
       </Accordion>
-      <div className="w-full row-span-12 sm:row-span-5 row-start-2 relative ">
+      <div className="w-full overflow-hidden sm:h-[600px] md:h-[711px] h-[400px] relative row-start-2 rounded-lg">
         <Image
-          src={imgSrc}
+          data-scroll
+          data-scroll-speed="-0.05"
+          src={"/modell/renderSquare.png"}
           alt="Bilde av modell 1"
           fill
-          objectFit="cover"
-          className=""
+          className="object-cover rounded-lg"
         />
       </div>
     </section>
@@ -208,4 +209,14 @@ function Hvordan() {
 export default Hvordan;
 {
   /* <Button text="Kontakt oss" slug="/kontakt" /> */
+}
+
+{
+  /* <Image
+  src={imgSrc}
+  alt="Bilde av modell 1"
+  fill
+  objectFit="cover"
+  className=""
+/>; */
 }
