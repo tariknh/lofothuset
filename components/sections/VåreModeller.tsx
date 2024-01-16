@@ -48,7 +48,7 @@ function VåreModeller() {
             className="z-20 self-start sm:self-center p-8 text-white sm:basis-1/2 sm:mx-8 lg:mx-16"
           >
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[2vw] font-base mb-3">
-              Urban transformation
+              Mikrohusets hjerte
             </h3>
             <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-[8vw] font-medium max-w-7 mb-6">
               Finnmarken

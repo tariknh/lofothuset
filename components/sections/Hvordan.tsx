@@ -130,7 +130,7 @@ function Hvordan() {
   }, [inView]); // Re-run the effect when `inView` changes
 
   return (
-    <section className="my-16 p-3 lg:p-4 grid sm:grid-cols-2 gap-8 h-screen w-full justify-center items-center ">
+    <section className="my-16 p-3 lg:p-4 grid sm:grid-cols-2 gap-8 min-h-screen w-full justify-center items-center ">
       <h2 className="sm:col-span-2 self-end text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter ">
         <AnimatedLetters
           center

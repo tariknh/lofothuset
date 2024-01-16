@@ -22,6 +22,7 @@ function Hero() {
           <div className="absolute md:h-[100px] md:w-[100px] bottom-0 right-0">
             <AnimateBounce>
               <Image
+                priority
                 className="rotate-90"
                 alt="Mikrohus"
                 src={"/arrowWhite.svg"}
