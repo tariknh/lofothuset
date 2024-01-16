@@ -89,7 +89,7 @@ export const AnimatedLetters = ({
   const isInView = useInView(ref, { once: true });
   return (
     <motion.span
-      className={`flex overflow-hidden leading-none pb-2 flex-wrap text-balance ${
+      className={`${className} flex overflow-hidden leading-none pb-2 flex-wrap text-balance ${
         center && "justify-center"
       }`}
       variants={banner}
@@ -154,7 +154,7 @@ export const AnimatedLines = ({
 
 const AnimatedHero = () => {
   return (
-    <motion.div className="flex flex-col row-start-2 row-span-auto lg:row-start-2 z-50 scroll-m-20 text-5xl font-medium tracking-tight md:text-7xl lg:text-8xl h-fit">
+    <motion.div className="flex flex-col overflow-hidden row-start-2 row-span-auto lg:row-start-2 z-50 scroll-m-20 text-5xl font-medium tracking-tight md:text-7xl lg:text-8xl h-fit">
       <AnimatedLetters text="Opplev storhet" />
       <AnimatedLetters text="i mikrohus" />
     </motion.div>

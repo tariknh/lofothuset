@@ -8,7 +8,11 @@ import AnimatedHero, {
 function Hero() {
   return (
     <section id="hero" className="w-full relative">
-      <div className="p-8 lg:p-16 grid  h-screen grid-rows-12 absolute z-10 text-white w-full">
+      <div
+        data-scroll
+        data-scroll-speed="-.1"
+        className="p-8 lg:p-16 grid  h-screen grid-rows-12 absolute z-10 text-white w-full"
+      >
         <AnimatedHero />
         <h2 className="col-span-full scroll-m-20 text-4xl tracking-tight row-start-11 lg:row-start-12">
           <AnimatedLetters text="Smart, bærekraftig mikrohus. Levert." />

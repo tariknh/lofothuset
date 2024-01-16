@@ -40,15 +40,22 @@ function Footer() {
       </div>
       <div className="border-t-4 col-span-full row-start-4 w-full border-zinc-500"></div>
 
-      <div className="flex col-span-full md:mt-5 row-start-5 w-full justify-evenly sm:justify-end sm:gap-5">
-        <span className="underline">Bruksvilkår</span>
-        <span className="underline">Personvern</span>
-        <span className="text-zinc-400">
-          Laget av{" "}
-          <span className="text-white underline">
-            <Link href={"https://www.jort.no/"}>jort</Link>
+      <div className="flex col-span-full md:mt-5 row-start-5 w-full justify-evenly sm:justify-between sm:gap-5">
+        <div>
+          <span className="text-zinc-400">
+            Lofoten A Group AS. Org nr 930 035 688
           </span>
-        </span>
+        </div>
+        <div className="justify-evenly sm:gap-5 flex">
+          <span className="underline">Bruksvilkår</span>
+          <span className="underline">Personvern</span>
+          <span className="text-zinc-400">
+            Laget av{" "}
+            <span className="text-white underline">
+              <Link href={"https://www.jort.no/"}>jort</Link>
+            </span>
+          </span>
+        </div>
       </div>
     </footer>
   );
