@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 import { InputWithButton } from "../ui/InputWithButton";
 
@@ -15,14 +16,24 @@ function Footer() {
       </div>
       <div className="text-zinc-300 md:col-start-4 md:row-start-1">
         <h2 className="text-xl text-white font-semibold">Info</h2>
-        <h3>Nyheter</h3>
-        <h3>Blogg</h3>
-        <h3>Om Oss</h3>
+        <h3 className="hover:underline">
+          <Link href={"/"}>Nyheter</Link>
+        </h3>
+        <h3 className="hover:underline">
+          <Link href={"/"}>Blogg</Link>
+        </h3>
+        <h3 className="hover:underline">
+          <Link href={"/om-oss"}>Om Oss</Link>
+        </h3>
       </div>
       <div className="text-zinc-300 md:col-start-5 md:row-start-1">
         <h2 className="text-xl text-white font-semibold">Kontakt</h2>
-        <h3>hei@lofothuset.no</h3>
-        <h3>+47 123 45 678</h3>
+        <h3 className="hover:underline">
+          <Link href={"mailto:hei@lofothuset.no"}>hei@lofothuset.no</Link>
+        </h3>
+        <h3 className="hover:underline">
+          <Link href={"tel:+4712345678"}>+47 123 45 678</Link>
+        </h3>
       </div>
       <div className="col-span-full tracking-tighter md:row-start-3 text-6xl sm:text-8xl md:text-[8rem] lg:text-[12rem] opacity-50 font-bold text-center">
         <AnimatedLetters center text="lofothuset" />
@@ -33,7 +44,10 @@ function Footer() {
         <span className="underline">Bruksvilkår</span>
         <span className="underline">Personvern</span>
         <span className="text-zinc-400">
-          Laget av <span className="text-white underline">Jort</span>
+          Laget av{" "}
+          <span className="text-white underline">
+            <Link href={"https://www.jort.no/"}>jort</Link>
+          </span>
         </span>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { AnimatedLines } from "../ui/Animations/AnimatedHero";
+import { AnimatedLetters, AnimatedLines } from "../ui/Animations/AnimatedHero";
 
 type FordelProps = {
   title: string;
@@ -55,7 +55,7 @@ function FordelerV2() {
         text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight p-3 lg:p-4
         "
         >
-          <AnimatedLines text="Derfor bør du velge mikrohus" center />
+          <AnimatedLetters text="Derfor bør du velge mikrohus" center />
         </h2>
         <p className="text-center mb-8 sm:mb-14 text-lg lg:text-2xl">
           For beboere i Norge

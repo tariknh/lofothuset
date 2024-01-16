@@ -48,12 +48,13 @@ const banner = {
 
 type AnimateBounceProps = {
   children: React.ReactNode;
+  className?: string;
 };
 
-export const AnimateBounce = ({ children }: AnimateBounceProps) => {
+export const AnimateBounce = ({ children, className }: AnimateBounceProps) => {
   return (
     <motion.div
-      className="row-start-11 lg:row-start-12 justify-self-end"
+      className={`${className}`}
       initial={{ y: 0 }}
       animate={{ y: [0, -30, 0, -15, 0, -7, 0] }} // Sequence of motion for the 'y' axis
       transition={{
@@ -85,7 +86,7 @@ export const AnimatedLetters = ({
   center,
 }: AnimatedLettersProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0, once: true });
+  const isInView = useInView(ref, { once: true });
   return (
     <motion.span
       className={`flex overflow-hidden leading-none pb-2 flex-wrap text-balance ${
@@ -122,7 +123,7 @@ export const AnimatedLines = ({
   center,
 }: AnimatedLettersProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0, once: true });
+  const isInView = useInView(ref, { once: true });
   return (
     <motion.span
       className={`flex overflow-hidden pb-2 leading-tight flex-wrap text-balance ${
