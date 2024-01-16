@@ -11,7 +11,7 @@ import React from "react";
 
 function page() {
   return (
-    <main className="w-full flex min-h-screen flex-col justify-start">
+    <main className="w-full flex min-h-screen flex-col justify-start items-center">
       <ModellHero />
       <ModellModeller />
       {/* <ModellVideo /> */}

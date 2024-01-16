@@ -46,6 +46,29 @@ const banner = {
   },
 };
 
+type AnimateBounceProps = {
+  children: React.ReactNode;
+};
+
+export const AnimateBounce = ({ children }: AnimateBounceProps) => {
+  return (
+    <motion.div
+      className="row-start-11 lg:row-start-12 justify-self-end"
+      initial={{ y: 0 }}
+      animate={{ y: [0, -30, 0, -15, 0, -7, 0] }} // Sequence of motion for the 'y' axis
+      transition={{
+        duration: 2, // Total duration of the animation
+        ease: "easeInOut", // Easing function for the animation
+        times: [0, 0.2, 0.4, 0.6, 0.8, 0.9, 1], // Timing for each segment of the animation
+        delay: 2, // Time to wait before starting animation
+        repeatDelay: 1, // Delay between each loop
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
 interface AnimatedLettersProps {
   text: string;
   el?: keyof JSX.IntrinsicElements;
