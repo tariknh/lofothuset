@@ -41,6 +41,8 @@ const Omoss = async () => {
         </h2>
         <div className="flex sm:grid col-span-full grid-cols-4 flex-col gap-8">
           <Image
+            data-scroll
+            data-scroll-speed="0.2"
             objectFit="cover"
             height={700}
             width={700}
@@ -49,6 +51,8 @@ const Omoss = async () => {
             className="col-span-1 col-start-2"
           />
           <Image
+            data-scroll
+            data-scroll-speed="-0.01"
             objectFit="cover"
             height={800}
             width={800}
@@ -57,6 +61,8 @@ const Omoss = async () => {
             className="col-span-3 col-start-3"
           />
           <Image
+            data-scroll
+            data-scroll-speed="0.2"
             objectFit="cover"
             height={1000}
             width={1000}
