@@ -76,6 +76,7 @@ interface AnimatedLettersProps {
   className?: string;
   once?: boolean;
   center?: boolean;
+  singleWord?: boolean;
 }
 
 export const AnimatedLetters = ({
@@ -84,6 +85,7 @@ export const AnimatedLetters = ({
   className,
   once,
   center,
+  singleWord,
 }: AnimatedLettersProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -108,7 +110,7 @@ export const AnimatedLetters = ({
               {letter}
             </motion.span>
           ))}
-          <span className="inline-block">&nbsp;</span>
+          {!singleWord && <span className="inline-block">&nbsp;</span>}
         </span>
       ))}
     </motion.span>

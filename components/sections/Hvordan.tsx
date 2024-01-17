@@ -165,28 +165,28 @@ function Hvordan() {
         />
         <AccordianHow
           value="item-3"
+          title="Ferie til tyrkia"
+          num="05."
+          text="I en begrenset periode tilbyr vi en gratis ferie til Tyrkia for å se på produksjonen av ditt mikrohus."
+          //   img="/modell1.png"
+          progress={progress}
+          onClick={() => handleClick("item-3")}
+        />
+        <AccordianHow
+          value="item-4"
           title="Levering og installasjon"
           num="03."
           text="Vi leverer og installerer ditt mikrohus. Du kan flytte rett inn!"
           //   img="/modell1.png"
           progress={progress}
-          onClick={() => handleClick("item-3")}
+          onClick={() => handleClick("item-4")}
         />
 
         <AccordianHow
-          value="item-4"
+          value="item-5"
           title="Innflytting"
           num="04."
-          text="Gratulere med ditt nye mikrohus! Vi håper du vil trives i ditt nye hjem."
-          //   img="/modell1.png"
-          progress={progress}
-          onClick={() => handleClick("item-4")}
-        />
-        <AccordianHow
-          value="item-5"
-          title="Ferie til tyrkia"
-          num="05."
-          text="Nå som du har spart penger på ditt nye mikrohus, kan du ta deg en ferie til Tyrkia!"
+          text="Gratulerer med ditt nye mikrohus! Vi håper du vil trives i ditt nye hjem."
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-5")}
