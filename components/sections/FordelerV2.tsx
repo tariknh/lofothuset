@@ -20,7 +20,7 @@ function FordelerV2() {
         } w-full px-8 py-12 xl:px-14 xl:py-20 flex rounded-lg md:justify-start items-center`}
       >
         <Image
-          className="shrink-0"
+          className="shrink-0 "
           src={image}
           alt={title}
           width={100}
@@ -55,10 +55,14 @@ function FordelerV2() {
         text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight p-3 lg:p-4
         "
         >
-          <AnimatedLetters text="Derfor bør du velge mikrohus" center />
+          <AnimatedLetters
+            text="Derfor bør du velge mikrohus"
+            className="tracking-tighter"
+            center
+          />
         </h2>
         <p className="text-center mb-8 sm:mb-14 text-lg lg:text-2xl">
-          For beboere i Norge
+          De nøkkelfordelene som gjør våre mikrohus til et smart valg
         </p>
       </div>
 

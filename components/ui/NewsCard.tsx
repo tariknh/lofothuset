@@ -6,14 +6,20 @@ function NewsCard({
   title,
   text,
   className,
+  speed = "0",
 }: {
   date: string;
   title: string;
   text?: string;
   className?: string;
+  speed?: string;
 }) {
   return (
-    <div className={`${className} w-full  border-zinc-500 border-b-[1px] pb-8`}>
+    <div
+      data-scroll
+      data-scroll-speed={speed}
+      className={`${className} w-full  border-zinc-500 border-b-[1px] pb-8`}
+    >
       <div className="relative aspect-square mb-2">
         <Image
           fill

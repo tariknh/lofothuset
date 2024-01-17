@@ -19,7 +19,7 @@ function page() {
 
       <ModellFordelerV2 />
 
-      <ModellBestille className="p-3 lg:p-4" />
+      <ModellBestille className="p-3 lg:p-4 mb-16 lg:mb-0 mt-32" />
 
       <Hvordan />
       <Blog />

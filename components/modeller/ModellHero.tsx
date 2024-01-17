@@ -4,8 +4,8 @@ import ModellFordel from "./ModellFordel";
 
 function ModellHero() {
   return (
-    <section className="pt-20 px-2 sm:px-4 lg:px-16 min-h-[80vh] mb-28 md:mb-44 max-w-[1200px]">
-      <div className="w-full max-h-[600px] h-[50vw] relative">
+    <section className="pt-20 px-2 sm:px-4 lg:px-16 min-h-[80vh] mb-28 md:mb-44 max-w-[1920px]">
+      <div className="w-full max-h-[900px] h-[50vw] relative">
         <Image
           src={"/images/finn.png"}
           alt="Bildet av hus"
