@@ -50,8 +50,8 @@ function FormCheck({ formData, handleInputChange }: FormCheckProps) {
       </div>
 
       <p className="text-xs max-w-[314px] ">
-        Ved å trykke 'send', samtykker du til at Lofothuset lagrer og behandler
-        dine oppgitte personopplysninger for å levere ønsket innhold.
+        Ved å trykke &apos;send&apos;, samtykker du til at Lofothuset lagrer og
+        behandler dine oppgitte personopplysninger for å levere ønsket innhold.
       </p>
     </div>
   );

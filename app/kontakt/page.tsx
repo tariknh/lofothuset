@@ -35,7 +35,7 @@ const formDataSchemeSecond = z.object({
   }),
 });
 
-function page() {
+function Page() {
   const [currentStep, setCurrentStep] = useState(1);
 
   const initialFormData = {
@@ -280,4 +280,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

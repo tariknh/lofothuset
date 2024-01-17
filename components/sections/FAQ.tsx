@@ -9,7 +9,7 @@ import { promises as fs } from "fs";
 
 export async function FAQ() {
   const file = await fs.readFile(
-    process.cwd() + "/public/Static/faq.json",
+    process.cwd() + "/public/Static/FAQ.json",
     "utf8"
   );
   const questions = JSON.parse(file);

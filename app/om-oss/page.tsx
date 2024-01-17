@@ -123,8 +123,8 @@ const Omoss = async () => {
             </div>
           ))}
         </div>
-        <div className="col-span-full my-16 lg:col-start-2 self-center  w-full">
-          <section className="self-center sm:px-4 lg:px-16 flex flex-col sm:flex-row-reverse justify-center items-center gap-8 w-full max-w-[1200px]">
+        <div className="col-span-full my-16 self-center content-center ">
+          <section className="self-center sm:px-4 lg:px-16 flex flex-col sm:flex-row-reverse justify-center md:items-center gap-8">
             <div className="aspect-square relative w-full sm:max-w-[500px] ">
               <Image
                 src="/geir.png"
@@ -133,7 +133,7 @@ const Omoss = async () => {
                 className="object-cover"
               />
             </div>
-            <div className="flex flex-col w-full justify-center sm:items-start sm:p-8">
+            <div className="flex flex-col justify-center sm:items-start sm:p-8">
               <h3 className="uppercase sm:mb-2 text-lg">
                 Oppfyll drømmene dine
               </h3>
