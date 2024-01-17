@@ -4,7 +4,7 @@ import { InputWithButton } from "../ui/InputWithButton";
 
 function Footer() {
   return (
-    <footer className="p-8 min-h-[50vh] md:items-start items-center grid grid-cols-2 md:grid-cols-6 md:grid-rows-2 text-white bg-[#121212] gap-4 md:gap-0">
+    <footer className="p-3 sm:p-8 min-h-[50vh] md:items-start items-center grid grid-cols-2 md:grid-cols-6 md:grid-rows-2 text-white bg-[#121212] gap-4 md:gap-0">
       <div className="col-start-1 col-span-2 row-start-1 flex flex-col gap-4 max-w-fit">
         <h2 className="text-white lg:text-2xl text-left">
           Lyst å lære mer om mikrohus?
@@ -40,13 +40,13 @@ function Footer() {
       </div>
       <div className="border-t-4 col-span-full row-start-4 w-full border-zinc-500"></div>
 
-      <div className="flex col-span-full md:mt-5 row-start-5 w-full justify-evenly sm:justify-between sm:gap-5">
+      <div className="flex-wrap sm:flex-row flex col-span-full md:mt-5 row-start-5 w-full justify-evenly sm:justify-between sm:gap-5">
         <div>
           <span className="text-zinc-400">
             Lofoten A Group AS. Org nr 930 035 688
           </span>
         </div>
-        <div className="justify-evenly sm:gap-5 flex">
+        <div className="justify-evenly gap-3 sm:gap-5 flex">
           <span className="underline">Bruksvilkår</span>
           <span className="underline">Personvern</span>
           <span className="text-zinc-400">

@@ -38,7 +38,7 @@ function Hero() {
           objectFit="cover"
           className="absolute"
           alt="Mikrohus"
-          src={"/images/mobileHome.png"}
+          src={"/images/mobileHome.webp"}
           fill
         />
         {/* <Image
