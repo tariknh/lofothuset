@@ -46,6 +46,7 @@ export const metadata: Metadata = {
     "mikrohus pris",
     "mikrohus til salgs",
   ],
+  viewport: "width=device-width, initial-scale=1.0, viewport-fit=cover",
   openGraph: {
     title: "Lofothuset - Moderne Mikrohus",
     description:
