@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import questions from "@/app/Static/faq.json";
+import questions from "public/Static/faq.json";
 import { AnimatedLetters, AnimatedLines } from "../ui/Animations/AnimatedHero";
 
 export function FAQ() {

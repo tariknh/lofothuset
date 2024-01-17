@@ -1,6 +1,6 @@
 import { AnimatedLetters } from "@/components/ui/Animations/AnimatedHero";
 import Image from "next/image";
-import team from "../Static/Folk.json";
+import team from "public/Static/Folk.json";
 import ModellBestille from "@/components/modeller/ModellBestille";
 import Button from "@/components/ui/LagButton";
 import Link from "next/link";
