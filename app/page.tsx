@@ -20,8 +20,20 @@ export default function Home() {
       <VåreModeller />
       <FordelerV2 />
       <Hvordan />
-      <Blog />
       <FAQ />
     </main>
   );
+}
+
+{
+  /* <main className="w-full flex min-h-screen flex-col items-left justify-start">
+      <Hero />
+      <OmOss />
+      <SisteNytt />
+      <VåreModeller />
+      <FordelerV2 />
+      <Hvordan />
+      <Blog />
+      <FAQ />
+    </main> */
 }

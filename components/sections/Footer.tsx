@@ -10,7 +10,7 @@ function Footer() {
           Lyst å lære mer om mikrohus?
         </h2>
         <h3 className="max-w-[50vw] lg:text-lg lg:max-w-[25vw] text-zinc-400">
-          Meld deg på vårt nyhetsbrev og få tilsendt en gratis info om mikrohus.
+          Meld deg på vårt nyhetsbrev og få tilsendt gratis info om mikrohus.
         </h3>
         <InputWithButton />
       </div>
@@ -36,7 +36,7 @@ function Footer() {
         </h3>
       </div>
       <div className="col-span-full tracking-tighter md:row-start-3 text-6xl sm:text-8xl md:text-[8rem] lg:text-[12rem] opacity-50 font-bold text-center">
-        <AnimatedLetters center text="lofothuset" />
+        <AnimatedLetters singleWord center text="lofothuset" />
       </div>
       <div className="border-t-4 col-span-full row-start-4 w-full border-zinc-500"></div>
 
