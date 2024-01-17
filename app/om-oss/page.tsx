@@ -1,10 +1,15 @@
 import { AnimatedLetters } from "@/components/ui/Animations/AnimatedHero";
 import Image from "next/image";
-import team from "../Static/Folk.json";
 import ModellBestille from "@/components/modeller/ModellBestille";
 import Button from "@/components/ui/LagButton";
 import Link from "next/link";
-const Omoss = () => {
+import { promises as fs } from "fs";
+const Omoss = async () => {
+  const file = await fs.readFile(
+    process.cwd() + "/public/Static/Folk.json",
+    "utf8"
+  );
+  const team = JSON.parse(file);
   return (
     <main className="w-full flex min-h-screen flex-col items-center justify-start">
       <section className="bg-white p-3 text-6xl place-items-end h-[50vh] flex w-full ">
@@ -88,7 +93,7 @@ const Omoss = () => {
           <h2 className="text-3xl md:text-5xl col-span-full mb-8">
             MØT VÅRT TEAM
           </h2>
-          {team.team.map((teamMember, index) => (
+          {team.team.map((teamMember: any, index: number) => (
             <div key={index}>
               <div className="relative overflow-hidden flex gap-6 flex-col">
                 <div className="relative w-full h-[60vh] md:h-[20vh] lg:h-[50vh] ">
@@ -124,8 +129,8 @@ const Omoss = () => {
             </div>
           ))}
         </div>
-        <div className="col-span-full my-16 lg:col-start-2 self-center  w-full">
-          <section className="self-center sm:px-4 lg:px-16 flex flex-col sm:flex-row-reverse justify-center items-center gap-8 w-full max-w-[1200px]">
+        <div className="col-span-full my-16 self-center content-center ">
+          <section className="self-center sm:px-4 lg:px-16 flex flex-col sm:flex-row-reverse justify-center md:items-center gap-8">
             <div className="aspect-square relative w-full sm:max-w-[500px] ">
               <Image
                 src="/geir.png"
@@ -134,7 +139,7 @@ const Omoss = () => {
                 className="object-cover"
               />
             </div>
-            <div className="flex flex-col w-full justify-center sm:items-start sm:p-8">
+            <div className="flex flex-col justify-center sm:items-start sm:p-8">
               <h3 className="uppercase sm:mb-2 text-lg">
                 Oppfyll drømmene dine
               </h3>

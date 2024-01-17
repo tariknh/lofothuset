@@ -2,13 +2,7 @@
 import React from "react";
 import Button from "../ui/LagButton";
 import NewsCard from "../ui/NewsCard";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+
 import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 import Link from "next/link";
 
@@ -63,6 +57,7 @@ function SisteNytt() {
               className={`${
                 index === news_cards.length - 1 ? "md:hidden" : ""
               }`}
+              key={index}
             />
           ))}
         </div>
