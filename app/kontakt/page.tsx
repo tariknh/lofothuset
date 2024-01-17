@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { kontaktValidation } from "@/actions/KontaktValidation";
 import { Checkbox } from "@/components/ui/checkbox";
 import FormCheck from "@/components/ui/FormCheck";
+import { redirect } from "next/navigation";
 
 const formDataSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters" }),
@@ -86,7 +87,7 @@ function Page() {
       return;
     }
 
-    // redirect("/takk");
+    redirect("/kontakt/takk");
   }
 
   const next = () => {
