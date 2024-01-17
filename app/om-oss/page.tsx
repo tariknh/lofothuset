@@ -1,10 +1,15 @@
 import { AnimatedLetters } from "@/components/ui/Animations/AnimatedHero";
 import Image from "next/image";
-import team from "public/Static/Folk.json";
 import ModellBestille from "@/components/modeller/ModellBestille";
 import Button from "@/components/ui/LagButton";
 import Link from "next/link";
-const Omoss = () => {
+import { promises as fs } from "fs";
+const Omoss = async () => {
+  const file = await fs.readFile(
+    process.cwd() + "/public/Static/Folk.json",
+    "utf8"
+  );
+  const team = JSON.parse(file);
   return (
     <main className="w-full flex min-h-screen flex-col items-center justify-start">
       <section className="bg-white p-3 text-6xl place-items-end h-[50vh] flex w-full ">
@@ -82,7 +87,7 @@ const Omoss = () => {
           <h2 className="text-3xl md:text-5xl col-span-full mb-8">
             MØT VÅRT TEAM
           </h2>
-          {team.team.map((teamMember, index) => (
+          {team.team.map((teamMember: any, index: number) => (
             <div key={index}>
               <div className="relative overflow-hidden flex gap-6 flex-col">
                 <div className="relative w-full h-[60vh] md:h-[20vh] lg:h-[50vh] ">
