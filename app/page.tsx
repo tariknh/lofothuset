@@ -16,7 +16,7 @@ export default function Home() {
     <main className="w-full flex min-h-screen flex-col items-left justify-start">
       <Hero />
       <OmOss />
-      <SisteNytt />
+      {/* <SisteNytt /> */}
       <VåreModeller />
       <FordelerV2 />
       <Hvordan />
