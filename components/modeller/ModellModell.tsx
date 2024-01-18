@@ -23,7 +23,7 @@ function ModellModell({
       className={`col-span-4 w-full h-full ${className} `}
     >
       <Image
-        className="max-h-screen shadow-xl rounded-[2px]"
+        className="max-h-screen shadow-xl object-cover rounded-[2px]"
         src={image}
         alt={`Bilde av ${text}`}
         width={1080}

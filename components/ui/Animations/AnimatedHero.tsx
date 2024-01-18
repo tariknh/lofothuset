@@ -18,7 +18,7 @@ const letterAnimation = {
     opacity: 1,
     transition: {
       ease: [0.87, 0, 0.13, 1],
-      duration: 2.3,
+      duration: 1.3,
     },
   },
 };
@@ -41,7 +41,7 @@ const linesAnimation = {
 const banner = {
   animate: {
     transition: {
-      staggerChildren: 0.01,
+      staggerChildren: 0.012,
     },
   },
 };

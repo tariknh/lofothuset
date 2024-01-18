@@ -67,7 +67,7 @@ function ModellModeller() {
         image="/modell/inside2.jpg"
         className="col-start-1 mb-16 xl:col-start-4"
         speed="0.2"
-        text="Fremmside vindu"
+        text="Framside vindu"
       />
       <ModellModell
         image="/modell/inside3.jpg"
