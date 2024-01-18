@@ -138,7 +138,10 @@ function Page() {
         <div className="flex flex-col justify-center items-center text-pretty">
           <h1 className="text-4xl sm:text-5xl font-medium mb-4">Kontakt Oss</h1>
           <p className="text-xl text-center text-pretty max-w-xs sm:max-w-none mb-8">
-            Vi hører gjerne fra deg!<br/> Fyll ut skjemaet nedenfor med navn, e-post, telefonnummer og litt informasjon om dine behov, så tar vi kontakt så snart som mulig.
+            Vi hører gjerne fra deg!
+            <br /> Fyll ut skjemaet nedenfor med navn, e-post, telefonnummer og
+            litt informasjon om dine behov, så tar vi kontakt så snart som
+            mulig.
           </p>
         </div>
         <div>

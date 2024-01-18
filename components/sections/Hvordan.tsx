@@ -148,7 +148,7 @@ function Hvordan() {
           value="item-1"
           title="Bestilling av mikrohus"
           num="01."
-          text="Trykk på kontakt oss, full skjema og send inn, så finner vi ut hvilken modell som passer best for deg."
+          text="Trykk på Kontakt øverst, fyll ut skjemaet og send det inn, så finner vi ut hvilken modell som passer best for deg."
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-1")}
@@ -158,7 +158,7 @@ function Hvordan() {
           value="item-2"
           title="Produksjon av mikrohus"
           num="02."
-          text="Vi starter produksjonen av ditt mikrohus. Du får en egen prosjektleder som følger deg gjennom hele prosessen."
+          text="Produksjonen av ditt mikrohus er nå startet. Produksjonstiden kan være opptil 2 måneder."
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-2")}
@@ -176,7 +176,7 @@ function Hvordan() {
           value="item-4"
           title="Levering og installasjon"
           num="04."
-          text="Vi leverer og installerer ditt mikrohus. Du kan flytte rett inn!"
+          text="Vi leverer og installerer ditt mikrohus, klar for innflytting. Fra bestilling til levering av mikrohuset ditt kan det ta opptil 4 måneder."
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-4")}
