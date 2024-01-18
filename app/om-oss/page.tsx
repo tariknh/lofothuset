@@ -17,8 +17,7 @@ const Omoss = async () => {
       </section>
       <section className="grid relative grid-rows-6 h-[50vh] w-full">
         <Image
-          className="absolute"
-          objectFit="cover"
+          className="absolute object-cover"
           fill
           src="/images/fjell.jpg"
           alt={""}
@@ -43,32 +42,29 @@ const Omoss = async () => {
           <Image
             data-scroll
             data-scroll-speed="0.2"
-            objectFit="cover"
             height={700}
             width={700}
             src="/images/fjell.jpg"
             alt={""}
-            className="col-span-1 col-start-2"
+            className="col-span-1 col-start-2 object-cover"
           />
           <Image
             data-scroll
             data-scroll-speed="-0.01"
-            objectFit="cover"
             height={800}
             width={800}
             src="/images/fjell.jpg"
             alt={""}
-            className="col-span-3 col-start-3"
+            className="col-span-3 col-start-3 object-cover"
           />
           <Image
             data-scroll
             data-scroll-speed="0.2"
-            objectFit="cover"
             height={1000}
             width={1000}
             src="/images/fjell.jpg"
             alt={""}
-            className="col-span-4 col-start-1"
+            className="col-span-4 col-start-1 object-cover"
           />
         </div>
         <div className="grid sm:grid-cols-4 col-span-full min-h-[80vh]">
@@ -98,7 +94,7 @@ const Omoss = async () => {
               <div className="relative overflow-hidden flex gap-6 flex-col">
                 <div className="relative w-full h-[60vh] md:h-[20vh] lg:h-[50vh] ">
                   <Image
-                    objectFit="cover"
+                    className="object-cover"
                     fill
                     src={teamMember.image}
                     alt={teamMember.name}

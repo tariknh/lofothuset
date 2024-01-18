@@ -23,10 +23,9 @@ function NewsCard({
       <div className="relative aspect-square mb-2">
         <Image
           fill
-          objectFit="cover"
           src={"/turkey.jpg"}
           alt="Image of a ship"
-          className=""
+          className="object-cover"
         />
       </div>
       <div className="flex flex-col xsm:gap-4 gap-2 ">

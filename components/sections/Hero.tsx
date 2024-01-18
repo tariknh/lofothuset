@@ -35,8 +35,7 @@ function Hero() {
       </div>
       <div className="h-screen relative overflow-hidden">
         <Image
-          objectFit="cover"
-          className="absolute"
+          className="absolute object-cover"
           alt="Mikrohus"
           src={"/images/mobileHome.webp"}
           fill

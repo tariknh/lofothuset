@@ -34,6 +34,12 @@ const satoshi = localFont({
   ],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export const metadata: Metadata = {
   title: "Lofothuset - Moderne Mikrohus",
   description:
@@ -46,7 +52,7 @@ export const metadata: Metadata = {
     "mikrohus pris",
     "mikrohus til salgs",
   ],
-  viewport: "width=device-width, initial-scale=1.0, viewport-fit=cover",
+  metadataBase: new URL("https://lofothuset.no/"),
   openGraph: {
     title: "Lofothuset - Moderne Mikrohus",
     description:

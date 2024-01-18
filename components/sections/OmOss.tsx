@@ -49,7 +49,7 @@ function OmOss() {
                 src={"/images/harald.png"}
                 alt={"Bilde av daglig leder Harald Kjeldaas"}
                 fill
-                objectFit="cover"
+                className="object-cover"
               />
             </div>
           </div>

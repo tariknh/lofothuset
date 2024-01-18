@@ -27,7 +27,7 @@ function Header() {
   const path = usePathname();
 
   if (navItems[0].href === path) {
-    console.log(true, "true!");
+    // console.log(true, "true!");
   }
 
   const [isMobile, setIsMobile] = useState(false);
@@ -43,7 +43,7 @@ function Header() {
       inView(
         hero,
         (info) => {
-          console.log("in view");
+          // console.log("in view");
           setIsHero(true);
           return (leaveInfo) => setIsHero(false);
         },
