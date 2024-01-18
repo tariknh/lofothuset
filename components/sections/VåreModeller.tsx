@@ -20,8 +20,8 @@ function VåreModeller() {
               src={"/modell1.png"}
               alt="Bilde av modell 1"
               fill
-              objectFit="cover"
-              className="absolute rounded-lg"
+              
+              className="absolute rounded-lg object-cover"
             />
           </div>
           <h3 className="font-light mt-2 md:text-lg lg:text-xl">

@@ -47,8 +47,7 @@ function AccordianHow({
               src={img}
               alt={`Bilde av ${title}`}
               fill
-              objectFit="cover"
-              className="rounded-lg"
+              className="rounded-lg object-cover"
             />
           </div>
         ) : (

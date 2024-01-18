@@ -216,7 +216,7 @@ export default Hvordan;
   src={imgSrc}
   alt="Bilde av modell 1"
   fill
-  objectFit="cover"
-  className=""
+  
+  className="object-cover"
 />; */
 }

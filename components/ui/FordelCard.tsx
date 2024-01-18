@@ -14,10 +14,9 @@ function FordelCard({ title, text, image, className }: FordelCardProps) {
     >
       <div className="w-20 h-20 xsm:w-24 xsm:h-24 sm:w-36 sm:h-36 md:w-48 md:h-48 relative ml-auto">
         <Image
-          className="ml-auto xsm:mr-4 absolute"
+          className="ml-auto xsm:mr-4 absolute object-contain"
           src={image}
           fill
-          objectFit="contain"
           alt=""
         />
       </div>

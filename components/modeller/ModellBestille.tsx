@@ -34,7 +34,7 @@ function ModellBestille({ className }: FordelProps) {
         </h2>
 
         <div className="w-full">
-          <Button text="Kontakt Oss" slug="/" className="w-full " />
+          <Button text="Kontakt Oss" slug="/kontakt" className="w-full " />
         </div>
       </div>
     </section>

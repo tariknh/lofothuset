@@ -19,8 +19,7 @@ function ModellVideo() {
           src="/images/vid.png"
           alt="Finnmarken IV"
           fill
-          objectFit="cover"
-          className="rounded-lg"
+          className="rounded-lg object-cover"
         />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-1 h-fit gap-2 md:text-2xl sm:text-xl md:font-light xsm:text-lg lg:text-2xl">
@@ -42,7 +41,7 @@ function ModellVideo() {
         </div>
       </div>
       <div className="w-full flex justify-end items-center md:justify-start md:col-start-1 row-start-4 md:row-start-3">
-        <Button text="Kontakt oss" slug="/" className="" />
+        <Button text="Kontakt oss" slug="/kontakt" className="" />
       </div>
     </section>
   );

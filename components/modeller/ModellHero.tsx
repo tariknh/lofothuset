@@ -11,8 +11,7 @@ function ModellHero() {
           src={"/modell/render.png"}
           alt="Bildet av hus"
           fill
-          objectFit="cover"
-          className="rounded-lg"
+          className="rounded-lg object-cover"
         />
         <h1 className="absolute ml-4 sm:ml-8 lg:ml-16 text-4xl lg:text-6xl xsm:text-5xl text-white font-medium top-1/2 -translate-y-1/2 z-20">
           Lofoten Lodge
