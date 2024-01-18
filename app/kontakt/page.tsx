@@ -55,7 +55,6 @@ function Page() {
 
     if (!parsed.success) {
       parsed.error.issues.map((issue) => {
-        console.log(issue.message);
         toast.error(issue.message, {
           position: "top-center",
           autoClose: 5000,
@@ -69,7 +68,6 @@ function Page() {
 
       return;
     }
-
     const response = await kontaktValidation(parsed.data);
 
     if (response?.error) {
@@ -95,7 +93,6 @@ function Page() {
       const result = formDataSchema.safeParse(formData);
       if (!result.success) {
         result.error.issues.map((issue) => {
-          console.log(issue.message);
           toast.error(issue.message, {
             position: "top-center",
             autoClose: 5000,
