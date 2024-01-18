@@ -1,7 +1,6 @@
 "use server";
 import mailchimp from "@mailchimp/mailchimp_marketing";
 import crypto from "crypto";
-
 const subscribeMessage = "Du er nå medlem av vårt nyhetsbrev!";
 const updateMessage = "";
 const alreadySubscribedMessage = "";

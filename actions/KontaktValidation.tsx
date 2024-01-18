@@ -3,17 +3,17 @@ import mailchimp from "@mailchimp/mailchimp_marketing";
 import { z } from "zod";
 
 const schema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
+  name: z.string().min(2, { message: "Navnet må bestå av minst 2 tegn" }),
   email: z.string().trim().email({
     message: "Ugyldig e-postadresse. Vennligst oppgi en gyldig adresse.",
   }),
   phone: z
     .string()
-    .min(5, { message: "Phone number must be at least 2 characters" }),
+    .min(5, { message: "Telefonnummeret må bestå av minst 2 tegn" }),
   task: z.string(),
   modell: z.string(),
   agreeToTerms: z.boolean().refine((value) => value === true, {
-    message: "You must agree to the terms",
+    message: "Du må godta vilkårene",
   }),
 });
 
