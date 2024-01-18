@@ -97,7 +97,7 @@ function Header() {
         </div>
       ) : (
         <motion.div
-          className={`flex fixed py-4 w-full text-xl justify-between px-8 lg:px-[4rem] z-50  ${
+          className={` fixed py-4 hidden lg:flex w-full text-xl justify-between px-8 lg:px-[4rem] z-50  ${
             !isHero && "mix-blend-difference"
           }`}
         >
