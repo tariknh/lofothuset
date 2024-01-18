@@ -19,7 +19,7 @@ const Omoss = async () => {
         <Image
           className="absolute object-cover"
           fill
-          src="/images/fjell.jpg"
+          src="/webp/coast.webp"
           alt={""}
         />
       </section>
@@ -44,7 +44,7 @@ const Omoss = async () => {
             data-scroll-speed="0.2"
             height={700}
             width={700}
-            src="/modell/produksjonV2.jpg"
+            src="/webp/snow1.webp"
             alt={""}
             className="col-span-1 col-start-2 object-cover"
           />
@@ -53,7 +53,7 @@ const Omoss = async () => {
             data-scroll-speed="-0.01"
             height={800}
             width={800}
-            src="/modell/uteNorsk.png"
+            src="/webp/uteNorsk.webp"
             alt={""}
             className="col-span-3 col-start-3 object-cover"
           />
@@ -62,7 +62,7 @@ const Omoss = async () => {
             data-scroll-speed="0.2"
             height={1000}
             width={1000}
-            src="/modell/ute3.png"
+            src="/webp/produksjonV2.webp"
             alt={""}
             className="col-span-4 col-start-1 object-cover"
           />
@@ -129,7 +129,7 @@ const Omoss = async () => {
           <section className="self-center sm:px-4 lg:px-16 flex flex-col sm:flex-row-reverse justify-center md:items-center gap-8">
             <div className="aspect-square relative w-full sm:max-w-[500px] ">
               <Image
-                src="/geir.png"
+                src="/webp/uteNorsk.webp"
                 alt="Bestille"
                 fill
                 className="object-cover"

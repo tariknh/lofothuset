@@ -46,7 +46,7 @@ function OmOss() {
           <div className="w-[116px] h-[116px] border rounded-full flex justify-center items-center">
             <div className="w-[96px] h-[96px] relative">
               <Image
-                src={"/images/harald.png"}
+                src={"/webp/haraldIcon.webp"}
                 alt={"Bilde av daglig leder Harald Kjeldaas"}
                 fill
                 className="object-cover"

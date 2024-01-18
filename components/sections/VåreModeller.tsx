@@ -34,7 +34,7 @@ function VåreModeller() {
           className="relative h-[100vh] w-full flex flex-col sm:flex-row justify-center items-center"
         >
           <Image
-            src={"/modell/renderSquareZoomed.png"}
+            src={"/webp/renderSquareZoomed.webp"}
             alt="Bilde av modell 1"
             fill
             className="absolute object-cover "
@@ -75,7 +75,7 @@ function VåreModeller() {
             <Image
               fill
               className="object-contain z-20 p-6"
-              src={"/modell/renderBlueprintZoomedV2.png"}
+              src={"/webp/renderBlueprintZoomedV2.webp"}
               alt="Bilde av modell 1"
             />
           </div>
