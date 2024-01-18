@@ -17,91 +17,91 @@ function ModellModeller() {
   return (
     <section className="w-full grid grid-cols-5 p-2 lg:p-16">
       <ModellModell
-        image="/modell/unedited/ute1.jpg"
+        image="/webp/ute1.webp"
         className="mb-16"
         text="Forside med inngangsparti"
       />
       <ModellModell
-        image="/modell/unedited/ute3.jpg"
+        image="/webp/ute3.webp"
         className="col-start-2 mb-16 xl:col-start-3"
         speed="0.3"
         text="Side uten vindu"
       />
       <ModellModell
-        image="/modell/unedited/ute4.jpg"
+        image="/webp/ute4.webp"
         className="col-start-1 col-span-4 mb-16 xl:col-start-2"
         speed="-0.1"
         text="Side med vindu"
       />
       <ModellModell
-        image="/modell/unedited/ute5.jpg"
+        image="/webp/ute5.webp"
         className="col-start-2 mb-16 xl:col-start-1"
         speed="0.3"
         text="Bakside skrått"
       />
       <ModellModell
-        image="/modell/unedited/ute15.jpg"
+        image="/webp/ute15.webp"
         className="col-start-1 mb-16 xl:col-start-3"
         speed="0.2"
         text="Bakside"
       />
       <ModellModell
-        image="/modell/unedited/ute13.jpg"
+        image="/webp/ute13.webp"
         className="mb-16 col-start-2 xl:col-start-1"
         speed="0.3"
         text="Bakside med vannrør"
       />
       <ModellModell
-        image="/modell/unedited/ute14.jpg"
+        image="/webp/ute14.webp"
         className="col-start-1 mb-16 xl:col-start-3"
         speed="-0.1"
         text="Bakside med elektrisk anlegg"
       />
       <ModellModell
-        image="/modell/inside1.jpg"
+        image="/webp/inside1.webp"
         className="col-start-2 col-span-4 mb-16 xl:col-start-2"
         speed="0.3"
         text="Stue vindu"
       />
       <ModellModell
-        image="/modell/inside2.jpg"
+        image="/webp/inside2.webp"
         className="col-start-1 mb-16 xl:col-start-4"
         speed="0.2"
         text="Framside vindu"
       />
       <ModellModell
-        image="/modell/inside3.jpg"
+        image="/webp/inside3.webp"
         className="col-start-2 mb-16 xl:col-start-3"
         speed="-0.1"
         text="Rom 1"
       />
       <ModellModell
-        image="/modell/insideB1.jpg"
+        image="/webp/insideB1.webp"
         className="mb-16 col-start-1 xl:col-start-1"
         speed="0.2"
         text="Bad"
       />
       <ModellModell
-        image="/modell/insideB2.jpg"
+        image="/webp/insideB2.webp"
         className="col-start-2 mb-16 xl:col-start-3"
         speed="0.3"
         text="Bad"
       />
 
       <ModellModell
-        image="/modell/insideK2.jpg"
+        image="/webp/insideK2.webp"
         className="col-start-1 col-span-4 mb-16 xl:col-start-2"
         speed="-0.1"
         text="Kjøkken"
       />
       <ModellModell
-        image="/modell/renderBlueprintZoomedV2.png"
+        image="/webp/renderBlueprintZoomedV2.webp"
         className="col-start-2 mb-16 xl:col-start-1"
         speed="0.2"
         text="Mikrohuset 3d modell"
       />
       <ModellModell
-        image="/modell/renderBlueprintMicrohouse.png"
+        image="/webp/renderBlueprintMicrohouse.webp"
         className="col-start-1 mb-16 xl:col-start-3"
         speed="0.3"
         text="Tegninger av mikrohuset"

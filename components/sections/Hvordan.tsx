@@ -196,7 +196,7 @@ function Hvordan() {
         <Image
           data-scroll
           data-scroll-speed="-0.1"
-          src={"/modell/renderSquare.png"}
+          src={"/webp/renderSquare.webp"}
           alt="Bilde av modell 1"
           fill
           className="object-cover rounded-lg"

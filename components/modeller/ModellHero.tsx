@@ -8,8 +8,9 @@ function ModellHero() {
       <div className="w-full max-h-[900px] h-[50vw] relative">
         <div className="w-full h-full absolute bg-black z-10 opacity-30"></div>
         <Image
-          src={"/modell/render.png"}
-          alt="Bildet av hus"
+          priority
+          src={"/webp/render.webp"}
+          alt="Bilde av hus"
           fill
           className="rounded-lg object-cover"
         />

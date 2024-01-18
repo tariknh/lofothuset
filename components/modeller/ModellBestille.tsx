@@ -13,7 +13,7 @@ function ModellBestille({ className }: FordelProps) {
     >
       <div className="aspect-square relative w-full sm:max-w-[700px] overflow-hidden">
         <Image
-          src="/geir.png"
+          src="/webp/uteNorsk.webp"
           alt="Bestille"
           fill
           className="object-cover"
