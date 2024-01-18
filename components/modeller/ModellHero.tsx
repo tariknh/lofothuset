@@ -24,7 +24,7 @@ function ModellHero() {
               Lofoten Lodge II
             </h2>
             <div className="flex justify-center items-center text-sm sm:text-lg">
-              Opp til 4 x
+              Opp til 2 x
               <Image
                 src={"/users.svg"}
                 alt="User icon"

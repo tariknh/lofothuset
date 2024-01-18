@@ -44,7 +44,7 @@ const Omoss = async () => {
             data-scroll-speed="0.2"
             height={700}
             width={700}
-            src="/images/fjell.jpg"
+            src="/modell/produksjonV2.jpg"
             alt={""}
             className="col-span-1 col-start-2 object-cover"
           />
@@ -53,7 +53,7 @@ const Omoss = async () => {
             data-scroll-speed="-0.01"
             height={800}
             width={800}
-            src="/images/fjell.jpg"
+            src="/modell/uteNorsk.png"
             alt={""}
             className="col-span-3 col-start-3 object-cover"
           />
@@ -62,7 +62,7 @@ const Omoss = async () => {
             data-scroll-speed="0.2"
             height={1000}
             width={1000}
-            src="/images/fjell.jpg"
+            src="/modell/ute3.png"
             alt={""}
             className="col-span-4 col-start-1 object-cover"
           />

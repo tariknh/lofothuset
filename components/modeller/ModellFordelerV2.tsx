@@ -66,34 +66,34 @@ function ModellFordelerV2() {
         </div>
 
         <Fordel
-          title="Elektrisitet"
+          title="Strømtilkobling"
           text="Mikrohus bruker ofte opptil 45% mindre energi for oppvarming og kjøling."
-          image="/battery-eco.svg"
+          image="/battery.svg"
         />
         <Fordel
-          title="Aircondition"
+          title="Vanntilkobling"
           text="Reduser karbonavtrykk med så mye som 36%"
-          image="/leaf.svg"
+          image="/water.svg"
         />
         <Fordel
           title="Varmesystem"
           text="Mindre rot og enklere livsstil, kan redusere eiendeler med 40-60%"
-          image="/truck-loading.svg"
+          image="/radiator.svg"
         />
         <Fordel
-          title="Varmepumpe"
+          title="Varmtvannstank"
           text="Mikrohus koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
-          image="/pig-money.svg"
+          image="/heater.svg"
         />
         <Fordel
-          title="Ventilasjon"
+          title="Utløp"
           text="Mikrohus koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
-          image="/pig-money.svg"
+          image="/waste.svg"
         />
         <Fordel
-          title="Vann System"
+          title="TEK17"
           text="Mikrohus koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
-          image="/pig-money.svg"
+          image="/checkV2.svg"
         />
       </div>
     </section>
