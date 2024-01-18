@@ -32,7 +32,7 @@ function Footer() {
           <Link href={"mailto:hei@lofothuset.no"}>hei@lofothuset.no</Link>
         </h3>
         <h3 className="hover:underline">
-          <Link href={"tel:+4712345678"}>+47 123 45 678</Link>
+          <Link href={"tel:+4793049995"}>+47 930 49 995</Link>
         </h3>
       </div>
       <div className="col-span-full tracking-tighter md:row-start-3 text-6xl sm:text-8xl md:text-[8rem] lg:text-[12rem] opacity-50 font-bold text-center">
@@ -47,8 +47,9 @@ function Footer() {
           </span>
         </div>
         <div className="justify-evenly gap-3 sm:gap-5 flex">
-          <span className="underline">Bruksvilkår</span>
-          <span className="underline">Personvern</span>
+          
+          {/* <span className="underline">Bruksvilkår</span>
+          <span className="underline">Personvern</span> */}
           <span className="text-zinc-400">
             Laget av{" "}
             <span className="text-white underline">
