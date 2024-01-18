@@ -133,14 +133,12 @@ function Page() {
     }
   };
   return (
-    <main className="w-full flex min-h-svh flex-col items-center justify-center p-3 lg:p-4 py-[88px]">
-      <form action={clientAction} className="max-w-[745px]">
-        <div className="flex flex-col justify-center items-center text-balance text-center">
-          <h1 className="text-5xl font-medium mb-4">Kontakt Oss</h1>
-          <p className="text-xl mb-8">
-            Vi hører gjerne fra deg! Fyll ut skjemaet nedenfor med navn, e-post,
-            telefonnummer og litt informasjon om dine behov, så tar vi kontakt
-            så snart som mulig.
+    <main className="w-full p-3 flex sm:min-h-screen min-h-svh flex-col items-center justify-center lg:p-4 py-[88px]">
+      <form action={clientAction} className="sm:my-20 max-w-[745px]">
+        <div className="flex flex-col justify-center items-center text-pretty">
+          <h1 className="text-4xl sm:text-5xl font-medium mb-4">Kontakt Oss</h1>
+          <p className="text-xl text-center text-pretty max-w-xs sm:max-w-none mb-8">
+            Vi hører gjerne fra deg!<br/> Fyll ut skjemaet nedenfor med navn, e-post, telefonnummer og litt informasjon om dine behov, så tar vi kontakt så snart som mulig.
           </p>
         </div>
         <div>
@@ -186,7 +184,7 @@ function Page() {
                   formData={formData.phone}
                   handleInputChange={handleInputChange}
                 />
-                <div className="w-full flex justify-end items-center mt-8">
+                <div className="w-full flex justify-end items-center">
                   <button
                     type="button"
                     onClick={next}
