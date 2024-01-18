@@ -50,22 +50,23 @@ function Header() {
         { margin: "-35px 0px 0px 0px" }
       );
     }
+  }, [path]);
 
+  useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024);
     };
-
     handleResize(); // Set the initial state
 
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [path]);
+  }, []);
 
   return (
     <nav>
-      {isMobile && (
+      {isMobile ? (
         <div>
           <div className={styles.main}>
             <div
@@ -94,8 +95,7 @@ function Header() {
             {isActive && <MobileNav setOpen={setIsActive} open={isActive} />}
           </AnimatePresence>
         </div>
-      )}
-      {!isMobile && (
+      ) : (
         <motion.div
           className={`flex fixed py-4 w-full text-xl justify-between px-8 lg:px-[4rem] z-50  ${
             !isHero && "mix-blend-difference"

@@ -166,7 +166,7 @@ function Hvordan() {
         <AccordianHow
           value="item-3"
           title="Ferie til tyrkia"
-          num="05."
+          num="03."
           text="I en begrenset periode tilbyr vi en gratis ferie til Tyrkia for å se på produksjonen av ditt mikrohus."
           //   img="/modell1.png"
           progress={progress}
@@ -175,7 +175,7 @@ function Hvordan() {
         <AccordianHow
           value="item-4"
           title="Levering og installasjon"
-          num="03."
+          num="04."
           text="Vi leverer og installerer ditt mikrohus. Du kan flytte rett inn!"
           //   img="/modell1.png"
           progress={progress}
@@ -185,7 +185,7 @@ function Hvordan() {
         <AccordianHow
           value="item-5"
           title="Innflytting"
-          num="04."
+          num="05."
           text="Gratulerer med ditt nye mikrohus! Vi håper du vil trives i ditt nye hjem."
           //   img="/modell1.png"
           progress={progress}
@@ -195,7 +195,7 @@ function Hvordan() {
       <div className="w-full overflow-hidden sm:h-[600px] md:h-[711px] h-[400px] relative row-start-2 rounded-lg shrink-0">
         <Image
           data-scroll
-          data-scroll-speed="-0.05"
+          data-scroll-speed="-0.1"
           src={"/modell/renderSquare.png"}
           alt="Bilde av modell 1"
           fill

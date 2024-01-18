@@ -19,9 +19,9 @@ function Footer() {
         <h3 className="hover:underline">
           <Link href={"/"}>Nyheter</Link>
         </h3>
-        <h3 className="hover:underline">
+        {/* <h3 className="hover:underline">
           <Link href={"/"}>Blogg</Link>
-        </h3>
+        </h3> */}
         <h3 className="hover:underline">
           <Link href={"/om-oss"}>Om Oss</Link>
         </h3>
@@ -37,10 +37,10 @@ function Footer() {
       </div>
       <div className="col-span-full tracking-tighter md:row-start-3 text-6xl sm:text-8xl md:text-[8rem] lg:text-[12rem] opacity-50 font-bold text-center">
         <AnimatedLetters singleWord center text="lofothuset" />
+        <div className="border-t-4 col-span-full row-start-4 w-full border-zinc-500"></div>
       </div>
-      <div className="border-t-4 col-span-full row-start-4 w-full border-zinc-500"></div>
 
-      <div className="flex-wrap sm:flex-row flex col-span-full md:mt-5 row-start-5 w-full justify-evenly sm:justify-between sm:gap-5">
+      <div className="flex-wrap sm:flex-row flex col-span-full md:mt-5 row-start-4 w-full justify-evenly sm:justify-between sm:gap-5">
         <div>
           <span className="text-zinc-400">
             Lofoten A Group AS. Org nr 930 035 688
