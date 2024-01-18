@@ -4,14 +4,14 @@ import React from "react";
 type ModellModellProps = {
   image: string;
   className: string;
-  alt: string;
+
   text: string;
   speed?: string;
 };
 
 function ModellModell({
   image,
-  alt,
+
   className,
   text,
   speed = "0.2",
@@ -25,7 +25,7 @@ function ModellModell({
       <Image
         className="max-h-screen shadow-xl rounded-[2px]"
         src={image}
-        alt={alt}
+        alt={`Bilde av ${text}`}
         width={1080}
         height={1080}
       />

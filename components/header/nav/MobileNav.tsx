@@ -16,13 +16,13 @@ export const navItems = [
     title: "Hjem",
     href: "/",
   },
+  // {
+  //   title: "Aktiviteter",
+  //   href: "/aktiviteter",
+  // },
   {
-    title: "Aktiviteter",
-    href: "/aktiviteter",
-  },
-  {
-    title: "Modeller",
-    href: "/modeller/finnmarken",
+    title: "Modell",
+    href: "/modeller/lofoten-lodge",
   },
   {
     title: "Om oss",

@@ -140,7 +140,7 @@ const Omoss = async () => {
                 Oppfyll drømmene dine
               </h3>
               <h2 className="xsm-370:text-2xl sm:text-3xl lg:text-4xl text-xl font-medium mb-4 sm:max-w-72">
-                Klar til å bestille Finnmarken IV?{" "}
+                Klar til å bestille Lofoten Lodge II?{" "}
               </h2>
               <Link href={"/kontakt"}>
                 <button
