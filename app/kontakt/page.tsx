@@ -13,26 +13,26 @@ import FormCheck from "@/components/ui/FormCheck";
 import { redirect } from "next/navigation";
 
 const formDataSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
+  name: z.string().min(2, { message: "Navnet må bestå av minst 2 tegn" }),
   email: z.string().trim().email({
     message: "Ugyldig e-postadresse. Vennligst oppgi en gyldig adresse.",
   }),
   phone: z
     .string()
-    .min(5, { message: "Phone number must be at least 2 characters" }),
+    .min(5, { message: "Telefonnummeret må bestå av minst 2 tegn" }),
 });
 const formDataSchemeSecond = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
+  name: z.string().min(2, { message: "Navnet må bestå av minst 2 tegn" }),
   email: z.string().trim().email({
     message: "Ugyldig e-postadresse. Vennligst oppgi en gyldig adresse.",
   }),
   phone: z
     .string()
-    .min(5, { message: "Phone number must be at least 2 characters" }),
+    .min(5, { message: "Telefonnummeret må bestå av minst 2 tegn" }),
   task: z.string(),
   modell: z.string(),
   agreeToTerms: z.boolean().refine((value) => value === true, {
-    message: "You must agree to the terms",
+    message: "Du må godta vilkårene",
   }),
 });
 
@@ -93,9 +93,9 @@ function Page() {
   const next = () => {
     if (currentStep < 2) {
       const result = formDataSchema.safeParse(formData);
+
       if (!result.success) {
         result.error.issues.map((issue) => {
-          console.log(issue.message);
           toast.error(issue.message, {
             position: "top-center",
             autoClose: 5000,
