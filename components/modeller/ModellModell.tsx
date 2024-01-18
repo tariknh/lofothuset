@@ -23,13 +23,13 @@ function ModellModell({
       className={`col-span-4 w-full h-full ${className} `}
     >
       <Image
-        className="max-h-screen shadow-xl object-cover rounded-[2px]"
+        className="max-h-screen shadow-sm object-cover rounded-[2px]"
         src={image}
         alt={`Bilde av ${text}`}
         width={1080}
         height={1080}
       />
-      <h2 className="mt-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase tracking-tight font-medium">
+      <h2 className="mt-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase tracking-tight ">
         {text}
       </h2>
     </div>
