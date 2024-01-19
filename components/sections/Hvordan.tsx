@@ -146,7 +146,7 @@ function Hvordan() {
       >
         <AccordianHow
           value="item-1"
-          title="Bestilling av mikrohus"
+          title="Bestilling"
           num="01."
           text="Trykk på Kontakt øverst, fyll ut skjemaet og send det inn, så finner vi ut hvilken modell som passer best for deg."
           //   img="/modell1.png"
