@@ -35,7 +35,7 @@ function Fordeler() {
         <FordelCard
           title={"Økonomisk"}
           text={
-            "Reduserte byggekostnader for mikrohus kan være opptil 80% lavere enn tradisjonelle hus på grunn av mindre materialbehov og enklere design."
+            "Reduserte byggekostnader for våre boliger kan være opptil 80% lavere enn tradisjonelle hus på grunn av mindre materialbehov og enklere design."
           }
           image={"/wallet.svg"}
           className={"col-span-2"}

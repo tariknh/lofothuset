@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const heading = "Opplev Storhet";
-const heading2 = "i mikrohus";
+const heading2 = "i våre boliger";
 
 const letters = Array.from(heading);
 const letters2 = Array.from(heading2);
