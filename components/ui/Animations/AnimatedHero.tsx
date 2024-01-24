@@ -158,7 +158,7 @@ const AnimatedHero = () => {
   return (
     <motion.div className="flex flex-col overflow-hidden row-start-2 row-span-auto lg:row-start-2 z-50 scroll-m-20 text-5xl font-medium tracking-tight md:text-7xl lg:text-8xl h-fit">
       <AnimatedLetters text="Opplev storhet" />
-      <AnimatedLetters text="i mikrohus" />
+      <AnimatedLetters text="i våre boliger" />
     </motion.div>
   );
 };

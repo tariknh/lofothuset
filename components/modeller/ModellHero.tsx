@@ -15,14 +15,14 @@ function ModellHero() {
           className="rounded-lg object-cover"
         />
         <h1 className="absolute ml-4 sm:ml-8 lg:ml-16 text-4xl lg:text-6xl xsm:text-5xl text-white font-medium top-1/2 -translate-y-1/2 z-20">
-          Lofoten Lodge
+          Stamsund Lodge
         </h1>
       </div>
       <div className="relative z-40">
         <div className=" bg-white xsm-370:-translate-y-8 xsm-370:translate-x-12 xsm-370:mr-12 sm:translate-x-16 sm:mr-12 rounded-lg md:translate-x-16 md:-translate-y-12 lg:translate-x-24 lg:-translate-y-20 rounded-r-none p-4 xsm:p-8 sm:p-12 md:p-16">
           <div className="flex justify-between items-center mb-2 sm:mb-8">
             <h2 className="xsm-370:text-2xl sm:text-3xl lg:text-4xl text-xl font-medium  ">
-              Lofoten Lodge II
+              Stamsund Lodge
             </h2>
             <div className="flex justify-center items-center text-sm sm:text-lg">
               Opp til 2 x
@@ -36,7 +36,7 @@ function ModellHero() {
             </div>
           </div>
           <h3 className="mb-4 xsm-370:mb-0 xsm-370:text-lg sm:text-xl lg:text-2xl ">
-            Lofoten Lodge er et bærekraftig og moderne boalternativ som gir
+            Stamsund Lodge er et bærekraftig og moderne boalternativ som gir
             energieffektive løsninger for alle livsstiler. Inspirert av Lofotens
             naturlige skjønnhet, er denne modellen perfekt for par eller små
             familier som verdsetter miljøet og en minimalistisk livsstil.
