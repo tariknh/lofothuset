@@ -13,13 +13,6 @@ import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import LocomotiveScroll from "locomotive-scroll";
 
-export const SmoothScroll = dynamic(
-  () => import("contexts/SmoothScroll.context"),
-  {
-    ssr: false,
-  }
-);
-
 function Header() {
   const [isActive, setIsActive] = useState(false);
   const [isHero, setIsHero] = useState(false);

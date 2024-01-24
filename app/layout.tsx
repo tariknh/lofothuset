@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { cn } from "@/lib/utils";
-import Header, { SmoothScroll } from "@/components/header/Header";
+import Header from "@/components/header/Header";
 import dynamic from "next/dynamic";
 import Hvordan from "@/components/sections/Hvordan";
 import Blog from "@/components/sections/Blog";
@@ -80,7 +80,6 @@ export default function RootLayout({
           satoshi.variable
         )}
       >
-        <SmoothScroll />
         <Header />
         {children}
         <Footer />

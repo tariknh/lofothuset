@@ -44,7 +44,7 @@ function Page() {
     email: "",
     phone: "",
     task: "Jeg vil ha en visning over video",
-    modell: "Lofoten Lodge",
+    modell: "Stamsund Lodge",
     agreeToTerms: false,
   };
 
@@ -220,7 +220,7 @@ function Page() {
                 <FormSelect
                   id="HVILKEN MODELL?"
                   name="modell"
-                  values={["Lofoten Lodge"]}
+                  values={["Stamsund Lodge"]}
                   formData={formData.modell}
                   handleInputChange={handleInputChange}
                 />

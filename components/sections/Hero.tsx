@@ -15,7 +15,7 @@ function Hero() {
       >
         <AnimatedHero />
         <h2 className="col-span-full scroll-m-20 text-4xl tracking-tight row-start-11 lg:row-start-12">
-          <AnimatedLetters text="Smart, bærekraftig mikrohus. Levert." />
+          <AnimatedLetters text="Smarte, bærekraftige boligkonsepter. Levert." />
         </h2>
 
         <div className="relative bg-red-200 row-start-11 lg:row-start-12 justify-self-end">

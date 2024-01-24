@@ -10,21 +10,20 @@ function Footer() {
           Lyst å lære mer om vårt boligkonsept?
         </h2>
         <h3 className="max-w-[50vw] lg:text-lg lg:max-w-[25vw] text-zinc-400">
-          Meld deg på vårt nyhetsbrev og få tilsendt gratis info om
-          boligkonseptet.
+          Meld deg på vårt nyhetsbrev og få tilsendt gratis info.
         </h3>
         <InputWithButton />
       </div>
       <div className="text-zinc-300 md:col-start-4 md:row-start-1">
         <h2 className="text-xl text-white font-semibold">Info</h2>
         <h3 className="hover:underline">
-          <Link href={"/"}>Nyheter</Link>
+          <Link href={"/modeller/lofoten-lodge"}>Vår Modell</Link>
         </h3>
-        {/* <h3 className="hover:underline">
-          <Link href={"/"}>Blogg</Link>
-        </h3> */}
         <h3 className="hover:underline">
           <Link href={"/om-oss"}>Om Oss</Link>
+        </h3>
+        <h3 className="hover:underline">
+          <Link href={"/kontakt"}>Kontaktskjema</Link>
         </h3>
       </div>
       <div className="text-zinc-300 md:col-start-5 md:row-start-1">
