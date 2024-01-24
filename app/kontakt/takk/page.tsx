@@ -55,15 +55,15 @@ function Page() {
               alt="Check"
             />
             <p className="text-xl">
-              En av våre mikrohuseksperter vil snart kontakte deg for å avtale
-              en visning eller svare på spørsmål du måtte ha. Vi ser frem til å
+              En av våre bolig eksperter vil snart kontakte deg for å avtale en
+              visning eller svare på spørsmål du måtte ha. Vi ser frem til å
               hjelpe deg på veien mot ditt nye hjem!
             </p>
           </div>
 
           <p className="text-xl font-bold">
-            Du er et skritt nærmere ditt drømme mikrohus. Hold et øye med
-            innboksen din!
+            Du er et skritt nærmere ditt drømme hus. Hold et øye med innboksen
+            din!
           </p>
         </div>
         <div className="lg:order-2 order-1 flex justify-center items-center">

@@ -7,10 +7,11 @@ function Footer() {
     <footer className="p-3 sm:p-8 min-h-[50vh] md:items-start items-center grid grid-cols-2 md:grid-cols-6 md:grid-rows-2 text-white bg-[#121212] gap-4 md:gap-0">
       <div className="col-start-1 col-span-2 row-start-1 flex flex-col gap-4 max-w-fit">
         <h2 className="text-white lg:text-2xl text-left">
-          Lyst å lære mer om mikrohus?
+          Lyst å lære mer om vårt boligkonsept?
         </h2>
         <h3 className="max-w-[50vw] lg:text-lg lg:max-w-[25vw] text-zinc-400">
-          Meld deg på vårt nyhetsbrev og få tilsendt gratis info om mikrohus.
+          Meld deg på vårt nyhetsbrev og få tilsendt gratis info om
+          boligkonseptet.
         </h3>
         <InputWithButton />
       </div>
@@ -47,7 +48,6 @@ function Footer() {
           </span>
         </div>
         <div className="justify-evenly gap-3 sm:gap-5 flex">
-          
           {/* <span className="underline">Bruksvilkår</span>
           <span className="underline">Personvern</span> */}
           <span className="text-zinc-400">

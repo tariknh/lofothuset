@@ -41,9 +41,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Lofothuset - Moderne Mikrohus",
+  title: "Lofothuset - Et moderne boligkonsept",
   description:
-    "Utforsk vårt unike utvalg av norske mikrohus – din løsning for en bærekraftig livsstil! Våre mikrohus kombinerer fleksibilitet og funksjonalitet, perfekt tilpasset moderne behov. Oppdag mikrohuset som definerer kompakt, miljøvennlig design, tilgjengelig til konkurransedyktige priser. Sjekk ut våre nyeste mikrohus til salgs og invester i et øko-vennlig, kostnadseffektivt hjem. Finn ditt ideelle mikro hus hos oss!",
+    "Utforsk vårt unike utvalg av moderne boligløsninger – din løsning for en bærekraftig livsstil! Våre boliger kombinerer fleksibilitet og funksjonalitet, perfekt tilpasset moderne behov. Oppdag boligen som definerer kompakt, miljøvennlig design, tilgjengelig til konkurransedyktige priser. Sjekk ut våre nyeste boliger til salgs og invester i et øko-vennlig, kostnadseffektivt hjem. Finn din ideelle bolig hos oss!",
   keywords: [
     "mikrohus",
     "mikrobolig",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://lofothuset.no/"),
   openGraph: {
-    title: "Lofothuset - Moderne Mikrohus",
+    title: "Lofothuset - Et moderne boligkonsept",
     description:
-      "Utforsk vårt unike utvalg av norske mikrohus – din løsning for en bærekraftig livsstil! Våre mikrohus kombinerer fleksibilitet og funksjonalitet, perfekt tilpasset moderne behov. Oppdag mikrohuset som definerer kompakt, miljøvennlig design, tilgjengelig til konkurransedyktige priser. Sjekk ut våre nyeste mikrohus til salgs og invester i et øko-vennlig, kostnadseffektivt hjem. Finn ditt ideelle mikro hus hos oss!",
+      "Utforsk vårt unike utvalg av moderne boligløsninger – din løsning for en bærekraftig livsstil! Våre boliger kombinerer fleksibilitet og funksjonalitet, perfekt tilpasset moderne behov. Oppdag boligen som definerer kompakt, miljøvennlig design, tilgjengelig til konkurransedyktige priser. Sjekk ut våre nyeste boliger til salgs og invester i et øko-vennlig, kostnadseffektivt hjem. Finn din ideelle bolig hos oss!",
     url: "https://lofothuset.no/",
     siteName: "Lofothuset",
     locale: "no_NO",

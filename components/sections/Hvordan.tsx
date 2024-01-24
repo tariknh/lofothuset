@@ -132,10 +132,7 @@ function Hvordan() {
   return (
     <section className="my-16 p-3 lg:p-4 grid sm:grid-cols-2 gap-8 min-h-screen w-full justify-center items-center ">
       <h2 className="sm:col-span-2 self-end text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter ">
-        <AnimatedLetters
-          center
-          text="Så lett er det å få i gang ditt mikrohus"
-        />
+        <AnimatedLetters center text="Så lett er det å få i gang din bolig" />
       </h2>
       <Accordion
         ref={ref}
@@ -146,7 +143,7 @@ function Hvordan() {
       >
         <AccordianHow
           value="item-1"
-          title="Bestilling av mikrohus"
+          title="Bestilling av bolig"
           num="01."
           text="Trykk på Kontakt øverst, fyll ut skjemaet og send det inn, så finner vi ut hvilken modell som passer best for deg."
           //   img="/modell1.png"
@@ -156,9 +153,9 @@ function Hvordan() {
 
         <AccordianHow
           value="item-2"
-          title="Produksjon av mikrohus"
+          title="Produksjon av boligen"
           num="02."
-          text="Produksjonen av ditt mikrohus er nå startet. Produksjonstiden kan være opptil 2 måneder."
+          text="Produksjonen av din bolig er nå startet. Produksjonstiden kan være opptil 2 måneder."
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-2")}
@@ -167,7 +164,7 @@ function Hvordan() {
           value="item-3"
           title="Ferie til tyrkia"
           num="03."
-          text="I en begrenset periode tilbyr vi en gratis ferie til Tyrkia for å se på produksjonen av ditt mikrohus."
+          text="I en begrenset periode tilbyr vi en gratis ferie til Tyrkia for å se på produksjonen av din bolig."
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-3")}
@@ -176,7 +173,7 @@ function Hvordan() {
           value="item-4"
           title="Levering og installasjon"
           num="04."
-          text="Vi leverer og installerer ditt mikrohus, klar for innflytting. Fra bestilling til levering av mikrohuset ditt kan det ta opptil 4 måneder."
+          text="Vi leverer og installerer din bolig, klar for innflytting. Fra bestilling til levering av boligen din kan det ta opptil 4 måneder."
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-4")}
@@ -186,7 +183,7 @@ function Hvordan() {
           value="item-5"
           title="Innflytting"
           num="05."
-          text="Gratulerer med ditt nye mikrohus! Vi håper du vil trives i ditt nye hjem."
+          text="Gratulerer med din nye bolig! Vi håper du vil trives i ditt nye hjem."
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-5")}

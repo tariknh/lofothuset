@@ -57,17 +57,17 @@ function ModellFordelerV2() {
             className="uppercase font-medium text-center max-w-[600px] md:max-w-full text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight mb-4
         "
           >
-            <AnimatedLines text="Inkludert i alle mikrohus" center />
+            <AnimatedLines text="Inkludert i alle boliger" center />
           </h2>
           <p className="text-center mb-8 sm:mb-14 text-xl lg:text-2xl">
             Uavhengig av modellen du velger, er alle disse funksjonene inkludert
-            i grunnprisen for våre mikrohus.
+            i grunnprisen for våre boliger.
           </p>
         </div>
 
         <Fordel
           title="Strømtilkobling"
-          text="Mikrohus bruker ofte opptil 45% mindre energi for oppvarming og kjøling."
+          text="Våre boliger bruker opptil 45% mindre energi for oppvarming og kjøling."
           image="/battery.svg"
         />
         <Fordel
@@ -82,17 +82,17 @@ function ModellFordelerV2() {
         />
         <Fordel
           title="Varmtvannstank"
-          text="Mikrohus koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
+          text="Våre boliger koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
           image="/heater.svg"
         />
         <Fordel
           title="Utløp"
-          text="Mikrohus koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
+          text="Våre boliger koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
           image="/waste.svg"
         />
         <Fordel
           title="TEK17"
-          text="Mikrohus koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
+          text="Våre boliger koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
           image="/checkV2.svg"
         />
       </div>

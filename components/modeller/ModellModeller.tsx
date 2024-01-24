@@ -98,13 +98,13 @@ function ModellModeller() {
         image="/webp/renderBlueprintZoomedV2.webp"
         className="col-start-2 mb-16 xl:col-start-1"
         speed="0.2"
-        text="Mikrohuset 3d modell"
+        text="Boligen i 3d modell"
       />
       <ModellModell
         image="/webp/renderBlueprintMicrohouse.webp"
         className="col-start-1 mb-16 xl:col-start-3"
         speed="0.3"
-        text="Tegninger av mikrohuset"
+        text="Tegninger av boligen"
       />
       {/* Video Goes here when done */}
       {/* <div

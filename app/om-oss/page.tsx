@@ -35,7 +35,7 @@ const Omoss = async () => {
           <span className="font-light text-lg md:text-2xl lg:text-3xl">
             Vårt team er dedikert til kvalitet og komfort, og skaper ditt
             drømmehjem med miljøvennlige, effektive løsninger. Opplev friheten
-            et mikrohus tilbyr.
+            vårt boligkonsept tilbyr.
           </span>
         </h2>
         <div className="flex sm:grid col-span-full grid-cols-4 flex-col gap-8">

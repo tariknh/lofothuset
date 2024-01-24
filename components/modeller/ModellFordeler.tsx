@@ -8,11 +8,11 @@ function ModellFordeler() {
       <div className="flex flex-col justify-center items-center mb-4 xsm-370:text-lg sm:text-xl lg:text-2xl mt-20">
         <h4 className="text-zinc-300">Fordeler</h4>
         <h2 className="xsm-370:text-2xl sm:text-3xl lg:text-4xl text-xl font-medium mb-4">
-          Inkludert i alle mikrohus
+          Inkludert i alle boliger
         </h2>
         <h3 className="text-center mb-2 xsm-370:text-lg sm:text-xl lg:text-2xl max-w-[700px] text-lagMuted">
           Uavhengig av modellen du velger, er alle disse funksjonene inkludert i
-          grunnprisen for våre mikrohus.
+          grunnprisen for våre boliger.
         </h3>
       </div>
       <div className="grid grid-cols-2 pb-36 w-full max-w-[1200px] ">

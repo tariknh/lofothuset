@@ -56,19 +56,19 @@ function FordelerV2() {
         "
         >
           <AnimatedLetters
-            text="Derfor bør du velge mikrohus"
+            text="Derfor bør du velge vårt boligkonsept"
             className="tracking-tighter"
             center
           />
         </h2>
         <p className="text-center mb-8 sm:mb-14 text-lg lg:text-2xl">
-          De nøkkelfordelene som gjør våre mikrohus til et smart valg
+          De nøkkelfordelene som gjør våre boliger til et smart valg
         </p>
       </div>
 
       <Fordel
         title="Energiforbruk"
-        text="Mikrohus bruker ofte opptil 45% mindre energi for oppvarming og kjøling."
+        text="Vårt boligkonsept bruker ofte opptil 45% mindre energi for oppvarming og kjøling."
         image="/battery-eco.svg"
       />
       <Fordel
@@ -83,7 +83,7 @@ function FordelerV2() {
       />
       <Fordel
         title="Økonomisk"
-        text="Mikrohus koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
+        text="Vårt boligkonsept koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
         image="/pig-money.svg"
       />
     </section>

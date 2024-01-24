@@ -7,7 +7,7 @@ function Fordeler() {
   return (
     <section className="my-16 p-3 lg:p-4">
       <h2 className="text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter my-8">
-        <AnimatedLetters text="Derfor bør du velge mikrohus" />
+        <AnimatedLetters text="Derfor bør du velge vårt boligkonsept" />
       </h2>
       <div className="grid grid-cols-3 gap-2 lg:gap-6">
         <FordelCard
@@ -35,7 +35,7 @@ function Fordeler() {
         <FordelCard
           title={"Økonomisk"}
           text={
-            " Reduserte byggekostnader for mikrohus kan være opptil 80% lavere enn tradisjonelle hus på grunn av mindre materialbehov og enklere design."
+            "Reduserte byggekostnader for mikrohus kan være opptil 80% lavere enn tradisjonelle hus på grunn av mindre materialbehov og enklere design."
           }
           image={"/wallet.svg"}
           className={"col-span-2"}
