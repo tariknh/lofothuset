@@ -113,7 +113,11 @@ const Omoss = async () => {
 
                   {teamMember.phone && (
                     <span className="text-sm">
-                      <a href={`tel:${teamMember.phone}`}>{teamMember.phone}</a>
+                      <a href={`tel:${teamMember.phone}`}>
+                        {teamMember.phone
+                          .replace(/\D/g, "")
+                          .replace(/(\d{3})(\d{2})(\d+)/, "$1 $2 $3")}
+                      </a>
                     </span>
                   )}
 
