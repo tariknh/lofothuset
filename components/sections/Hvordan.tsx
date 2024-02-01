@@ -162,9 +162,9 @@ function Hvordan() {
         />
         <AccordianHow
           value="item-3"
-          title="Ferie til tyrkia"
+          title="Eksklusivt Boligkjøpstilbud i Tyrkia"
           num="03."
-          text="I en begrenset periode tilbyr vi en gratis ferie til Tyrkia for å se på produksjonen av din bolig."
+          text="For en begrenset periode inkluderer vi dekning av fly- og hotellkostnader for de som er interessert i å besøke Tyrkia for å se på fremdriften av sin bolig under konstruksjon."
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-3")}
