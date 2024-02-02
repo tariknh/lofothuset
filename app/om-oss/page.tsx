@@ -69,13 +69,12 @@ const Omoss = async () => {
         </div> */}
         <div className="grid sm:grid-cols-4 col-span-full min-h-[80vh]">
           <h2 className="text-balance col-span-3 md:col-span-2 text-3xl md:text-4xl mb-8">
-            <AnimatedLetters text="VI REVOLUSJONERER MIKROBOLIGER FOR FREMTIDENS BOENDE" />
+            <AnimatedLetters text="VI REVOLUSJONERER BOLIGKONSEPTER FOR FREMTIDENS BOENDE" />
           </h2>
           <h2 className=" lg:text-2xl xl:col-span-1 col-span-full lg:col-span-2 sm:col-span-2 md:col-span-2 md:row-start-2 row-start-2 md:col-start-1 text-lg font-light mb-8">
             Lofothusets løsning tar i bruk innovativ design og smart teknologi
-            for å skape kostnadseffektive og miljøvennlige mikroboliger som ikke
-            bare møter dagens boligbehov, men også tilpasser seg fremtidens
-            livsstil.
+            for å skape kostnadseffektive og miljøvennlige boliger som ikke bare
+            møter dagens boligbehov, men også tilpasser seg fremtidens livsstil.
           </h2>
           <h2 className="sm:col-span-2 xl:col-span-1 xl:col-start-3 lg:col-span-2 lg:col-start-3 lg:text-2xl  col-span-full  md:col-span-2 md:col-start-3 md:row-start-2 text-lg font-light">
             Hos Lofothuset er vi drevet av stadig innovasjon for å sikre at våre
