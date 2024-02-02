@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 import { InputWithButton } from "../ui/InputWithButton";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -9,10 +10,21 @@ function Footer() {
         <h2 className="text-white lg:text-2xl text-left">
           Lyst å lære mer om vårt boligkonsept?
         </h2>
-        <h3 className="max-w-[50vw] lg:text-lg lg:max-w-[25vw] text-zinc-400">
-          Meld deg på vårt nyhetsbrev og få tilsendt gratis info.
+        <h3 className="max-w-[50vw] lg:text-lg lg:max-w-[25vw] text-zinc-400 w-fit">
+          <Link
+            target="_blank"
+            href={"https://www.facebook.com/groups/1512424325918333"}
+          >
+            <Image
+              src={"/facebook.svg"}
+              alt="Facebook Logo"
+              width={50}
+              height={50}
+              className="hover:scale-110 transition "
+            />
+          </Link>
         </h3>
-        <InputWithButton />
+        {/* <InputWithButton /> */}
       </div>
       <div className="text-zinc-300 md:col-start-4 md:row-start-1">
         <h2 className="text-xl text-white font-semibold">Info</h2>

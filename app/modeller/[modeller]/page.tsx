@@ -9,71 +9,13 @@ import { FAQ } from "@/components/sections/FAQ";
 import Hvordan from "@/components/sections/Hvordan";
 import Transition from "@/components/ui/Animations/Transition";
 import React from "react";
-
-const modellerList = [
-  {
-    id: "stamsund-lodge",
-    name: "Stamsund Lodge",
-    description:
-      "Stamsund Lodge er et bærekraftig og moderne boalternativ som gir energieffektive løsninger for alle livsstiler. Inspirert av Lofotens naturlige skjønnhet, er denne modellen perfekt for par eller små familier som verdsetter miljøet og en minimalistisk livsstil.",
-    opptil: "3",
-    soverom: "1",
-    bygningsareal: "37",
-    rom: "3",
-    bad: "1",
-    leveringstid: "2-4 Måneder",
-    inngangsparti: "1",
-    video: "/husVideo.mp4",
-    images: [
-      {
-        src: "/webp/ute1.webp",
-        text: "Forside med inngangsparti",
-      },
-      {
-        src: "/webp/ute3.webp",
-        text: "Side uten vindu",
-      },
-      {
-        src: "/webp/ute4.webp",
-        text: "Side med vindu",
-      },
-      {
-        src: "/webp/ute5.webp",
-        text: "Bakside skrått",
-      },
-      {
-        src: "/webp/ute15.webp",
-        text: "Bakside",
-      },
-      {
-        src: "/webp/ute13.webp",
-        text: "Bakside med vannrør",
-      },
-      {
-        src: "/webp/ute14.webp",
-        text: "Bakside med elektrisk anlegg",
-      },
-      {
-        src: "/webp/inside1.webp",
-        text: "Soveroms vindu",
-      },
-      {
-        src: "/webp/inside2.webp",
-        text: "Framside vindu",
-      },
-      {
-        src: "/webp/inside3.webp",
-        text: "Bakside skrått",
-      },
-    ],
-  },
-];
+import modellerList from "@/public/Static/Modeller.json";
 
 function page({ params }: { params: { modeller: string } }) {
   const model = modellerList.find((model) => model.id === params.modeller);
 
   if (!model) {
-    return <div>Modell ikke funnet</div>;
+    return <div className="h-screen">Modell ikke funnet</div>;
   }
 
   return (
@@ -88,6 +30,7 @@ function page({ params }: { params: { modeller: string } }) {
         bad={model.bad}
         leveringstid={model.leveringstid}
         inngangsparti={model.inngangsparti}
+        heroImage={model.heroImage}
       />
       <ModellModeller images={model.images} video={model.video} />
 

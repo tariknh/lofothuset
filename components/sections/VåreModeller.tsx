@@ -43,7 +43,7 @@ function VåreModeller() {
             Villa Serenity by the Snow
           </h3>
         </div> */}
-      <Link href="/modeller/lofoten-lodge">
+      <Link href="/modeller/stamsund-lodge">
         <div
           id="imageHover"
           className="relative h-[100vh] w-full flex flex-col sm:flex-row justify-center items-center"

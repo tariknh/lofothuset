@@ -12,6 +12,7 @@ interface ModellHeroProps {
   bad: string;
   leveringstid: string;
   inngangsparti: string;
+  heroImage: string;
 }
 
 function ModellHero({
@@ -24,6 +25,7 @@ function ModellHero({
   bad,
   leveringstid,
   inngangsparti,
+  heroImage,
 }: ModellHeroProps) {
   return (
     <section className="pt-20 px-2 sm:px-4 lg:px-16 min-h-[80vh] mb-28 md:mb-44 max-w-[1920px]">
@@ -31,7 +33,7 @@ function ModellHero({
         <div className="w-full h-full absolute bg-black z-10 opacity-30"></div>
         <Image
           priority
-          src={"/webp/render.webp"}
+          src={heroImage}
           alt="Bilde av hus"
           fill
           className="rounded-lg object-cover"
