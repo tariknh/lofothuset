@@ -85,11 +85,11 @@ function VåreModeller() {
           <div
             data-scroll
             data-scroll-speed="0.05"
-            className="relative aspect-square w-full sm:basis-1/2 sm:mx-8 lg:mx-16"
+            className="relative aspect-square w-full sm:basis-1/2 sm:mx-8 lg:mx-16 m-32"
           >
             <Image
               fill
-              className="object-contain z-20 p-6"
+              className="object-contain z-20 sm:p-12 lg:p-[5rem] xl:p-[7rem] p-12"
               src={"/webp/renderBlueprintZoomedV2.webp"}
               alt="Bilde av modell 1"
             />
