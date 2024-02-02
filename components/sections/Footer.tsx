@@ -29,7 +29,9 @@ function Footer() {
       <div className="text-zinc-300 md:col-start-5 md:row-start-1">
         <h2 className="text-xl text-white font-semibold">Kontakt</h2>
         <h3 className="hover:underline">
-          <Link href={"mailto:hei@lofothuset.no"}>hei@lofothuset.no</Link>
+          <Link href={"mailto:kontakt@lofothuset.no"}>
+            kontakt@lofothuset.no
+          </Link>
         </h3>
         <h3 className="hover:underline">
           <Link href={"tel:+4793049995"}>+47 930 49 995</Link>
