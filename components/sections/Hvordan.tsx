@@ -58,10 +58,10 @@ function Hvordan() {
     // start a new progress interval
     progressInterval.current = setInterval(() => {
       setProgress((oldProgress) => {
-        const newProgress = oldProgress + 2; // increment by 2 every 100ms to reach 100 in 5 seconds
+        const newProgress = oldProgress + 0.1667; // increment by 2 every 100ms to reach 100 in 5 seconds
         return Math.min(newProgress, 100);
       });
-    }, 100); // 100ms interval
+    }, 50); // 100ms interval
 
     // clear and restart the accordion interval
     if (accordionInterval.current) {
@@ -99,11 +99,11 @@ function Hvordan() {
 
       progressInterval.current = setInterval(() => {
         setProgress((oldProgress) => {
-          const newProgress = oldProgress + 2; // increment by 2 every 100ms to reach 100 in 5 seconds
+          const newProgress = oldProgress + 0.1667; // increment by 2 every 100ms to reach 100 in 5 seconds
           return Math.min(newProgress, 100);
         });
-      }, 100); // 100ms interval
-    }, 5000);
+      }, 50); // 100ms interval
+    }, 30000);
   };
 
   useEffect(() => {
@@ -113,10 +113,10 @@ function Hvordan() {
       // Start the progress interval immediately when the component is in view
       progressInterval.current = setInterval(() => {
         setProgress((oldProgress) => {
-          const newProgress = oldProgress + 2; // Increment by 2 every 100ms
+          const newProgress = oldProgress + 0.1667; // Increment by 2 every 100ms
           return Math.min(newProgress, 100);
         });
-      }, 100); // 100ms interval
+      }, 50); // 100ms interval
     }
 
     return () => {
@@ -162,9 +162,10 @@ function Hvordan() {
         />
         <AccordianHow
           value="item-3"
-          title="Eksklusivt Boligkjøpstilbud i Tyrkia"
+          title="Tur til tyrkia for 2 personer!"
           num="03."
-          text="For en begrenset periode inkluderer vi dekning av fly- og hotellkostnader for de som er interessert i å besøke Tyrkia for å se på fremdriften av sin bolig under konstruksjon."
+          text="Vi spanderer tur til tyrkia for 2 personer! Kampanjen gjelder ved kjøp av et av våre husmodeller. Kunden kjøper selv flybiletter og hotellopphold og skal ikke overstige totalt 20.000 kr. Utlegg blir trukket fra kjøpesummen ved inngått kontrakt. Kampanjen gjelder frem til 31.mai 2024
+"
           //   img="/modell1.png"
           progress={progress}
           onClick={() => handleClick("item-3")}

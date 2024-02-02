@@ -103,7 +103,7 @@ export const AnimatedLetters = ({
         <span key={word} className="inline-block pb-2 overflow-hidden h-fit">
           {word.split("").map((letter, index) => (
             <motion.span
-              className="inline-block py-1"
+              className="inline-block py-1 "
               variants={letterAnimation}
               key={index}
             >

@@ -16,6 +16,15 @@ function ModellModeller() {
 
   return (
     <section className="w-full grid grid-cols-5 p-2 lg:p-16">
+      <video
+        className="w-full col-span-5"
+        preload="true"
+        muted
+        autoPlay
+        controls
+      >
+        <source src="/husVideo.mp4" />
+      </video>
       <ModellModell
         image="/webp/ute1.webp"
         className="mb-16"
@@ -61,7 +70,7 @@ function ModellModeller() {
         image="/webp/inside1.webp"
         className="col-start-2 col-span-4 mb-16 xl:col-start-2"
         speed="0.3"
-        text="Stue vindu"
+        text="Soveroms vindu"
       />
       <ModellModell
         image="/webp/inside2.webp"

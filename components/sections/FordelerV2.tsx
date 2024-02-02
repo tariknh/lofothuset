@@ -40,17 +40,17 @@ function FordelerV2() {
 
   return (
     <section
-      className={`grid min-h-screen gap-3 grid-cols-1 md:grid-cols-2 py-32 p-3 lg:px-4 ${
+      className={`grid  min-h-screen gap-3 grid-cols-1 md:grid-cols-2 py-32 p-3 lg:px-4 ${
         black ? "bg-lagText" : "bg-white"
       }`}
     >
       <div
-        className={`flex flex-col md:col-span-2 justify-center items-center ${
+        className={`flex  flex-col md:col-span-2 justify-center items-center ${
           black ? "text-white" : "text-lagText"
         }`}
       >
         <h2
-          className="uppercase font-medium text-center mb-2 sm:mb-6 max-w-[600px] md:max-w-full 
+          className="uppercase font-medium text-center mb-2 sm:mb-6 max-w-[600px] md:max-w-full  
         
         text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight p-3 lg:p-4
         "
