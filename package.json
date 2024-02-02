@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.0",
     "@hookform/resolvers": "^3.3.4",
     "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@preact/signals-react": "^2.0.0",
@@ -23,6 +24,7 @@
     "clsx": "^2.1.0",
     "embla-carousel-react": "^8.0.0-rc18",
     "framer-motion": "^10.17.9",
+    "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.11",
     "lucide-react": "^0.304.0",
     "next": "14.0.4",

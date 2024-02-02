@@ -58,7 +58,7 @@ function Hvordan() {
     // start a new progress interval
     progressInterval.current = setInterval(() => {
       setProgress((oldProgress) => {
-        const newProgress = oldProgress + 2; // increment by 2 every 100ms to reach 100 in 5 seconds
+        const newProgress = oldProgress + 100 / 15; // increment by 100/15 every 100ms to reach 100 in 15 seconds
         return Math.min(newProgress, 100);
       });
     }, 100); // 100ms interval
@@ -99,11 +99,11 @@ function Hvordan() {
 
       progressInterval.current = setInterval(() => {
         setProgress((oldProgress) => {
-          const newProgress = oldProgress + 2; // increment by 2 every 100ms to reach 100 in 5 seconds
+          const newProgress = oldProgress + 100 / 15; // increment by 100/15 every 100ms to reach 100 in 15 seconds
           return Math.min(newProgress, 100);
         });
       }, 100); // 100ms interval
-    }, 5000);
+    }, 15000);
   };
 
   useEffect(() => {
@@ -113,7 +113,7 @@ function Hvordan() {
       // Start the progress interval immediately when the component is in view
       progressInterval.current = setInterval(() => {
         setProgress((oldProgress) => {
-          const newProgress = oldProgress + 2; // Increment by 2 every 100ms
+          const newProgress = oldProgress + 100 / 15; // Increment by 100/15 every 100ms
           return Math.min(newProgress, 100);
         });
       }, 100); // 100ms interval

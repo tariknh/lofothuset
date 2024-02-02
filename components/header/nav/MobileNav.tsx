@@ -21,7 +21,7 @@ export const navItems = [
   //   href: "/aktiviteter",
   // },
   {
-    title: "Modell",
+    title: "Modeller",
     href: "/modeller/lofoten-lodge",
   },
   {

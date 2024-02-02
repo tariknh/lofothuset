@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Button from "../ui/LagButton";
 import Image from "next/image";
@@ -5,9 +6,10 @@ import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
-function VåreModeller() {
+function VåreModeller2() {
   useGSAP(
     () => {
       ScrollTrigger.create({
@@ -21,28 +23,26 @@ function VåreModeller() {
   ); // <-- scope is for selector text (optional)
 
   return (
-    <section className="">
+    <section className="container">
       <div className="flex flex-col md:flex-row justify-between ">
         <h2 className="text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight p-3 lg:p-4">
           <AnimatedLetters text="Vår modell" />
         </h2>
       </div>
 
-      {/* Modeller */}
-      {/* <div className="flex flex-col my-16">
-          <div className="aspect-[16/12] w-full relative h-full">
-            <Image
-              src={"/modell1.png"}
-              alt="Bilde av modell 1"
-              fill
-              
-              className="absolute rounded-lg object-cover"
-            />
-          </div>
-          <h3 className="font-light mt-2 md:text-lg lg:text-xl">
-            Villa Serenity by the Snow
-          </h3>
-        </div> */}
+      <div className="flex flex-col my-16">
+        <div className="aspect-[16/12] w-full relative h-full">
+          <Image
+            src={"/modell1.png"}
+            alt="Bilde av modell 1"
+            fill
+            className="absolute rounded-lg object-cover"
+          />
+        </div>
+        <h3 className="font-light mt-2 md:text-lg lg:text-xl">
+          Villa Serenity by the Snow
+        </h3>
+      </div>
       <Link href="/modeller/lofoten-lodge">
         <div
           id="imageHover"
@@ -100,4 +100,4 @@ function VåreModeller() {
   );
 }
 
-export default VåreModeller;
+export default VåreModeller2;
