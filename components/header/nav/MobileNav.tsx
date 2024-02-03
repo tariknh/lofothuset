@@ -22,7 +22,7 @@ export const navItems = [
   // },
   {
     title: "Modeller",
-    href: "/modeller/lofoten-lodge",
+    href: "/#modeller",
   },
   {
     title: "Om oss",
@@ -31,6 +31,10 @@ export const navItems = [
   {
     title: "Kontakt",
     href: "/kontakt",
+  },
+  {
+    title: "Visning",
+    href: "/visning",
   },
 ];
 

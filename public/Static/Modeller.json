@@ -1,0 +1,183 @@
+[
+  {
+    "id": "stamsund-lodge",
+    "name": "Stamsund Lodge",
+    "description": "Stamsund Lodge er et bærekraftig og moderne boalternativ som gir energieffektive løsninger for alle livsstiler. Inspirert av Lofotens naturlige skjønnhet, er denne modellen perfekt for par eller små familier som verdsetter miljøet og en minimalistisk livsstil.",
+    "opptil": "3",
+    "soverom": "1",
+    "bygningsareal": "37",
+    "rom": "3",
+    "bad": "1",
+    "leveringstid": "2-4 Måneder",
+    "inngangsparti": "1",
+    "video": "/husVideo.mp4",
+    "heroImage": "/webp/render.webp",
+    "images": [
+      {
+        "src": "/webp/ute1.webp",
+        "text": "Forside med inngangsparti"
+      },
+      {
+        "src": "/webp/ute3.webp",
+        "text": "Side uten vindu"
+      },
+      {
+        "src": "/webp/ute4.webp",
+        "text": "Side med vindu"
+      },
+      {
+        "src": "/webp/ute5.webp",
+        "text": "Bakside skrått"
+      },
+      {
+        "src": "/webp/ute15.webp",
+        "text": "Bakside"
+      },
+      {
+        "src": "/webp/ute13.webp",
+        "text": "Bakside med vannrør"
+      },
+      {
+        "src": "/webp/ute14.webp",
+        "text": "Bakside med elektrisk anlegg"
+      },
+      {
+        "src": "/webp/inside1.webp",
+        "text": "Soveroms vindu"
+      },
+      {
+        "src": "/webp/inside2.webp",
+        "text": "Framside vindu"
+      },
+      {
+        "src": "/webp/inside3.webp",
+        "text": "Bakside skrått"
+      }
+    ]
+  },
+
+  {
+    "id": "reine-retreat",
+    "name": "Reine Retreat",
+    "description": "Reine Retreat representerer et miljøvennlig og samtidsriktig bosted, utformet for å fremme energisparing tilpasset enhver livsstil. Med inspirasjon hentet fra Lofotens betagende natur, er denne boligen ideell for par eller mindre familier som setter pris på økologisk ansvarlighet og en enkel tilværelse.",
+    "opptil": "3",
+    "soverom": "1",
+    "bygningsareal": "37",
+    "rom": "3",
+    "bad": "1",
+    "leveringstid": "2-4 Måneder",
+    "inngangsparti": "1",
+
+    "heroImage": "/webp/f2.webp",
+    "images": [
+      {
+        "src": "/webp/f1.webp",
+        "text": "Forside med inngangsparti"
+      },
+      {
+        "src": "/webp/f2.webp",
+        "text": "Side uten vindu"
+      },
+      {
+        "src": "/webp/f3.webp",
+        "text": "Side med vindu"
+      },
+      {
+        "src": "/webp/f4.webp",
+        "text": "Bakside skrått"
+      }
+    ]
+  },
+  {
+    "id": "henningsvær-hideaway",
+    "name": "Henningsvær Hideaway ",
+    "description": "Henningsvær Hideaway er et bosted designet for å smelte harmonisk sammen med den naturlige skjønnheten i Lofoten. Dette tilfluktsstedet er skreddersydd for de som søker ro i omgivelser som speiler regionens maritime arv, samtidig som det tilbyr moderne bekvemmeligheter. Med fokus på bærekraftige byggemetoder og energieffektive løsninger, er Henningsvær Hideaway det perfekte valget for individuelle utforskere eller familier som verdsetter miljøbevissthet, kunstnerisk inspirasjon og en livsstil i pakt med naturen.",
+    "opptil": "3",
+    "soverom": "1",
+    "bygningsareal": "37",
+    "rom": "3",
+    "bad": "1",
+    "leveringstid": "2-4 Måneder",
+    "inngangsparti": "1",
+
+    "heroImage": "/webp/h2.webp",
+    "images": [
+      {
+        "src": "/webp/h1.webp",
+        "text": "Forside med inngangsparti"
+      },
+      {
+        "src": "/webp/h2.webp",
+        "text": "Side uten vindu"
+      },
+      {
+        "src": "/webp/h3.webp",
+        "text": "Side med vindu"
+      },
+      {
+        "src": "/webp/h4.webp",
+        "text": "Bakside skrått"
+      }
+    ]
+  },
+  {
+    "id": "kabelvåg-cottage",
+    "name": "Kabelvåg Cottage",
+    "description": "Kabelvåg Cottage er en sjarmerende og økologisk bevisst bolig som hyller Lofotens rike fiskehistorie og naturlige skjønnhet. Denne koselige hytta er designet med tanke på miljøvennlige materialer og energieffektive løsninger, og tilbyr en varm og innbydende atmosfære for de som søker en enkel, men meningsfylt livsstil. Perfekt for kunstnere, historieentusiaster, eller små familier, Kabelvåg Cottage kombinerer det tradisjonelle med det moderne, og skaper et idyllisk tilfluktssted som fremmer bærekraft og tilknytning til Lofotens unike kulturarv.",
+    "opptil": "3",
+    "soverom": "1",
+    "bygningsareal": "37",
+    "rom": "3",
+    "bad": "1",
+    "leveringstid": "2-4 Måneder",
+    "inngangsparti": "1",
+    "video": "/husVideo.mp4",
+    "heroImage": "/webp/q1.webp",
+    "images": [
+      {
+        "src": "/webp/q2.webp",
+        "text": "Forside med inngangsparti"
+      },
+      {
+        "src": "/webp/q1.webp",
+        "text": "Side uten vindu"
+      },
+      {
+        "src": "/webp/q3.webp",
+        "text": "Side med vindu"
+      }
+    ]
+  },
+  {
+    "id": "svolvær-haven",
+    "name": "Svolvær Haven",
+    "description": "Svolvær Haven er et moderne og bærekraftig bosted som fanger essensen av Lofotens urbane hjerte med en fredelig, naturlig bakgrunn. Dette hjemmet er spesielt designet for å integrere grønne løsninger og smarte teknologier, og tilbyr en balanse mellom det pulserende bylivet og den avslappende nærheten til naturen. Med en arkitektur som er både estetisk tiltalende og funksjonelt gjennomtenkt, er Svolvær Haven ideelt for de som verdsetter miljøansvar, kulturell dynamikk og en aktiv livsstil. Dette er det perfekte stedet for urbanister som ønsker å leve bærekraftig uten å ofre tilgangen til byens fasiliteter og Lofotens storslåtte landskap.",
+    "opptil": "3",
+    "soverom": "1",
+    "bygningsareal": "37",
+    "rom": "3",
+    "bad": "1",
+    "leveringstid": "2-4 Måneder",
+    "inngangsparti": "1",
+
+    "heroImage": "/webp/g1.webp",
+    "images": [
+      {
+        "src": "/webp/g2.webp",
+        "text": "Forside med inngangsparti"
+      },
+      {
+        "src": "/webp/g1.webp",
+        "text": "Side uten vindu"
+      },
+      {
+        "src": "/webp/g3.webp",
+        "text": "Side med vindu"
+      },
+      {
+        "src": "/webp/g4.webp",
+        "text": "Bakside skrått"
+      }
+    ]
+  }
+]

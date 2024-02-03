@@ -12,17 +12,17 @@ const Omoss = async () => {
   const team = JSON.parse(file);
   return (
     <main className="w-full flex min-h-screen flex-col items-center justify-start">
-      <section className="bg-white p-3 text-6xl place-items-end h-[50vh] flex w-full ">
+      <section className="bg-white p-3 text-6xl place-items-end h-[20vh] flex w-full ">
         <h1>Vårt Team</h1>
       </section>
-      <section className="grid relative grid-rows-6 h-[50vh] w-full">
+      {/* <section className="grid relative grid-rows-6 h-[50vh] w-full">
         <Image
           className="absolute object-cover"
           fill
           src="/webp/coast.webp"
           alt={""}
         />
-      </section>
+      </section> */}
       <section className="mb-16 p-3 lg:p-16 text-2xl gap-y-20 md:grid-cols-12 grid text-balance  bg-white h-fit">
         <h2
           data-scroll
@@ -38,7 +38,7 @@ const Omoss = async () => {
             vårt boligkonsept tilbyr.
           </span>
         </h2>
-        <div className="flex sm:grid col-span-full grid-cols-4 flex-col gap-8">
+        {/* <div className="flex sm:grid col-span-full grid-cols-4 flex-col gap-8">
           <Image
             data-scroll
             data-scroll-speed="0.2"
@@ -66,7 +66,7 @@ const Omoss = async () => {
             alt={""}
             className="col-span-4 col-start-1 object-cover"
           />
-        </div>
+        </div> */}
         <div className="grid sm:grid-cols-4 col-span-full min-h-[80vh]">
           <h2 className="text-balance col-span-3 md:col-span-2 text-3xl md:text-4xl mb-8">
             <AnimatedLetters text="VI REVOLUSJONERER BOLIGKONSEPTER FOR FREMTIDENS BOENDE" />
