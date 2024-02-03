@@ -58,12 +58,12 @@
   {
     "id": "reine-lodge",
     "name": "Reine Lodge",
-    "description": "Reine Retreat representerer et miljøvennlig og samtidsriktig bosted, utformet for å fremme energisparing tilpasset enhver livsstil. Med inspirasjon hentet fra Lofotens betagende natur, er denne boligen ideell for par eller mindre familier som setter pris på økologisk ansvarlighet og en enkel tilværelse.",
-    "opptil": "kommer",
-    "soverom": "kommer",
-    "bygningsareal": "kommer",
-    "rom": "kommer",
-    "bad": "kommer",
+    "description": "Reine Lodge representerer et miljøvennlig og samtidsriktig bosted, utformet for å fremme energisparing tilpasset enhver livsstil. Med inspirasjon hentet fra Lofotens betagende natur, er denne boligen ideell for par eller mindre familier som setter pris på økologisk ansvarlighet og en enkel tilværelse.",
+    "opptil": "3",
+    "soverom": "1",
+    "bygningsareal": "37",
+    "rom": "3",
+    "bad": "1",
     "leveringstid": "2-4 Måneder",
     "inngangsparti": "kommer",
 
