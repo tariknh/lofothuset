@@ -28,13 +28,14 @@ export const navItems = [
     title: "Om oss",
     href: "/om-oss",
   },
-  {
-    title: "Kontakt",
-    href: "/kontakt",
-  },
+
   {
     title: "Visning",
     href: "/visning",
+  },
+  {
+    title: "Kontakt",
+    href: "/kontakt",
   },
 ];
 

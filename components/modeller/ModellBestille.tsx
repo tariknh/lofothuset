@@ -30,7 +30,7 @@ function ModellBestille({ className }: FordelProps) {
           Oppfyll drømmene dine
         </h3>
         <h2 className=" font-medium mb-4 lg:mb-8  text-[clamp(36px,11vw,40px)] text-balance sm:text-[clamp(32px,3.3vw,60px)] tracking-tight">
-          Klar til å bestille Stamsund Lodge ?{" "}
+          Klar til å bestille din bolig ?{" "}
         </h2>
 
         <div className="w-full">

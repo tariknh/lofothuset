@@ -5,6 +5,7 @@ import Fordeler from "@/components/sections/Fordeler";
 import FordelerV2 from "@/components/sections/FordelerV2";
 import Hero from "@/components/sections/Hero";
 import Hvordan from "@/components/sections/Hvordan";
+import Kampanje from "@/components/sections/Kampanje";
 import OmOss from "@/components/sections/OmOss";
 import SisteNytt from "@/components/sections/SisteNytt";
 import VåreModeller from "@/components/sections/VåreModeller";
@@ -20,6 +21,7 @@ export default function Home() {
       {/* <SisteNytt /> */}
       <VåreModeller2 />
       <FordelerV2 />
+      <Kampanje />
       <Hvordan />
       <FAQ />
     </main>

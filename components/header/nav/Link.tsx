@@ -26,7 +26,11 @@ export default function NavLink({
           isActive && "bg-white"
         }  left-0 absolute`}
       ></motion.div>
-      <Link className="tracking-tighter " href={href}>
+      <Link
+        scroll={!href.includes("#")}
+        className="tracking-tighter "
+        href={href}
+      >
         {title}
       </Link>
     </motion.div>
