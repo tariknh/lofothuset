@@ -25,7 +25,7 @@ function VåreModeller() {
     <section className="modeller" id="modeller">
       <div className="flex flex-col md:flex-row justify-between ">
         <h2 className="text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight p-3 lg:p-4">
-          <AnimatedLetters text="Vår modell" />
+          <AnimatedLetters text="Våre modeller" />
         </h2>
       </div>
 

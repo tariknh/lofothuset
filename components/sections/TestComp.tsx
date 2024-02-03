@@ -7,6 +7,7 @@ import { register } from "module";
 import Image from "next/image";
 import ModelComponent from "../ui/ModelComponent";
 import info from "@/public/Static/Modeller.json";
+import { AnimatedLetters } from "../ui/Animations/AnimatedHero";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,39 +55,49 @@ const TestComp = () => {
   ); // <-- scope is for selector text (optional)
 
   return (
-    <div ref={container} className="gallery justify-evenly relative flex">
-      <div className="left basis-1/3">
-        <div className="desktopContent m-auto">
-          <ModelComponent
-            title={"Stamsund Lodge"}
-            href={"/modeller/stamsund-lodge"}
-            slogan={"Boligens Hjerte"}
-            image={info[0].heroImage}
-          />
-          <ModelComponent
-            title={"Reine Lodge"}
-            href={"/modeller/reine-lodge"}
-            slogan={"Boligens Hjerte"}
-            image={info[1].heroImage}
-          />
-          <ModelComponent
-            title={"Leknes Lodge"}
-            href={"/modeller/leknes-lodge"}
-            slogan={"Boligens Hjerte"}
-            image={info[2].heroImage}
-          />
-          <ModelComponent
-            title={"Nusfjord Lodge"}
-            href={"/modeller/nusfjord-lodge"}
-            slogan={"Boligens Hjerte"}
-            image={info[3].heroImage}
-          />
-        </div>
+    <section>
+      <div className="flex flex-col md:flex-row justify-between ">
+        <h2 className="text-[clamp(36px,11vw,42px)] md:text-[clamp(52px,13.3vw,60px)] tracking-tight p-3 lg:p-4">
+          <AnimatedLetters text="Våre modeller" />
+        </h2>
       </div>
+      <div
+        ref={container}
+        id="modeller"
+        className="gallery justify-evenly relative flex"
+      >
+        <div className="left basis-1/3">
+          <div className="desktopContent m-auto">
+            <ModelComponent
+              title={"Stamsund Lodge"}
+              href={"/modeller/stamsund-lodge"}
+              slogan={"Boligens Hjerte"}
+              image={info[0].heroImage}
+            />
+            <ModelComponent
+              title={"Reine Lodge"}
+              href={"/modeller/reine-lodge"}
+              slogan={"Boligens Hjerte"}
+              image={info[1].heroImage}
+            />
+            <ModelComponent
+              title={"Leknes Lodge"}
+              href={"/modeller/leknes-lodge"}
+              slogan={"Boligens Hjerte"}
+              image={info[2].heroImage}
+            />
+            <ModelComponent
+              title={"Nusfjord Lodge"}
+              href={"/modeller/nusfjord-lodge"}
+              slogan={"Boligens Hjerte"}
+              image={info[3].heroImage}
+            />
+          </div>
+        </div>
 
-      <div className="right items-center h-screen justify-center w-full flex flex-col">
-        <div className="desktopPhotos overflow-hidden relative aspect-square h-[20vw] w-[20vw]">
-          {/* {info.map((item, index) => {
+        <div className="right items-center h-screen justify-center w-full flex flex-col">
+          <div className="desktopPhotos overflow-hidden relative aspect-square h-[50vw] w-[50vw] sm:h-[20vw] sm:w-[20vw]">
+            {/* {info.map((item, index) => {
             return (
               <div
                 key={index}
@@ -101,41 +112,42 @@ const TestComp = () => {
               </div>
             );
           })} */}
-          <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
-            <Image
-              src={"/webp/renderBlueprintZoomedV2.webp"}
-              alt="Bilde av modell 1"
-              fill
-              className="absolute object-cover "
-            />
-          </div>
-          <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
-            <Image
-              src={"/webp/f3.webp"}
-              alt="Bilde av modell 1"
-              fill
-              className="absolute object-cover "
-            />
-          </div>
-          <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
-            <Image
-              src={"/webp/h1.webp"}
-              alt="Bilde av modell 1"
-              fill
-              className="absolute object-cover "
-            />
-          </div>
-          <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
-            <Image
-              src={"/webp/q3.webp"}
-              alt="Bilde av modell 1"
-              fill
-              className="absolute object-cover "
-            />
+            <div className="desktopPhoto  absolute w-full h-full bg-emerald-800 ">
+              <Image
+                src={"/webp/renderBlueprintZoomedV2.webp"}
+                alt="Bilde av modell 1"
+                fill
+                className="absolute object-cover "
+              />
+            </div>
+            <div className="desktopPhoto  absolute w-full h-full bg-emerald-800 ">
+              <Image
+                src={"/webp/f3.webp"}
+                alt="Bilde av modell 1"
+                fill
+                className="absolute object-cover "
+              />
+            </div>
+            <div className="desktopPhoto  absolute w-full h-full bg-emerald-800 ">
+              <Image
+                src={"/webp/h1.webp"}
+                alt="Bilde av modell 1"
+                fill
+                className="absolute object-cover "
+              />
+            </div>
+            <div className="desktopPhoto  absolute w-full h-full bg-emerald-800 ">
+              <Image
+                src={"/webp/q3.webp"}
+                alt="Bilde av modell 1"
+                fill
+                className="absolute object-cover "
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

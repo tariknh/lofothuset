@@ -75,7 +75,7 @@ export default function MobileNav({ open, setOpen }: openStates) {
             Kom i kontakt
           </span>
           <span className="font-normal text-xl underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
-            hei@lofothuset.no
+            kontakt@lofothuset.no
           </span>
         </motion.div>
         <span className="row-start-6 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">

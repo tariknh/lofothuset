@@ -29,7 +29,7 @@ function Footer() {
       <div className="text-zinc-300 md:col-start-4 md:row-start-1">
         <h2 className="text-xl text-white font-semibold">Info</h2>
         <h3 className="hover:underline">
-          <Link href={"/modeller/lofoten-lodge"}>Vår Modell</Link>
+          <Link href={"#modeller"}>Våre Modeller</Link>
         </h3>
         <h3 className="hover:underline">
           <Link href={"/om-oss"}>Om Oss</Link>
@@ -46,7 +46,7 @@ function Footer() {
           </Link>
         </h3>
         <h3 className="hover:underline">
-          <Link href={"tel:+4793049995"}>+47 930 49 995</Link>
+          <Link href={"tel:+4797586958"}>+47 975 86 958</Link>
         </h3>
       </div>
       <div className="col-span-full tracking-tighter md:row-start-3 text-6xl sm:text-8xl md:text-[8rem] lg:text-[12rem] opacity-50 font-bold text-center">
