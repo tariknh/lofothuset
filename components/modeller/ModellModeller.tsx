@@ -28,7 +28,7 @@ function ModellModeller({ images, video }: Props) {
     <section className="w-full grid grid-cols-5 p-2 lg:p-16">
       {video && (
         <video
-          className="w-full col-span-5"
+          className="w-full col-span-5 mb-16"
           preload="true"
           muted
           autoPlay
