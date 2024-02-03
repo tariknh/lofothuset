@@ -9,7 +9,7 @@ import { FAQ } from "@/components/sections/FAQ";
 import Hvordan from "@/components/sections/Hvordan";
 import Transition from "@/components/ui/Animations/Transition";
 import React from "react";
-import modellerList from "@/public/Static/Modeller.json";
+import modellerList from "@/public/static/Modeller.json";
 
 function page({ params }: { params: { modeller: string } }) {
   const model = modellerList.find((model) => model.id === params.modeller);
