@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/all";
 import { register } from "module";
 import Image from "next/image";
 import ModelComponent from "../ui/ModelComponent";
-import info from "@/public/static/Modeller.json";
+import info from "@/public/Static/Modeller.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
