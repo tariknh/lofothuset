@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/all";
 import { register } from "module";
 import Image from "next/image";
 import ModelComponent from "../ui/ModelComponent";
+import info from "@/public/static/Modeller.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,14 +57,56 @@ const TestComp = () => {
     <div ref={container} className="gallery justify-evenly relative flex">
       <div className="left basis-1/3">
         <div className="desktopContent m-auto">
-          <ModelComponent title={"ww"} href={"ww"} slogan={"ww"} />
-          <ModelComponent title={"ww"} href={"ww"} slogan={"ww"} />
-          <ModelComponent title={"ww"} href={"ww"} slogan={"ww"} />
+          <ModelComponent
+            title={"Stamsund Lodge"}
+            href={"/modeller/stamsund-lodge"}
+            slogan={"Boligens Hjerte"}
+            image={info[0].heroImage}
+          />
+          <ModelComponent
+            title={"Reine Lodge"}
+            href={"/modeller/reine-lodge"}
+            slogan={"Boligens Hjerte"}
+            image={info[1].heroImage}
+          />
+          <ModelComponent
+            title={"Leknes Lodge"}
+            href={"/modeller/leknes-lodge"}
+            slogan={"Boligens Hjerte"}
+            image={info[2].heroImage}
+          />
+          <ModelComponent
+            title={"Nusfjord Lodge"}
+            href={"/modeller/nusfjord-lodge"}
+            slogan={"Boligens Hjerte"}
+            image={info[3].heroImage}
+          />
+          <ModelComponent
+            title={"Eggum Lodge"}
+            href={"/modeller/eggum-lodge"}
+            slogan={"Boligens Hjerte"}
+            image={info[4].heroImage}
+          />
         </div>
       </div>
 
       <div className="right items-center h-screen justify-center w-full flex flex-col">
         <div className="desktopPhotos overflow-hidden relative aspect-square h-[20vw] w-[20vw]">
+          {/* {info.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 "
+              >
+                <Image
+                  src={"/webp/renderBlueprintZoomedV2.webp"}
+                  alt="Bilde av modell 1"
+                  fill
+                  className="absolute object-cover "
+                />
+              </div>
+            );
+          })} */}
           <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
             <Image
               src={"/webp/renderBlueprintZoomedV2.webp"}
@@ -72,9 +115,38 @@ const TestComp = () => {
               className="absolute object-cover "
             />
           </div>
-          <div className="desktopPhoto absolute w-full h-[25rem] bg-amber-400 "></div>
-          <div className="desktopPhoto absolute w-full h-[25rem] bg-lime-300 "></div>
-          <div className="desktopPhoto absolute w-full h-[25rem] bg-teal-700 "></div>
+          <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
+            <Image
+              src={"/webp/f3.webp"}
+              alt="Bilde av modell 1"
+              fill
+              className="absolute object-cover "
+            />
+          </div>
+          <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
+            <Image
+              src={"/webp/h1.webp"}
+              alt="Bilde av modell 1"
+              fill
+              className="absolute object-cover "
+            />
+          </div>
+          <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
+            <Image
+              src={"/webp/q3.webp"}
+              alt="Bilde av modell 1"
+              fill
+              className="absolute object-cover "
+            />
+          </div>
+          <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
+            <Image
+              src={"/webp/q3.webp"}
+              alt="Bilde av modell 1"
+              fill
+              className="absolute object-cover "
+            />
+          </div>
         </div>
       </div>
     </div>
