@@ -15,7 +15,7 @@ function page({ params }: { params: { modeller: string } }) {
   const model = modellerList.find((model) => model.id === params.modeller);
 
   if (!model) {
-    return <div className="h-screen">Modell ikke funnet</div>;
+    return <div className="h-screen bg-red-200">Modell ikke funnet</div>;
   }
 
   return (

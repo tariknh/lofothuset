@@ -29,10 +29,10 @@ export const navItems = [
     href: "/om-oss",
   },
 
-  {
-    title: "Visning",
-    href: "/visning",
-  },
+  // {
+  //   title: "Visning",
+  //   href: "/visning",
+  // },
   {
     title: "Kontakt",
     href: "/kontakt",

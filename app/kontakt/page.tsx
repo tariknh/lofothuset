@@ -212,6 +212,7 @@ function Page() {
                   values={[
                     "Jeg vil ha en visning over video",
                     "Jeg vil ringes opp for en samtale",
+                    "Jeg er interessert i å kjøpe",
                   ]}
                   formData={formData.task}
                   handleInputChange={handleInputChange}
@@ -220,7 +221,13 @@ function Page() {
                 <FormSelect
                   id="HVILKEN MODELL?"
                   name="modell"
-                  values={["Stamsund Lodge"]}
+                  values={[
+                    "Stamsund Lodge",
+                    "Leknes Lodge",
+                    "Reine Lodge",
+                    "Nusfjord Lodge",
+                    "Eggum Lodge",
+                  ]}
                   formData={formData.modell}
                   handleInputChange={handleInputChange}
                 />
