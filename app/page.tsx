@@ -7,6 +7,7 @@ import Hero from "@/components/sections/Hero";
 import Hvordan from "@/components/sections/Hvordan";
 import OmOss from "@/components/sections/OmOss";
 import SisteNytt from "@/components/sections/SisteNytt";
+import TestComp from "@/components/sections/TestComp";
 import VåreModeller from "@/components/sections/VåreModeller";
 import VåreModeller2 from "@/components/sections/VåreModeller copy";
 
@@ -18,7 +19,7 @@ export default function Home() {
       <Hero />
       <OmOss />
       {/* <SisteNytt /> */}
-      <VåreModeller2 />
+      <TestComp />
       <FordelerV2 />
       <Hvordan />
       <FAQ />
