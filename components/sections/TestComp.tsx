@@ -81,12 +81,6 @@ const TestComp = () => {
             slogan={"Boligens Hjerte"}
             image={info[3].heroImage}
           />
-          <ModelComponent
-            title={"Eggum Lodge"}
-            href={"/modeller/eggum-lodge"}
-            slogan={"Boligens Hjerte"}
-            image={info[4].heroImage}
-          />
         </div>
       </div>
 
@@ -126,14 +120,6 @@ const TestComp = () => {
           <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
             <Image
               src={"/webp/h1.webp"}
-              alt="Bilde av modell 1"
-              fill
-              className="absolute object-cover "
-            />
-          </div>
-          <div className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 ">
-            <Image
-              src={"/webp/q3.webp"}
               alt="Bilde av modell 1"
               fill
               className="absolute object-cover "
