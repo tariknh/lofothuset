@@ -71,19 +71,19 @@
     "images": [
       {
         "src": "/webp/f1.webp",
-        "text": "Forside med inngangsparti"
+        "text": "Render"
       },
       {
         "src": "/webp/f2.webp",
-        "text": "Side uten vindu"
+        "text": "Render"
       },
       {
         "src": "/webp/f3.webp",
-        "text": "Side med vindu"
+        "text": "Render"
       },
       {
         "src": "/webp/f4.webp",
-        "text": "Bakside skrått"
+        "text": "Render"
       }
     ]
   },
@@ -103,19 +103,19 @@
     "images": [
       {
         "src": "/webp/h1.webp",
-        "text": "Forside med inngangsparti"
+        "text": "Render"
       },
       {
         "src": "/webp/h2.webp",
-        "text": "Side uten vindu"
+        "text": "Render"
       },
       {
         "src": "/webp/h3.webp",
-        "text": "Side med vindu"
+        "text": "Render"
       },
       {
         "src": "/webp/h4.webp",
-        "text": "Bakside skrått"
+        "text": "Render"
       }
     ]
   },
@@ -135,15 +135,15 @@
     "images": [
       {
         "src": "/webp/q2.webp",
-        "text": "Forside med inngangsparti"
+        "text": "Render"
       },
       {
         "src": "/webp/q1.webp",
-        "text": "Side uten vindu"
+        "text": "Render"
       },
       {
         "src": "/webp/q3.webp",
-        "text": "Side med vindu"
+        "text": "Render"
       }
     ]
   },
@@ -163,19 +163,19 @@
     "images": [
       {
         "src": "/webp/g2.webp",
-        "text": "Forside med inngangsparti"
+        "text": "Render"
       },
       {
         "src": "/webp/g1.webp",
-        "text": "Side uten vindu"
+        "text": "Render"
       },
       {
         "src": "/webp/g3.webp",
-        "text": "Side med vindu"
+        "text": "Render"
       },
       {
         "src": "/webp/g4.webp",
-        "text": "Bakside skrått"
+        "text": "Render"
       }
     ]
   }
