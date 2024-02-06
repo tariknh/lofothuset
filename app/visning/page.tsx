@@ -4,7 +4,7 @@ import React from "react";
 
 function page() {
   return (
-    <main className="w-full flex justify-center items-center ">
+    <main className="w-full flex justify-center items-center pb-20">
       <div className="max-w-[1000px] w-full flex min-h-screen flex-col justify-start items-center pt-20 px-2 sm:px-4 lg:px-16">
         <div className="w-full flex">
           <h2 className="pb-2 px-4 self-end text-[clamp(32px,9.6vw,36px)] md:text-[clamp(42px,3.3vw,48px)] tracking-tighter ">
