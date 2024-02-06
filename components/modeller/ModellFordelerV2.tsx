@@ -108,13 +108,13 @@ function ModellFordelerV2() {
           text="Våre boliger koster mindre i innkjøp, drift og bygging, og tilbyr energiselvforsyning for økonomisk bærekraft."
           image="/waste.svg"
         />
-        <Fordel title="Oppvaskmaskin" text="" image="/checkV2.svg" />
-        <Fordel title="Komfyr" text="" image="/checkV2.svg" />
-        <Fordel title="Kjøleskap" text="" image="/checkV2.svg" />
+        <Fordel title="Oppvaskmaskin" text="" image="/dish.svg" />
+        <Fordel title="Komfyr" text="" image="/microwave.svg" />
+        <Fordel title="Kjøleskap" text="" image="/fridger.svg" />
         <Fordel
           title="Vaskemaskin"
           text=""
-          image="/checkV2.svg"
+          image="/washing.svg"
           className="col-span-2 lg:col-span-1 aspect-[9/3] lg:aspect-[4/3] sm:aspect-[9/3] md:aspect-[9/3]"
         />
 
@@ -138,28 +138,28 @@ function ModellFordelerV2() {
             className="!aspect-[7/6] h-full col-span-3 col-start-2 p-1"
             title="Elektriske gardiner"
             text=""
-            image="/checkV2.svg"
+            image="/curtains.svg"
             textClassName={miniFordelClass}
           />
           <Fordel
             className="!aspect-[7/6] h-full col-span-3 text-balance p-1"
             title="Varmekabler (stue, bad, kjøkken)"
             text=""
-            image="/checkV2.svg"
+            image="/heating.svg"
             textClassName={miniFordelClass}
           />
           <Fordel
             className="!aspect-[7/6] h-full col-span-3 col-start-2 p-1"
             title="Overvåknings kameraer"
             text=""
-            image="/checkV2.svg"
+            image="/camera.svg"
             textClassName={miniFordelClass}
           />
           <Fordel
             className="!aspect-[7/6] h-full col-span-3 p-1"
             title="Alarm system"
             text=""
-            image="/checkV2.svg"
+            image="/alarm.svg"
             textClassName={miniFordelClass}
           />
         </div>
