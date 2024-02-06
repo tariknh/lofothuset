@@ -79,7 +79,7 @@ export default function MobileNav({ open, setOpen }: openStates) {
           </span>
         </motion.div>
         <span className="row-start-6 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
-          Lofotveien 54, 8300 Svolvær
+          Syverudveien 1, 3077 Sande
         </span>
       </motion.div>
     </div>

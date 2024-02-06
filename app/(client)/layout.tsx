@@ -1,6 +1,6 @@
 import type { Viewport, Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 import { cn } from "@/lib/utils";
 import Header from "@/components/header/Header";
@@ -16,19 +16,19 @@ const satoshi = localFont({
   variable: "--font-sans",
   src: [
     {
-      path: "./fonts/Satoshi-Bold.woff2",
+      path: "../fonts/Satoshi-Bold.woff2",
     },
     {
-      path: "./fonts/Satoshi-Light.woff2",
+      path: "../fonts/Satoshi-Light.woff2",
     },
     {
-      path: "./fonts/Satoshi-Medium.woff2",
+      path: "../fonts/Satoshi-Medium.woff2",
     },
     {
-      path: "./fonts/Satoshi-Regular.woff2",
+      path: "../fonts/Satoshi-Regular.woff2",
     },
     {
-      path: "./fonts/Satoshi-Variable.woff2",
+      path: "../fonts/Satoshi-Variable.woff2",
       style: "variable",
     },
   ],
