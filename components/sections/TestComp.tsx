@@ -67,7 +67,7 @@ const TestComp = () => {
         className="gallery justify-evenly relative flex"
       >
         <div className="left basis-1/3">
-          <div className="desktopContent m-auto">
+          <div className="desktopContent  m-auto">
             <ModelComponent
               title={"Stamsund Lodge"}
               href={"/modeller/stamsund-lodge"}
@@ -112,7 +112,7 @@ const TestComp = () => {
               </div>
             );
           })} */}
-            <div className="desktopPhoto  absolute w-full h-full bg-emerald-800 ">
+            <div className="desktopPhoto  absolute w-full h-full  ">
               <Image
                 src={"/webp/renderBlueprintZoomedV2.webp"}
                 alt="Bilde av modell 1"
@@ -120,7 +120,7 @@ const TestComp = () => {
                 className="absolute object-cover "
               />
             </div>
-            <div className="desktopPhoto  absolute w-full h-full bg-emerald-800 ">
+            <div className="desktopPhoto  absolute w-full h-full  ">
               <Image
                 src={"/webp/f3.webp"}
                 alt="Bilde av modell 1"
@@ -128,7 +128,7 @@ const TestComp = () => {
                 className="absolute object-cover "
               />
             </div>
-            <div className="desktopPhoto  absolute w-full h-full bg-emerald-800 ">
+            <div className="desktopPhoto  absolute w-full h-full  ">
               <Image
                 src={"/webp/h1.webp"}
                 alt="Bilde av modell 1"
@@ -136,7 +136,7 @@ const TestComp = () => {
                 className="absolute object-cover "
               />
             </div>
-            <div className="desktopPhoto  absolute w-full h-full bg-emerald-800 ">
+            <div className="desktopPhoto  absolute w-full h-full  ">
               <Image
                 src={"/webp/q3.webp"}
                 alt="Bilde av modell 1"
