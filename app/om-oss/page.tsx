@@ -12,7 +12,7 @@ const Omoss = async () => {
   const team = JSON.parse(file);
   return (
     <main className="w-full flex min-h-screen flex-col items-center justify-start">
-      <section className="bg-white p-3 text-6xl place-items-end h-[20vh] flex w-full ">
+      <section className="bg-white p-3 lg:px-16 text-6xl place-items-end h-[20vh] flex w-full ">
         <h1>Vårt Team</h1>
       </section>
       {/* <section className="grid relative grid-rows-6 h-[50vh] w-full">
