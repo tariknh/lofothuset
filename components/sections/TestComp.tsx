@@ -61,11 +61,8 @@ const TestComp = () => {
           <AnimatedLetters text="Våre modeller" />
         </h2>
       </div>
-      <div
-        ref={container}
-        id="modeller"
-        className="gallery justify-evenly relative flex"
-      >
+      <div ref={container} id="modeller" className="gallery relative flex">
+        {/* add space-evenly to add square, and remove hidden further below ^^ */}
         <div className="left basis-1/3">
           <div className="desktopContent  m-auto">
             <ModelComponent
@@ -95,23 +92,8 @@ const TestComp = () => {
           </div>
         </div>
 
-        <div className="right items-center h-screen justify-center w-full flex flex-col">
+        {/* <div className="right items-center h-screen justify-center w-full flex flex-col">
           <div className="desktopPhotos overflow-hidden relative aspect-square h-[50vw] w-[50vw] sm:h-[20vw] sm:w-[20vw]">
-            {/* {info.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="desktopPhoto  absolute w-full h-[25rem] bg-emerald-800 "
-              >
-                <Image
-                  src={"/webp/renderBlueprintZoomedV2.webp"}
-                  alt="Bilde av modell 1"
-                  fill
-                  className="absolute object-cover "
-                />
-              </div>
-            );
-          })} */}
             <div className="desktopPhoto  absolute w-full h-full  ">
               <Image
                 src={"/webp/renderBlueprintZoomedV2.webp"}
@@ -145,7 +127,7 @@ const TestComp = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
