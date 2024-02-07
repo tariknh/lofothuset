@@ -26,6 +26,8 @@ const ønsker = [
   "Jeg er interessert i å kjøpe",
 ];
 
+const region = ["Velg region", "Nord", "Sør", "Vest", "Øst"];
+
 const formDataSchema = z.object({
   name: z.string().min(2, { message: "Navnet må bestå av minst 2 tegn" }),
   email: z.string().trim().email({
@@ -45,6 +47,9 @@ const formDataSchemeSecond = z.object({
     .min(5, { message: "Telefonnummeret må bestå av minst 2 tegn" }),
   task: z.string(),
   modell: z.string(),
+  region: z.string().refine((value) => value !== "Velg region", {
+    message: "Velg en region.",
+  }),
   agreeToTerms: z.boolean().refine((value) => value === true, {
     message: "Du må godta vilkårene",
   }),
@@ -59,6 +64,7 @@ function Page() {
     phone: "",
     task: "Jeg vil ha en visning over video",
     modell: "Stamsund Lodge",
+    region: "Velg region",
     agreeToTerms: false,
   };
 
@@ -131,7 +137,6 @@ function Page() {
   };
 
   const handleInputChange = (event: any) => {
-    console.log(event);
     if (event && event.target) {
       setFormData({
         ...formData,
@@ -145,12 +150,14 @@ function Page() {
         // For example, if this handler is for a 'task' field, you would use:
         task: event,
       });
-    } else {
+    } else if (region.includes(event)) {
       setFormData({
         ...formData,
-        // Assuming the select component does not provide `name`, you would need to
-        // manually specify which field of `formData` should be updated.
-        // For example, if this handler is for a 'task' field, you would use:
+        region: event,
+      });
+    } else if (modeller.includes(event)) {
+      setFormData({
+        ...formData,
         modell: event,
       });
     }
@@ -242,6 +249,13 @@ function Page() {
                   name="modell"
                   values={modeller}
                   formData={formData.modell}
+                  handleInputChange={handleInputChange}
+                />
+                <FormSelect
+                  id="HVILKEN REGION?"
+                  name="region"
+                  values={region}
+                  formData={formData.region}
                   handleInputChange={handleInputChange}
                 />
                 <FormCheck
