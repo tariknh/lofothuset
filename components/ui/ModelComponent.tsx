@@ -20,7 +20,7 @@ const ModelComponent: React.FC<ModelComponentProps> = ({
 }) => {
   return (
     <div className="desktopContentSection flex flex-col items-center justify-center self-center min-h-screen ">
-      <h1>test</h1>
+      {/* <h1>test</h1> */}
 
       <div className="w-full p-0 m-0 left-0 h-screen max-w-screen absolute">
         <Image
@@ -31,7 +31,11 @@ const ModelComponent: React.FC<ModelComponentProps> = ({
         />
         <div className="bg-black w-full absolute opacity-40 h-screen z-5"></div>
       </div>
-      <div className="first absolute z-20 self-start sm:self-center p-8 text-white sm:basis-1/2 sm:mx-8 lg:mx-16">
+      <div
+        data-scroll
+        data-scroll-speed="-0.1"
+        className="first absolute z-20 self-start sm:self-center p-8 text-white sm:basis-1/2 sm:mx-8 lg:mx-16"
+      >
         <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[2vw] font-base mb-3">
           {slogan}
         </h3>
