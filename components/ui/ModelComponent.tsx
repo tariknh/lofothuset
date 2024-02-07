@@ -19,15 +19,17 @@ const ModelComponent: React.FC<ModelComponentProps> = ({
   image,
 }) => {
   return (
-    <div className="desktopContentSection flex flex-col items-center  justify-center self-center min-h-screen">
+    <div className="desktopContentSection flex flex-col items-center justify-center self-center min-h-screen ">
       <h1>test</h1>
+
       <div className="w-full p-0 m-0 left-0 h-screen max-w-screen absolute">
         <Image
           src={image}
           alt="Bilde av modell 1"
           fill
-          className="absolute object-cover "
+          className="absolute object-cover"
         />
+        <div className="bg-black w-full absolute opacity-40 h-screen z-5"></div>
       </div>
       <div className="first absolute z-20 self-start sm:self-center p-8 text-white sm:basis-1/2 sm:mx-8 lg:mx-16">
         <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[2vw] font-base mb-3">

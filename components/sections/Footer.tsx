@@ -41,12 +41,10 @@ function Footer() {
       <div className="text-zinc-300 md:col-start-5 md:row-start-1">
         <h2 className="text-xl text-white font-semibold">Kontakt</h2>
         <h3 className="hover:underline">
-          <Link href={"mailto:kontakt@lofothuset.no"}>
-            kontakt@lofothuset.no
-          </Link>
+          <Link href={"mailto:harald@lofothuset.no"}>harald@lofothuset.no</Link>
         </h3>
         <h3 className="hover:underline">
-          <Link href={"tel:+4797586958"}>+47 975 86 958</Link>
+          <Link href={"tel:+4798283501"}>+47 982 83 501</Link>
         </h3>
       </div>
       <div className="col-span-full tracking-tighter md:row-start-3 text-6xl sm:text-8xl md:text-[8rem] lg:text-[12rem] opacity-50 font-bold text-center">
