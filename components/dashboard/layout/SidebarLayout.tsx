@@ -1,11 +1,12 @@
-import React from "react";
+import { ReactNode } from "react";
+type PageProps = {
+  children: ReactNode;
+  className?: string;
+};
 
-function SidebarLayout() {
+function SidebarLayout({ children, className }: PageProps) {
   return (
-    <main className="w-full h-full min-h-screen flex">
-      {/* <Sidebar />
-<Content /> */}
-    </main>
+    <main className={`flex w-full min-h-screen ${className}`}>{children}</main>
   );
 }
 

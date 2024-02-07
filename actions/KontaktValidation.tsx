@@ -12,6 +12,9 @@ const schema = z.object({
     .min(5, { message: "Telefonnummeret må bestå av minst 2 tegn" }),
   task: z.string(),
   modell: z.string(),
+  region: z.string().refine((value) => value !== "Velg region", {
+    message: "Please select a valid region",
+  }),
   agreeToTerms: z.boolean().refine((value) => value === true, {
     message: "Du må godta vilkårene",
   }),
@@ -41,6 +44,7 @@ export const kontaktValidation = async (kontaktForm: any) => {
           PHONE: kontaktForm.phone,
           WISH: kontaktForm.task,
           MODELL: kontaktForm.modell,
+          REGION: kontaktForm.region,
         },
       }
     );

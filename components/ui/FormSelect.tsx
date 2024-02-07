@@ -47,7 +47,7 @@ function FormSelect({
         <SelectContent>
           {values.map((value, index) => (
             <SelectItem
-              className="focus:bg-lagText focus:text-white "
+              className={`focus:bg-lagText focus:text-white`}
               key={index}
               value={value}
             >

@@ -1,4 +1,6 @@
 import "../globals.css";
+import SidebarLayout from "@/components/dashboard/layout/SidebarLayout";
+import SidebarV1 from "@/components/dashboard/sidebar/SidebarV1";
 
 import { cn } from "@/lib/utils";
 
@@ -39,7 +41,27 @@ export default function RootLayout({
           satoshi.variable
         )}
       >
-        {children}
+        <SidebarLayout className="h-[300vh]">
+          <SidebarV1
+            navItems={[
+              { nav: "Oversikt", svg: "/leaf.svg" },
+              { nav: "Kunder", svg: "/gang.svg" },
+              { nav: "Mails", svg: "/heater.svg" },
+            ]}
+            navItemsLower={[
+              { nav: "Innstillinger", svg: "/leaf.svg" },
+              { nav: "Meldinger", svg: "gang.svg" },
+              { nav: "Profil", svg: "/heater.svg" },
+            ]}
+            navItemsLowerTitle={"Administrativt"}
+            textColor={"text-white"}
+            primaryColor={"bg-[#6200EE]"}
+            activeTextColor={"text-white"}
+            className=""
+          />
+
+          {children}
+        </SidebarLayout>
       </body>
     </html>
   );
