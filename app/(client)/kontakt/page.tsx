@@ -26,7 +26,14 @@ const ønsker = [
   "Jeg er interessert i å kjøpe",
 ];
 
-const region = ["Velg region", "Nord", "Sør", "Vest", "Øst"];
+const region = [
+  "Velg region",
+  "Nord-Norge",
+  "Midt-Norge",
+  "Vest-Norge",
+  "Sør-Norge",
+  "Øst-Norge",
+];
 
 const formDataSchema = z.object({
   name: z.string().min(2, { message: "Navnet må bestå av minst 2 tegn" }),
