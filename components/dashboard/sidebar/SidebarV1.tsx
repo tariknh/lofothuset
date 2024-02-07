@@ -23,7 +23,7 @@ function SidebarV1({
   className,
 }: SidebarV1Props) {
   return (
-    <div className="relative h-full min-w-32 bg-red-200">
+    <div className="relative h-screen min-w-32 bg-red-200">
       <nav className="w-full h-full">test</nav>
     </div>
   );

@@ -138,7 +138,7 @@ const Omoss = async () => {
                 className="object-cover"
               />
             </div>
-            <div className="flex flex-col justify-center sm:items-start sm:p-8">
+            <div className="flex flex-col justify-center sm:items-start mr-20">
               <h3 className="uppercase sm:mb-2 text-lg">
                 Oppfyll drømmene dine
               </h3>

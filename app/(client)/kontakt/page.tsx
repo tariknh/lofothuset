@@ -12,6 +12,20 @@ import { Checkbox } from "@/components/ui/checkbox";
 import FormCheck from "@/components/ui/FormCheck";
 import { redirect } from "next/navigation";
 
+const modeller = [
+  "Stamsund Lodge",
+  "Leknes Lodge",
+  "Reine Lodge",
+  "Nusfjord Lodge",
+  "Eggum Lodge",
+];
+
+const ønsker = [
+  "Jeg vil ha en visning over video",
+  "Jeg vil ringes opp for en samtale",
+  "Jeg er interessert i å kjøpe",
+];
+
 const formDataSchema = z.object({
   name: z.string().min(2, { message: "Navnet må bestå av minst 2 tegn" }),
   email: z.string().trim().email({
@@ -117,10 +131,19 @@ function Page() {
   };
 
   const handleInputChange = (event: any) => {
+    console.log(event);
     if (event && event.target) {
       setFormData({
         ...formData,
         [event.target.name]: event.target.value,
+      });
+    } else if (ønsker.includes(event)) {
+      setFormData({
+        ...formData,
+        // Assuming the select component does not provide `name`, you would need to
+        // manually specify which field of `formData` should be updated.
+        // For example, if this handler is for a 'task' field, you would use:
+        task: event,
       });
     } else {
       setFormData({
@@ -128,7 +151,7 @@ function Page() {
         // Assuming the select component does not provide `name`, you would need to
         // manually specify which field of `formData` should be updated.
         // For example, if this handler is for a 'task' field, you would use:
-        task: event,
+        modell: event,
       });
     }
   };
@@ -209,11 +232,7 @@ function Page() {
                 <FormSelect
                   id="HVA ØNSKER DU Å GJØRE?"
                   name="task"
-                  values={[
-                    "Jeg vil ha en visning over video",
-                    "Jeg vil ringes opp for en samtale",
-                    "Jeg er interessert i å kjøpe",
-                  ]}
+                  values={ønsker}
                   formData={formData.task}
                   handleInputChange={handleInputChange}
                 />
@@ -221,13 +240,7 @@ function Page() {
                 <FormSelect
                   id="HVILKEN MODELL?"
                   name="modell"
-                  values={[
-                    "Stamsund Lodge",
-                    "Leknes Lodge",
-                    "Reine Lodge",
-                    "Nusfjord Lodge",
-                    "Eggum Lodge",
-                  ]}
+                  values={modeller}
                   formData={formData.modell}
                   handleInputChange={handleInputChange}
                 />
