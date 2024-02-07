@@ -27,11 +27,7 @@ export default function NavLink({
         }  left-0 absolute`}
       ></motion.div>
 
-      <Link
-        scroll={!href.includes("#")}
-        className="tracking-tighter "
-        href={href}
-      >
+      <Link className="tracking-tighter" href={href} data-scroll-to>
         {title}
       </Link>
     </motion.div>
