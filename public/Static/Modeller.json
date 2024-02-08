@@ -91,13 +91,13 @@
     "id": "leknes-lodge",
     "name": "Leknes Lodge",
     "description": "Leknes Lodge er et bosted designet for å smelte harmonisk sammen med den naturlige skjønnheten i Lofoten. Dette tilfluktsstedet er skreddersydd for de som søker ro i omgivelser som speiler regionens maritime arv, samtidig som det tilbyr moderne bekvemmeligheter. Med fokus på bærekraftige byggemetoder og energieffektive løsninger, er Leknes Lodge det perfekte valget for individuelle utforskere eller familier som verdsetter miljøbevissthet, kunstnerisk inspirasjon og en livsstil i pakt med naturen.",
-    "opptil": "kommer",
-    "soverom": "kommer",
-    "bygningsareal": "kommer",
-    "rom": "kommer",
-    "bad": "kommer",
+    "opptil": "2+",
+    "soverom": "1",
+    "bygningsareal": "30",
+    "rom": "2",
+    "bad": "1",
     "leveringstid": "2-4 Måneder",
-    "inngangsparti": "kommer",
+    "inngangsparti": "1",
 
     "heroImage": "/webp/h2.webp",
     "images": [
@@ -123,13 +123,13 @@
     "id": "nusfjord-lodge",
     "name": "Nusfjord Lodge",
     "description": "Nusfjord Lodge er en sjarmerende og økologisk bevisst bolig som hyller Lofotens rike fiskehistorie og naturlige skjønnhet. Denne koselige hytta er designet med tanke på miljøvennlige materialer og energieffektive løsninger, og tilbyr en varm og innbydende atmosfære for de som søker en enkel, men meningsfylt livsstil. Perfekt for kunstnere, historieentusiaster, eller små familier, Nusfjord Lodge kombinerer det tradisjonelle med det moderne, og skaper et idyllisk tilfluktssted som fremmer bærekraft og tilknytning til Lofotens unike kulturarv.",
-    "opptil": "kommer",
-    "soverom": "kommer",
-    "bygningsareal": "kommer",
-    "rom": "kommer",
-    "bad": "kommer",
+    "opptil": "3+",
+    "soverom": "1",
+    "bygningsareal": "42",
+    "rom": "3",
+    "bad": "1",
     "leveringstid": "2-4 Måneder",
-    "inngangsparti": "kommer",
+    "inngangsparti": "2",
     "video": "/husVideo.mp4",
     "heroImage": "/webp/q1.webp",
     "images": [
@@ -158,6 +158,38 @@
     "bad": "kommer",
     "leveringstid": "2-4 Måneder",
     "inngangsparti": "kommer",
+
+    "heroImage": "/webp/g1.webp",
+    "images": [
+      {
+        "src": "/webp/g2.webp",
+        "text": "Render"
+      },
+      {
+        "src": "/webp/g1.webp",
+        "text": "Render"
+      },
+      {
+        "src": "/webp/g3.webp",
+        "text": "Render"
+      },
+      {
+        "src": "/webp/g4.webp",
+        "text": "Render"
+      }
+    ]
+  },
+  {
+    "id": "hammerstad-lodge",
+    "name": "Hammerstad Lodge",
+    "description": "Hammerstad Lodge er et praktisk og komfortabelt hjem, designet for å imøtekomme behovene til en større familie. Dette hjemmet kombinerer funksjonalitet med et snev av moderne design, og tilbyr en enkel, men effektiv løsning for dagliglivet i Lofotens naturskjønne omgivelser. Med en enkel arkitektonisk stil og en praktisk planløsning, gir Hammerstad Lodge god plass til familieliv, uten å legge for mye vekt på luksus eller overdådige detaljer. Hjemmet inkluderer grunnleggende, miljøvennlige funksjoner som bidrar til en mer bærekraftig livsstil, samtidig som det sikrer at familien har alt de trenger for å leve komfortabelt. Hammerstad Lodge er et godt valg for de som verdsetter enkelhet og funksjonalitet, og som ser etter et hjem som støtter et aktivt og familiært liv i naturskjønne omgivelser.",
+    "opptil": "4+",
+    "soverom": "2",
+    "bygningsareal": "77",
+    "rom": "5",
+    "bad": "1",
+    "leveringstid": "2-4 Måneder",
+    "inngangsparti": "1",
 
     "heroImage": "/webp/g1.webp",
     "images": [
