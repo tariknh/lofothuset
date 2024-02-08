@@ -89,6 +89,12 @@ const TestComp = () => {
               slogan={"Boligens Hjerte"}
               image={info[3].heroImage}
             />
+            <ModelComponent
+              title={"Hammerstad Lodge"}
+              href={"/modeller/hammerstad-lodge"}
+              slogan={"Boligens Hjerte"}
+              image={info[4].heroImage}
+            />
           </div>
         </div>
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="p-3 sm:p-8 min-h-[50vh] md:items-start items-center grid grid-cols-2 md:grid-cols-6 md:grid-rows-2 text-white bg-[#121212] gap-4 md:gap-0">
+    <footer className="p-3 sm:p-8 min-h-[50vh] md:items-start grid grid-cols-2 md:grid-cols-6 md:grid-rows-2 text-white bg-[#121212] gap-4 md:gap-0">
       <div className="col-start-1 col-span-2 row-start-1 flex flex-col gap-4 max-w-fit">
         <h2 className="text-white lg:text-2xl text-left">
           Lyst å lære mer om vårt boligkonsept?
@@ -40,11 +40,19 @@ function Footer() {
       </div>
       <div className="text-zinc-300 md:col-start-5 md:row-start-1">
         <h2 className="text-xl text-white font-semibold">Kontakt</h2>
+        <h2 className=" text-zinc-500 font-semibold">Sør</h2>
         <h3 className="hover:underline">
           <Link href={"mailto:harald@lofothuset.no"}>harald@lofothuset.no</Link>
         </h3>
         <h3 className="hover:underline">
           <Link href={"tel:+4798283501"}>+47 982 83 501</Link>
+        </h3>
+        <h2 className=" text-zinc-500 font-semibold">Nord</h2>
+        <h3 className="hover:underline">
+          <Link href={"mailto:svein@lofothuset.no"}>svein@lofothuset.no</Link>
+        </h3>
+        <h3 className="hover:underline">
+          <Link href={"tel:+4797586958"}>+47 975 86 958</Link>
         </h3>
       </div>
       <div className="col-span-full tracking-tighter md:row-start-3 text-6xl sm:text-8xl md:text-[8rem] lg:text-[12rem] opacity-50 font-bold text-center">

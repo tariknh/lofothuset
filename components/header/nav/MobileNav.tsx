@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { topMobile, staggerChildren, textAnimate } from "../anim.js";
 import NavLink from "./Link";
+import Link from "next/link";
 
 type openStates = {
   open: boolean;
@@ -70,15 +71,32 @@ export default function MobileNav({ open, setOpen }: openStates) {
             ></NavLink>
           ))}
         </motion.div>
-        <motion.div className="text-white row-start-5 flex flex-col gap-3">
+        <motion.div className="text-white row-start-5 row-span-2 flex flex-col gap-2">
           <span className="text-sm font-normal text-muted-foreground">
             Kom i kontakt
           </span>
-          <span className="font-normal text-xl underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
-            harald@lofothuset.no
-          </span>
+          <div className="flex flex-col">
+            <span className="text-zinc-400 col-start-1 font-semibold text-base">
+              Nord
+            </span>
+            <span className="font-normal col-start-1 text-xl underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+              <Link href={"mailto:svein@lofothuset.no"}>
+                svein@lofothuset.no
+              </Link>
+            </span>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-zinc-400 col-start-2 font-semibold text-base">
+              Sør
+            </span>
+            <span className="font-normal col-start-2 text-xl underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+              <Link href={"mailto:harald@lofothuset.no"}>
+                harald@lofothuset.no
+              </Link>
+            </span>
+          </div>
         </motion.div>
-        <span className="row-start-6 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+        <span className="row-start-7 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
           Syverudveien 1, 3077 Sande
         </span>
       </motion.div>
