@@ -27,10 +27,10 @@ function FordelerV2() {
           height={100}
         />
         <div className="flex flex-col ml-4">
-          <h3 className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-medium uppercase text-wrap">
+          <h3 className="text-xl min-[385px]:text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-medium uppercase text-wrap">
             {title}
           </h3>
-          <p className="text-base md:text-base sm:text-lg lg:text-lg font-medium">
+          <p className="text-sm min-[385px]:text-base md:text-base sm:text-lg lg:text-lg font-medium">
             {text}
           </p>
         </div>
