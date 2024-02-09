@@ -29,7 +29,7 @@ function ModellFordelerV2() {
       <div
         className={`${className} ${
           black ? "bg-white text-lagText" : "bg-lagText text-white"
-        } text-center w-full aspect-[4/3] lg:aspect-[4/3] sm:aspect-[5/3] md:aspect-[6/3] flex flex-col rounded-lg justify-center items-center gap-2 p-2`}
+        } text-center w-full aspect-[4/3] lg:aspect-[4/3] sm:aspect-[5/3] md:aspect-[6/3] h-full flex flex-col rounded-lg justify-center items-center gap-2 p-2`}
       >
         {image && (
           <Image
@@ -93,7 +93,7 @@ function ModellFordelerV2() {
           image="/water.svg"
         />
         <Fordel
-          title="Varmekabler på bad"
+          title="Varmekabler i alle rom utenom soverom"
           text="Mindre rot og enklere livsstil, kan redusere eiendeler med 40-60%"
           image="/radiator.svg"
         />
@@ -143,7 +143,7 @@ function ModellFordelerV2() {
           />
           <Fordel
             className="!aspect-[7/6] h-full col-span-3 text-balance p-1"
-            title="Varmekabler (stue, bad, kjøkken)"
+            title="Varmepumpe"
             text=""
             image="/heating.svg"
             textClassName={miniFordelClass}
