@@ -71,19 +71,19 @@
     "images": [
       {
         "src": "/webp/f1.webp",
-        "text": "Render"
+        "text": "Plantegning"
       },
       {
         "src": "/webp/f2.webp",
-        "text": "Render"
+        "text": "Modell Framside"
       },
       {
         "src": "/webp/f3.webp",
-        "text": "Render"
+        "text": "Plantegning"
       },
       {
         "src": "/webp/f4.webp",
-        "text": "Render"
+        "text": "Modell Utside"
       }
     ]
   },
@@ -103,19 +103,19 @@
     "images": [
       {
         "src": "/webp/h1.webp",
-        "text": "Render"
+        "text": "Plantegning"
       },
       {
         "src": "/webp/h2.webp",
-        "text": "Render"
+        "text": "Modell Framside"
       },
       {
         "src": "/webp/h3.webp",
-        "text": "Render"
+        "text": "Modell Utside"
       },
       {
         "src": "/webp/h4.webp",
-        "text": "Render"
+        "text": "Plantegning"
       }
     ]
   },
@@ -125,7 +125,7 @@
     "description": "Nusfjord Lodge er en sjarmerende og økologisk bevisst bolig som hyller Lofotens rike fiskehistorie og naturlige skjønnhet. Denne koselige hytta er designet med tanke på miljøvennlige materialer og energieffektive løsninger, og tilbyr en varm og innbydende atmosfære for de som søker en enkel, men meningsfylt livsstil. Perfekt for kunstnere, historieentusiaster, eller små familier, Nusfjord Lodge kombinerer det tradisjonelle med det moderne, og skaper et idyllisk tilfluktssted som fremmer bærekraft og tilknytning til Lofotens unike kulturarv.",
     "opptil": "3+",
     "soverom": "1",
-    "bygningsareal": "42",
+    "bygningsareal": "30",
     "rom": "3",
     "bad": "1",
     "leveringstid": "2-4 Måneder",
@@ -135,15 +135,15 @@
     "images": [
       {
         "src": "/webp/q2.webp",
-        "text": "Render"
+        "text": "Modell Utside"
       },
       {
         "src": "/webp/q1.webp",
-        "text": "Render"
+        "text": "Modell Framside"
       },
       {
         "src": "/webp/q3.webp",
-        "text": "Render"
+        "text": "Plantegning"
       }
     ]
   },
@@ -191,23 +191,15 @@
     "leveringstid": "2-4 Måneder",
     "inngangsparti": "1",
 
-    "heroImage": "/webp/g1.webp",
+    "heroImage": "/webp/Hammerstad1.webp",
     "images": [
       {
-        "src": "/webp/g2.webp",
-        "text": "Render"
+        "src": "/webp/Hammerstad2.webp",
+        "text": "Modell Utside"
       },
       {
-        "src": "/webp/g1.webp",
-        "text": "Render"
-      },
-      {
-        "src": "/webp/g3.webp",
-        "text": "Render"
-      },
-      {
-        "src": "/webp/g4.webp",
-        "text": "Render"
+        "src": "/webp/Hammerstad3.webp",
+        "text": "Plantegning"
       }
     ]
   }
