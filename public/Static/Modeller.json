@@ -103,19 +103,19 @@
     "images": [
       {
         "src": "/webp/h1.webp",
-        "text": "Render"
+        "text": "tegning av hus"
       },
       {
         "src": "/webp/h2.webp",
-        "text": "Render"
+        "text": "3D modell av hus"
       },
       {
         "src": "/webp/h3.webp",
-        "text": "Render"
+        "text": "Modell av huset"
       },
       {
         "src": "/webp/h4.webp",
-        "text": "Render"
+        "text": "tegning av hus"
       }
     ]
   },
@@ -130,20 +130,20 @@
     "bad": "1",
     "leveringstid": "2-4 Måneder",
     "inngangsparti": "2",
-    "video": "/husVideo.mp4",
-    "heroImage": "/webp/q1.webp",
+
+    "heroImage": "/webp/f2.webp",
     "images": [
       {
-        "src": "/webp/q2.webp",
-        "text": "Render"
+        "src": "/webp/f3.webp",
+        "text": "modell av hus"
       },
       {
-        "src": "/webp/q1.webp",
-        "text": "Render"
+        "src": "/webp/f4.webp",
+        "text": "modell av hus"
       },
       {
-        "src": "/webp/q3.webp",
-        "text": "Render"
+        "src": "/webp/f1.webp",
+        "text": "tegning av hus"
       }
     ]
   },
@@ -195,19 +195,19 @@
     "images": [
       {
         "src": "/webp/g2.webp",
-        "text": "Render"
+        "text": "3D modell av hus"
       },
       {
         "src": "/webp/g1.webp",
-        "text": "Render"
+        "text": "3D modell av hus"
       },
       {
         "src": "/webp/g3.webp",
-        "text": "Render"
+        "text": "3D modell av hus"
       },
       {
         "src": "/webp/g4.webp",
-        "text": "Render"
+        "text": "3D modell av hus"
       }
     ]
   }

@@ -1,10 +1,21 @@
 import "../globals.css";
 import SidebarLayout from "@/components/dashboard/layout/SidebarLayout";
 import SidebarV1 from "@/components/dashboard/sidebar/SidebarV1";
+import Oversikt from "@/public/svg/oversikt";
+import Nyheter from "@/public/svg/nyheter";
+import Blog from "@/public/svg/blog";
+import Innstillinger from "@/public/svg/innstillinger";
+import Kunder from "@/public/svg/kunder";
+import Profil from "@/public/svg/profil";
+import Visning from "@/public/svg/visning";
 
 import { cn } from "@/lib/utils";
 
 import localFont from "next/font/local";
+import ContentLayout from "@/components/dashboard/layout/ContentLayout";
+import ContentTest from "@/components/dashboard/content/ContentTest";
+import ContentTest2 from "@/components/dashboard/content/ContentTest2";
+import NyheterLayout from "@/components/dashboard/content/layouts/Nyheter";
 
 const satoshi = localFont({
   variable: "--font-sans",
@@ -28,6 +39,67 @@ const satoshi = localFont({
   ],
 });
 
+const logo = "Lofothuset";
+const lowerNavBarTitle = "Administrativt";
+const primaryColor = `#6200ee`;
+const notActiveClassname = "hover:scale-[1.05]";
+const activeClassname = "text-white bg-[#6200ee]";
+
+const navBarItems = [
+  {
+    nav: "Oversikt",
+    svg: <Oversikt />,
+    subNav: [{ Generelt: <ContentTest />, test2: <ContentTest2 /> }],
+  },
+  { nav: "Kunder", svg: <Kunder />, subNav: [{ none: <ContentTest /> }] },
+  {
+    nav: "Nyheter",
+    svg: <Nyheter />,
+    subNav: [{ none: <NyheterLayout /> }],
+  },
+  { nav: "Visning", svg: <Visning />, subNav: [{ none: <ContentTest /> }] },
+  { nav: "Blog", svg: <Blog />, subNav: [{ none: <ContentTest /> }] },
+  {
+    nav: "Profil",
+    svg: <Profil />,
+    subNav: [{ Generelt: <ContentTest />, test2: <ContentTest2 /> }],
+    lower: true,
+  },
+  {
+    nav: "Innstillinger",
+    svg: <Innstillinger />,
+    lower: true,
+    subNav: [{ none: <ContentTest /> }],
+  },
+];
+
+const smallPaddingValue = 2; // Corresponds to "p-2"
+const paddingValue = 4; // Corresponds to "p-4"
+const topBottomValue = 7; // Corresponds to "p-7"
+const textLeveling = topBottomValue - smallPaddingValue;
+const textSpacingValue = smallPaddingValue + paddingValue;
+
+const navItems = navBarItems
+  .filter(({ lower }) => !lower) // Exclude items with lower: true
+  .map(({ nav, svg }) => ({
+    nav,
+    svg,
+  }));
+
+const navItemsLower = navBarItems
+  .filter(({ lower }) => lower)
+  .map(({ nav, svg }) => ({
+    nav,
+    svg,
+  }));
+
+const contentLayoutNav = navBarItems
+  .filter(({ subNav }) => subNav)
+  .map(({ nav, subNav }) => ({
+    nav,
+    subNav,
+  }));
+
 export default function RootLayout({
   children,
 }: {
@@ -41,26 +113,26 @@ export default function RootLayout({
           satoshi.variable
         )}
       >
-        <SidebarLayout className="h-[300vh]">
+        <SidebarLayout className="h-[300vh] text-[#121212]">
           <SidebarV1
-            navItems={[
-              { nav: "Oversikt", svg: "/leaf.svg" },
-              { nav: "Kunder", svg: "/gang.svg" },
-              { nav: "Mails", svg: "/heater.svg" },
-            ]}
-            navItemsLower={[
-              { nav: "Innstillinger", svg: "/leaf.svg" },
-              { nav: "Meldinger", svg: "gang.svg" },
-              { nav: "Profil", svg: "/heater.svg" },
-            ]}
-            navItemsLowerTitle={"Administrativt"}
+            navItems={navItems}
+            navItemsLower={navItemsLower}
+            navItemsLowerTitle={lowerNavBarTitle}
             textColor={"text-white"}
-            primaryColor={"bg-[#6200EE]"}
-            activeTextColor={"text-white"}
+            primaryColor={primaryColor}
+            notActive={notActiveClassname}
+            activeTextColor={activeClassname}
             className=""
+            logo={logo}
           />
-
-          {children}
+          <ContentLayout
+            navItems={contentLayoutNav}
+            primaryColor={primaryColor}
+            activeNavbarClassname={`border-b-[2px] border-[#6200ee]`}
+            nonActiveNavbarClassname="text-[#403F44]"
+          >
+            {children}
+          </ContentLayout>
         </SidebarLayout>
       </body>
     </html>
