@@ -95,6 +95,16 @@ export default function MobileNav({ open, setOpen }: openStates) {
               </Link>
             </span>
           </div>
+          <div className="flex flex-col">
+            <span className="text-zinc-400 col-start-2 font-semibold text-base">
+              Tyrkia-kontor
+            </span>
+            <span className="font-normal col-start-2 text-xl underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+              <Link href={"mailto:harald@lofothuset.no"}>
+                yavuz@lofothuset.no
+              </Link>
+            </span>
+          </div>
         </motion.div>
         <span className="row-start-7 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
           Syverudveien 1, 3077 Sande
