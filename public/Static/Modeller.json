@@ -14,47 +14,95 @@
     "heroImage": "/webp/render.webp",
     "images": [
       {
-        "src": "/webp/ute1.webp",
-        "text": "Forside med inngangsparti"
+        "src": "/webp/mini1.webp",
+        "text": "Modell Framside"
       },
       {
-        "src": "/webp/ute3.webp",
-        "text": "Side uten vindu"
+        "src": "/webp/mini2.webp",
+        "text": "Modell Framside"
       },
       {
-        "src": "/webp/ute4.webp",
-        "text": "Side med vindu"
+        "src": "/webp/mini6.webp",
+        "text": "Framside med kamera"
       },
       {
-        "src": "/webp/ute5.webp",
-        "text": "Bakside skrått"
+        "src": "/webp/mini7.webp",
+        "text": "Hus kontroll panel"
       },
       {
-        "src": "/webp/ute15.webp",
-        "text": "Bakside"
+        "src": "/webp/mini8.webp",
+        "text": "Bad"
+      },
+
+      {
+        "src": "/webp/mini13.webp",
+        "text": "Stue"
       },
       {
-        "src": "/webp/ute13.webp",
-        "text": "Bakside med vannrør"
+        "src": "/webp/mini14.webp",
+        "text": "Kjøkken"
       },
       {
-        "src": "/webp/ute14.webp",
-        "text": "Bakside med elektrisk anlegg"
+        "src": "/webp/mini15.webp",
+        "text": "Soverom"
       },
       {
-        "src": "/webp/inside1.webp",
-        "text": "Soveroms vindu"
+        "src": "/webp/mini16.webp",
+        "text": "Soverom"
       },
       {
-        "src": "/webp/inside2.webp",
-        "text": "Framside vindu"
+        "src": "/webp/mini17.webp",
+        "text": "Varme panel"
       },
       {
-        "src": "/webp/inside3.webp",
-        "text": "Bakside skrått"
+        "src": "/webp/mini18.webp",
+        "text": "Dusj"
       },
       {
-        "src": "/webp/q3.webp",
+        "src": "/webp/mini20.webp",
+        "text": "bad"
+      },
+
+      {
+        "src": "/webp/mini22.webp",
+        "text": "kjøkken"
+      },
+
+      {
+        "src": "/webp/mini29.webp",
+        "text": "Utside"
+      },
+      {
+        "src": "/webp/mini31.webp",
+        "text": "Varmtvannsbereder"
+      },
+      {
+        "src": "/webp/mini32.webp",
+        "text": "Bad"
+      },
+      {
+        "src": "/webp/mini41.webp",
+        "text": "Soverom"
+      },
+      {
+        "src": "/webp/mini42.webp",
+        "text": "Innside"
+      },
+
+      {
+        "src": "/webp/mini58.webp",
+        "text": "Bevegelses sensor"
+      },
+      {
+        "src": "/webp/mini61.webp",
+        "text": "bad"
+      },
+      {
+        "src": "/webp/mini67.webp",
+        "text": "soverom"
+      },
+      {
+        "src": "/webp/stamsundTegning.webp",
         "text": "Plantegning"
       }
     ]
@@ -134,8 +182,8 @@
     "bad": "1",
     "leveringstid": "2-4 Måneder",
     "inngangsparti": "2",
-
-    "heroImage": "/webp/f2.webp",
+    "video": "/husVideo.mp4",
+    "heroImage": "/webp/q1.webp",
     "images": [
       {
         "src": "/webp/q2.webp",
@@ -146,8 +194,96 @@
         "text": "Modell Framside"
       },
       {
+        "src": "/webp/mini1.webp",
+        "text": "Modell Framside"
+      },
+      {
+        "src": "/webp/mini2.webp",
+        "text": "Modell Framside"
+      },
+      {
+        "src": "/webp/mini6.webp",
+        "text": "Framside med kamera"
+      },
+      {
+        "src": "/webp/mini7.webp",
+        "text": "Hus kontroll panel"
+      },
+      {
+        "src": "/webp/mini8.webp",
+        "text": "Bad"
+      },
+
+      {
+        "src": "/webp/mini13.webp",
+        "text": "Stue"
+      },
+      {
+        "src": "/webp/mini14.webp",
+        "text": "Kjøkken"
+      },
+      {
+        "src": "/webp/mini15.webp",
+        "text": "Soverom"
+      },
+      {
+        "src": "/webp/mini16.webp",
+        "text": "Soverom"
+      },
+      {
+        "src": "/webp/mini17.webp",
+        "text": "Varme panel"
+      },
+      {
+        "src": "/webp/mini18.webp",
+        "text": "Dusj"
+      },
+      {
+        "src": "/webp/mini20.webp",
+        "text": "bad"
+      },
+
+      {
+        "src": "/webp/mini22.webp",
+        "text": "kjøkken"
+      },
+
+      {
+        "src": "/webp/mini29.webp",
+        "text": "Utside"
+      },
+      {
+        "src": "/webp/mini31.webp",
+        "text": "Varmtvannsbereder"
+      },
+      {
+        "src": "/webp/mini32.webp",
+        "text": "Bad"
+      },
+      {
+        "src": "/webp/mini41.webp",
+        "text": "Soverom"
+      },
+      {
+        "src": "/webp/mini42.webp",
+        "text": "Innside"
+      },
+
+      {
+        "src": "/webp/mini58.webp",
+        "text": "Bevegelses sensor"
+      },
+      {
+        "src": "/webp/mini61.webp",
+        "text": "bad"
+      },
+      {
+        "src": "/webp/mini67.webp",
+        "text": "soverom"
+      },
+      {
         "src": "/webp/q3.webp",
-        "text": "Plantegning"
+        "text": "tegninger"
       }
     ]
   },
@@ -204,6 +340,22 @@
       {
         "src": "/webp/Hammerstad3.webp",
         "text": "Plantegning"
+      },
+      {
+        "src": "/webp/g1.webp",
+        "text": "Modell Framside"
+      },
+      {
+        "src": "/webp/g2.webp",
+        "text": "Modell Bakside"
+      },
+      {
+        "src": "/webp/g3.webp",
+        "text": "Modell Framside"
+      },
+      {
+        "src": "/webp/g4.webp",
+        "text": "Modell Framside"
       }
     ]
   }

@@ -6,6 +6,7 @@ import ContentTable from "../parts/ContentTable";
 import { set } from "zod";
 import ArrowLeft from "@/public/svg/arrowLeft";
 import Check from "@/public/svg/check";
+import { Editor } from "novel";
 
 const fakeData = [
   {
@@ -99,6 +100,7 @@ function Nyheter() {
               <label htmlFor="beskrivelse" className="uppercase font-bold">
                 Beskrivelse
               </label>
+              {/* <Editor /> */}
               <textarea
                 id="beskrivelse"
                 placeholder="Beskrivelse"
