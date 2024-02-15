@@ -106,7 +106,7 @@ export default function MobileNav({ open, setOpen }: openStates) {
             </span>
           </div>
         </motion.div>
-        <span className="row-start-7 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+        <span className="row-start-8 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
           Syverudveien 1, 3077 Sande
         </span>
       </motion.div>
