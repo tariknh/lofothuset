@@ -68,7 +68,7 @@ const TestComp = () => {
             <ModelComponent
               title={"Stamsund Lodge"}
               href={"/modeller/stamsund-lodge"}
-              slogan={"Boligens Hjerte"}
+              slogan={""}
               image={info[0].heroImage}
             />
             {/* <ModelComponent
@@ -80,19 +80,19 @@ const TestComp = () => {
             <ModelComponent
               title={"Leknes Lodge"}
               href={"/modeller/leknes-lodge"}
-              slogan={"Boligens Hjerte"}
+              slogan={""}
               image={info[2].heroImage}
             />
             <ModelComponent
               title={"Nusfjord Lodge"}
               href={"/modeller/nusfjord-lodge"}
-              slogan={"Boligens Hjerte"}
+              slogan={""}
               image={info[3].heroImage}
             />
             <ModelComponent
               title={"Hammerstad Lodge"}
               href={"/modeller/hammerstad-lodge"}
-              slogan={"Boligens Hjerte"}
+              slogan={""}
               image={info[4].heroImage}
             />
           </div>
