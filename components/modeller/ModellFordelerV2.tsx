@@ -93,7 +93,7 @@ function ModellFordelerV2() {
           image="/water.svg"
         />
         <Fordel
-          title="Varmekabler i alle rom utenom soverom"
+          title="Gulvvarme i alle rom utenom soverom"
           text="Mindre rot og enklere livsstil, kan redusere eiendeler med 40-60%"
           image="/radiator.svg"
         />
