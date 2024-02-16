@@ -154,10 +154,6 @@
     "heroImage": "/webp/h2.webp",
     "images": [
       {
-        "src": "/webp/h1.webp",
-        "text": "Plantegning"
-      },
-      {
         "src": "/webp/h2.webp",
         "text": "Modell Framside"
       },
@@ -165,6 +161,11 @@
         "src": "/webp/h3.webp",
         "text": "Modell Utside"
       },
+      {
+        "src": "/webp/h1.webp",
+        "text": "Plantegning"
+      },
+
       {
         "src": "/webp/h4.webp",
         "text": "Plantegning"
