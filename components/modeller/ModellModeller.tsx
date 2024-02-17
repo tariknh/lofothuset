@@ -31,7 +31,6 @@ function ModellModeller({ images, video }: Props) {
           className="w-full col-span-5 mb-16"
           preload="true"
           muted
-          autoPlay
           controls
         >
           <source src={video} />
