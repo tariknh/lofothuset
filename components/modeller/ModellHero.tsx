@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import ModellFordel from "./ModellFordel";
+import Link from "next/link";
 
 interface ModellHeroProps {
   title: string;
@@ -59,9 +60,17 @@ function ModellHero({
               />
             </div>
           </div>
-          <h3 className="mb-4 xsm-370:mb-0 xsm-370:text-lg sm:text-xl lg:text-2xl ">
+          <h3 className="mb-4 pb-4 sm:pb-10 xsm-370:mb-0 xsm-370:text-lg sm:text-xl lg:text-2xl ">
             {description}
           </h3>
+          <Link
+            target="_blank"
+            href={"/teknisk"}
+            className="flex justify-start items-center gap-4 underline underline-offset-[12px] text-base hover:text-[16.2px]  sm:text-lg lg:text-xl lg:hover:text-[20.2px] sm:hover:text-[18.2px] w-fit transition-all duration-200"
+          >
+            Trykk her for å lese tekniske detaljer
+            <Image src="/info.svg" alt="Arrow" width={24} height={24} />
+          </Link>
         </div>
         <div className="grid xsm:ml-12 lg:ml-32 lg:mr-16 sm:mx-2 md:mx-4 grid-cols-3 gap-y-12 gap-x-2">
           <ModellFordel
