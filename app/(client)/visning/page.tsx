@@ -15,11 +15,12 @@ function page() {
           <VisningNext
             featured
             title="Visning av Stamsundet Lodge"
-            date="10 Februar klokken 14:00"
+            date="19 Februar til 10 Mars"
             location="Miljøparken, Forusbeen 337, 4051 Sola"
             image="/webp/render.webp"
+            contact="ruben@lofothuset.no"
           />
-          <VisningNext
+          {/* <VisningNext
             title="Visning av Leknes Lodge"
             date="15 Mars 2024"
             location="Sandnes gatebakken 4"
@@ -30,7 +31,7 @@ function page() {
             date="15 Juli 2024"
             location="Sandnes gatebakken 4"
             image="/webp/uteNorsk.webp"
-          />
+          /> */}
         </div>
       </div>
     </main>

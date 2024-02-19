@@ -26,6 +26,10 @@ export const navItems = [
     href: "/#modeller",
   },
   {
+    title: "Visninger",
+    href: "/visning",
+  },
+  {
     title: "Om oss",
     href: "/om-oss",
   },

@@ -32,6 +32,9 @@ function Footer() {
           <Link href={"#modeller"}>Våre Modeller</Link>
         </h3>
         <h3 className="hover:underline">
+          <Link href={"/visninger"}>Visninger</Link>
+        </h3>
+        <h3 className="hover:underline">
           <Link href={"/om-oss"}>Om Oss</Link>
         </h3>
         <h3 className="hover:underline">

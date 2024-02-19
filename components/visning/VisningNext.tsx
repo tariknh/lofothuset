@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const prim = "col-span-2 flex flex-col h-full";
 const seco = "col-span-2 flex flex-col self-center";
@@ -12,6 +13,7 @@ interface VisningNextProps {
   date: string;
   location: string;
   image: string;
+  contact: string;
 }
 
 function VisningNext({
@@ -20,6 +22,7 @@ function VisningNext({
   date,
   location,
   image,
+  contact,
 }: VisningNextProps) {
   if (featured) {
     return (
@@ -38,8 +41,14 @@ function VisningNext({
         <p className="text-lg xsm:text-xl sm:text-2xl md:text-3xl mb-4 md:mb-8">
           Sted: {location}
         </p>
-        <p className="text-base xsm:text-lg sm:text-xl md:text-2xl text-zinc-500">
+        <p className="text-base xsm:text-lg sm:text-xl md:text-xl text-zinc-500">
           Dato: {date}
+        </p>
+        <p className="text-base xsm:text-lg sm:text-xl md:text-xl text-zinc-500">
+          Kontakt:
+          <Link className="underline" href={`mailto:${contact}`}>
+            {contact}
+          </Link>
         </p>
       </div>
     );
