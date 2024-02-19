@@ -14,7 +14,7 @@ function page() {
         <div className="grid grid-cols-1 justify-center items-center gap-8 w-full">
           <VisningNext
             featured
-            title="Visning av Stamsundet Lodge"
+            title="Visning av Stamsund Lodge"
             date="19 Februar til 10 Mars"
             location="Miljøparken, Forusbeen 337, 4051 Sola"
             image="/webp/render.webp"
