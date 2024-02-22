@@ -71,7 +71,7 @@ function page() {
         <Item
           title={"Yttervegger"}
           list={[
-            "Tykkelse: 150 mm.",
+            "Tykkelse: 200 mm.",
             "Høyde: 3500 mm.",
             "Utvendig kledning: Tre, spesialplate (150 mm), og aluminiumskompositt.",
             "Isolasjon: 150 mm tykk steinull (Knauf Company) med fuktsperre.",
