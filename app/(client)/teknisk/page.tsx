@@ -74,7 +74,7 @@ function page() {
             "Tykkelse: 150 mm.",
             "Høyde: 3500 mm.",
             "Utvendig kledning: Tre, spesialplate (150 mm), og aluminiumskompositt.",
-            "Isolasjon: 100 mm tykk steinull (Knauf Company) med fuktsperre.",
+            "Isolasjon: 150 mm tykk steinull (Knauf Company) med fuktsperre.",
             "Innvendig kledning: Gips og tapet.",
             "Alternativer: Tre, tilpasset etter kundens ønske.",
           ]}
