@@ -59,7 +59,7 @@ export default function MobileNav({ open, setOpen }: openStates) {
         animate="open"
         exit="initial"
         variants={topMobile}
-        className="p-6 grid grid-rows-8 justify-between bg-[#121212] row-span-8 rounded-b-xl text-5xl font-sans text-white tracking-tight"
+        className="p-6 grid grid-rows-8 gap-4 justify-between bg-[#121212] row-span-8 rounded-b-xl text-4xl font-sans text-white tracking-tight"
       >
         <motion.div
           className="row-start-2 flex flex-col gap-2"
@@ -75,7 +75,7 @@ export default function MobileNav({ open, setOpen }: openStates) {
             ></NavLink>
           ))}
         </motion.div>
-        <motion.div className="text-white row-start-5 row-span-2 flex flex-col gap-2">
+        <motion.div className="text-white row-start-6 row-span-3 flex flex-col gap-2">
           <span className="text-sm font-normal text-muted-foreground">
             Kom i kontakt
           </span>
@@ -83,7 +83,7 @@ export default function MobileNav({ open, setOpen }: openStates) {
             <span className="text-zinc-400 col-start-1 font-semibold text-base">
               Nord
             </span>
-            <span className="font-normal col-start-1 text-xl underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+            <span className="font-normal col-start-1 text-base underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
               <Link href={"mailto:svein@lofothuset.no"}>
                 svein@lofothuset.no
               </Link>
@@ -93,7 +93,7 @@ export default function MobileNav({ open, setOpen }: openStates) {
             <span className="text-zinc-400 col-start-2 font-semibold text-base">
               Sør
             </span>
-            <span className="font-normal col-start-2 text-xl underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+            <span className="font-normal col-start-2 text-base underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
               <Link href={"mailto:harald@lofothuset.no"}>
                 harald@lofothuset.no
               </Link>
@@ -103,14 +103,14 @@ export default function MobileNav({ open, setOpen }: openStates) {
             <span className="text-zinc-400 col-start-2 font-semibold text-base">
               Tyrkia-kontor
             </span>
-            <span className="font-normal col-start-2 text-xl underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+            <span className="font-normal col-start-2 text-base underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
               <Link href={"mailto:harald@lofothuset.no"}>
                 yavuz@lofothuset.no
               </Link>
             </span>
           </div>
         </motion.div>
-        <span className="row-start-8 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+        <span className="row-start-9 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
           Syverudveien 1, 3077 Sande
         </span>
       </motion.div>
