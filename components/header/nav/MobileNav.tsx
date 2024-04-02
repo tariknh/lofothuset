@@ -80,16 +80,14 @@ export default function MobileNav({ open, setOpen }: openStates) {
             Kom i kontakt
           </span>
           <div className="flex flex-col">
-            <span className="text-zinc-400 col-start-1 font-semibold text-base">
+            {/* <span className="text-zinc-400 col-start-1 font-semibold text-base">
               Nord
-            </span>
+            </span> */}
             <span className="font-normal col-start-1 text-base underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
-              <Link href={"mailto:svein@lofothuset.no"}>
-                svein@lofothuset.no
-              </Link>
+              <Link href={"mailto:svein@lofothuset.no"}>hei@jort.no</Link>
             </span>
           </div>
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <span className="text-zinc-400 col-start-2 font-semibold text-base">
               Sør
             </span>
@@ -108,11 +106,11 @@ export default function MobileNav({ open, setOpen }: openStates) {
                 yavuz@lofothuset.no
               </Link>
             </span>
-          </div>
+          </div> */}
         </motion.div>
-        <span className="row-start-9 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
+        {/* <span className="row-start-9 font-normal text-sm underline-offset-[.6rem] underline decoration-[.01rem] decoration-muted-foreground">
           Syverudveien 1, 3077 Sande
-        </span>
+        </span> */}
       </motion.div>
     </div>
   );

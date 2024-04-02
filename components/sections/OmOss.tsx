@@ -14,7 +14,7 @@ function OmOss() {
             fokus på detaljer.
           </h2>
           <h3 className="text-xl md:text-2xl max-w-[600px] text-balance font-light lg:text-end">
-            Hos Lofoten A Group kombinerer vi moderne design med bærekraft for å
+            Hos Lofothuset kombinerer vi moderne design med bærekraft for å
             skape unike boliger. Vårt team er dedikert til kvalitet og komfort,
             og skaper ditt drømmehjem med miljøvennlige, effektive løsninger.
             Opplev friheten vårt boligkonsept tilbyr.
@@ -39,11 +39,11 @@ function OmOss() {
         <h2 className="relative text-xl xsm:text-3xl xsm-370:text-2xl mb-4 md:my-6 sm:text-4xl md:text-5xl lg:text-6xl text-balance text-center font-light tracking-tighter max-w-[1200px]">
           <AnimatedLines
             center
-            text="Lofoten A Group tilbyr boliger med moderne arkitektur, som muliggjør liv i drømmemiljøet ditt. Vår erfaring og gjennomtenkte løsninger skaper et ettertraktet boligkonsept."
+            text="Lofothuset tilbyr boliger med moderne arkitektur, som muliggjør liv i drømmemiljøet ditt. Vår erfaring og gjennomtenkte løsninger skaper et ettertraktet boligkonsept."
           />
         </h2>
         <div className="flex justify-center items-center gap-4">
-          <div className="w-[116px] h-[116px] border rounded-full flex justify-center items-center">
+          {/* <div className="w-[116px] h-[116px] border rounded-full flex justify-center items-center">
             <div className="w-[96px] h-[96px] relative">
               <Image
                 src={"/webp/haraldIcon.webp"}
@@ -52,12 +52,12 @@ function OmOss() {
                 className="object-cover"
               />
             </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-normal">Harald Kjeldaas</h2>
+          </div> */}
+          {/* <div>
+            <h2 className="text-xl font-normal">Tarik</h2>
             <h3 className="font-light">Daglig leder,</h3>
             <h3 className="font-light">Lofoten A Group</h3>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

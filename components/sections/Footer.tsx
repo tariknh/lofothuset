@@ -43,11 +43,11 @@ function Footer() {
       </div>
       <div className="text-zinc-300 md:col-start-5 md:row-start-1 ">
         <h2 className="text-xl text-white font-semibold">Kontakt</h2>
-        <h2 className=" text-zinc-500 font-semibold">Sør</h2>
+        {/* <h2 className=" text-zinc-500 font-semibold">Sør</h2> */}
         <h3 className="hover:underline">
-          <Link href={"mailto:harald@lofothuset.no"}>harald@lofothuset.no</Link>
+          <Link href={"mailto:hei@jort.no"}>hei@jort.no</Link>
         </h3>
-        <h3 className="hover:underline mb-2">
+        {/* <h3 className="hover:underline mb-2">
           <Link href={"tel:+4798283501"}>+47 982 83 501</Link>
         </h3>
         <h2 className=" text-zinc-500 font-semibold">Nord</h2>
@@ -63,7 +63,7 @@ function Footer() {
         </h3>
         <h3 className="hover:underline mb-2">
           <Link href={"tel:+4797586958"}>+47 400 70 279</Link>
-        </h3>
+        </h3> */}
       </div>
       <div className="col-span-full tracking-tighter md:row-start-3 text-6xl sm:text-8xl md:text-[8rem] lg:text-[12rem] opacity-50 font-bold text-center">
         <AnimatedLetters singleWord center text="lofothuset" />
@@ -72,9 +72,7 @@ function Footer() {
 
       <div className="flex-wrap sm:flex-row flex col-span-full md:mt-5 row-start-4 w-full justify-evenly sm:justify-between sm:gap-5">
         <div>
-          <span className="text-zinc-400">
-            Lofoten A Group AS. Org nr 930 035 688
-          </span>
+          <span className="text-zinc-400">lofothuset @ 2024</span>
         </div>
         <div className="justify-evenly gap-3 sm:gap-5 flex">
           {/* <span className="underline">Bruksvilkår</span>

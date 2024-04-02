@@ -1,37 +1,12 @@
 {
   "team": [
     {
-      "name": "Harald Kjeldaas",
-      "phone": "98283501",
-      "mail": "harald@lofothuset.no",
+      "name": "Kevin Hansen",
+      "phone": "95189711",
+      "mail": "hei@jort.no",
       "position": "Daglig leder og salgsansvarlig",
       "description": "Har 25 år i byggevarhandel som salgssjef og dagligleder. Har du stort eller lite prosjekt hva angår små hus. Er jeg den rette å snakke med.",
-      "image": "/webp/harald.webp"
-    },
-    {
-      "name": "Svein Arne Hagen",
-      "phone": "97586958",
-      "mail": "svein@lofothuset.no",
-      "position": "Markedsansvarlig",
-      "description": "Har studert markedsføring på det glade 80 tall. Har jobbet som markedssjef i flere selskaper både på og utenfor børs. Har i tillegg vært tilrettelegger for flere selskaper i grunderfasen. Er markedsansvarlig i Lofoten a group i tillegg til å håndtere markedet i Nordland Troms og Finnmark.",
-      "image": "/webp/svein.webp"
-    },
-
-    {
-      "name": "Yavuz Karaboga",
-      "phone": "40070279",
-      "mail": "yavuz@lofothuset.no",
-      "position": "Utdannelse fra BI Oslo innen forretningsjus",
-      "description": "Har jobbet innenfor bank, forsikring, eiendom og helse. Bodd i Norge i 25 år, er nå fast bosatt i Tyrkia og driver med utvikling og salg av boligkonsepter til både norske så vel som utenlandske kunder.",
-      "image": "/webp/yavuz.webp"
-    },
-    {
-      "name": "Ruben Staven",
-      "phone": "93049995",
-      "mail": "ruben@lofothuset.no",
-      "position": "Salgsansvarlig for Sør-vest Norge",
-      "description": "Jeg har 6 års erfaring innen salg&service. Har du spørsmål angående boligen? Hvor du skal starte og prosessen videre? Ta gjerne kontakt.",
-      "image": "/webp/ruben.webp"
+      "image": "/webp/jack.jpg"
     }
   ]
 }
