@@ -45,7 +45,7 @@ function page({ params }: { params: { modeller: string } }) {
 
       <Hvordan />
 
-      <FAQ />
+      {/* <FAQ /> */}
     </main>
   );
 }
