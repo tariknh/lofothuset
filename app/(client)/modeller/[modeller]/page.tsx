@@ -12,6 +12,7 @@ import React from "react";
 import modellerList from "@/public/Static/Modeller.json";
 
 function page({ params }: { params: { modeller: string } }) {
+  console.log("Testing inside modeller first line");
   const model = modellerList.find((model) => model.id === params.modeller);
 
   if (!model) {
